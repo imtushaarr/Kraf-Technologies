@@ -6,6 +6,7 @@
     "@fontsource/jost": "^5.1.2",
     "@headlessui/react": "^2.2.0",
     "@heroicons/react": "^2.2.0",
+    "build": "^0.1.4",
     "cra-template": "1.2.0",
     "framer-motion": "^12.0.1",
     "lucide-react": "^0.473.0",
