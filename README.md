@@ -96,8 +96,8 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ## Contact
 For inquiries, feedback, or support, please contact us at:
-- **Email**: contact@kraftechnologies.com
-- **Website**: [Kraf Technologies](https://kraftechnologies.com)
+- **Email**: info@kraftechnologies.com
+- **Website**: [Kraf Technologies](https://kraftechnologies.vercel.com)
 
 ---
 
