@@ -4,7 +4,6 @@ import { Code2, Rocket, Target, Trophy } from 'lucide-react';
 export default function About() {
   return (
     <div className="bg-black py-24 relative overflow-hidden">
-      {/* Background Elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-0 w-96 h-96 bg-[#18CB96] rounded-full filter blur-[128px]"></div>
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#18CB96] rounded-full filter blur-[128px]"></div>
@@ -12,7 +11,6 @@ export default function About() {
 
       <div className="container mx-auto px-6 relative">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Image Column */}
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img 
@@ -21,8 +19,7 @@ export default function About() {
                 className="w-full h-[600px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-              
-              {/* Stats */}
+               
               <div className="absolute bottom-0 left-0 right-0 p-8 grid grid-cols-2 gap-8">
                 <div>
                   <div className="text-[#18CB96] text-4xl font-bold mb-2">10+</div>
@@ -36,12 +33,11 @@ export default function About() {
             </div>
           </div>
 
-          {/* Content Column */}
           <div>
             <h2 className="text-4xl font-semibold text-white mb-6">
               Transforming Ideas into Digital Reality
             </h2>
-            <p className="text-gray-400 mb-8 text-lg leading-relaxed">
+            <p className="text-gray-400 mb-8 text-lg leading-relaxed text-justify">
               Since our inception, we've been at the forefront of digital innovation, 
               crafting sophisticated software solutions that empower businesses to thrive 
               in the digital age. Our commitment to excellence and cutting-edge technology 
