@@ -6,6 +6,7 @@ export default {
       animation: {
         'gradient-x': 'gradient-x 15s ease infinite',
         'pulse': 'pulse 6s ease-in-out infinite',
+        'spin-slow': 'spin 2s linear infinite',
       },
       keyframes: {
         'gradient-x': {
