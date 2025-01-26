@@ -30,10 +30,10 @@ export default function Showcase() {
         </div>
 
         {/* Project Grid */}
-        <div className="grid md:grid-cols-2 gap-8 mb-24">
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
           {/* Enterprise Dashboard */}
-          <div className="group animate-slide-up hover-lift">
-            <div className="glass-effect rounded-xl overflow-hidden border border-[#18CB96]/10 group-hover:border-[#18CB96]/30 transition-colors duration-300">
+          <div className="group animate-slide-up hover-lift flex flex-col">
+            <div className="glass-effect rounded-xl overflow-hidden border border-[#18CB96]/10 group-hover:border-[#18CB96]/30 transition-colors duration-300 flex-1 flex flex-col">
               <div className="bg-gray-800/50 p-3 flex items-center gap-2">
                 <div className="flex gap-2">
                   <div className="w-3 h-3 rounded-full bg-red-500"></div>
@@ -46,13 +46,13 @@ export default function Showcase() {
                   </div>
                 </div>
               </div>
-              <div className="p-6">
+              <div className="p-6 flex-1 flex flex-col">
                 <img 
                   src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2426"
                   alt="Enterprise Dashboard"
                   className="rounded-lg shadow-2xl transform group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="mt-6">
+                <div className="mt-6 flex-1">
                   <h3 className="text-white/3 text-xl font-semibold mb-2">Enterprise Analytics Dashboard</h3>
                   <p className="text-gray-400 mb-4">Real-time data visualization and analytics platform for enterprise decision-making.</p>
                   <div className="flex gap-3">
@@ -66,8 +66,8 @@ export default function Showcase() {
           </div>
 
           {/* Mobile App */}
-          <div className="group animate-slide-up hover-lift" style={{ animationDelay: '200ms' }}>
-            <div className="glass-effect rounded-xl overflow-hidden border border-[#18CB96]/10 group-hover:border-[#18CB96]/30 transition-colors duration-300">
+          <div className="group animate-slide-up hover-light flex flex-col" style={{ animationDelay: '200ms' }}>
+            <div className="glass-effect rounded-xl overflow-hidden border border-[#18CB96]/10 group-hover:border-[#18CB96]/30 transition-colors duration-300 flex-1 flex flex-col">
               <div className="bg-gray-800/50 p-3 flex items-center gap-2">
                 <div className="flex gap-2">
                   <div className="w-3 h-3 rounded-full bg-red-500"></div>
@@ -80,13 +80,13 @@ export default function Showcase() {
                   </div>
                 </div>
               </div>
-              <div className="p-6">
+              <div className="p-6 flex-1 flex flex-col">
                 <img 
                   src="https://images.unsplash.com/photo-1555421689-491a97ff2040?auto=format&fit=crop&q=80&w=2426"
                   alt="Fintech Mobile App"
                   className="rounded-lg shadow-2xl transform group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="mt-6">
+                <div className="mt-6 flex-1">
                   <h3 className="text-white/3 text-xl font-semibold mb-2">Fintech Mobile Platform</h3>
                   <p className="text-gray-400 mb-4">Secure and intuitive mobile banking solution with advanced features.</p>
                   <div className="flex gap-3">
@@ -99,7 +99,16 @@ export default function Showcase() {
             </div>
           </div>
         </div>
+
+        {/* View More Projects Button */}
+        <div className="text-center">
+          <a href="/products" className="inline-block text-[#18CB96] hover:text-[#18CB96]/90 transition-colors">
+          <button className="bg-[#18CB96] text-black px-8 py-3 rounded-full text-sm font-semibold hover:bg-[#18CB96]/90 transition-colors">
+            View More Projects
+          </button>
+          </a>
         </div>
-        </div>
+      </div>
+    </div>
   );
 }
