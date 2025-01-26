@@ -39,9 +39,9 @@ export default function Footer() {
 
     {/* Placeholder for Additional Content */}
     <div>
-      <h4 className="text-lg font-semibold mb-4">Additional Information</h4>
+      <h4 className="text-lg font-semibold mb-4">Kraf Technologies</h4>
       <p className="text-sm text-gray-400">
-        Add any other content here, such as social media links, address, or business hours.
+      Kraf Technologies delivers innovative software and B2B solutions, empowering businesses with AI, cloud, and advanced digital technologies.
       </p>
     </div>
   </div>

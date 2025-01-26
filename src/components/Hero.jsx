@@ -53,7 +53,7 @@ export default function Hero() {
           <div className="mb-8 animate-fade-in">
             <div className="inline-block p-2  backdrop-blur-sm ">
               <h1 className="text-5xl md:text-7xl font-semibold text-white">
-                Innovative Software Solutions
+                Building Next-Gen Solutions
               </h1>
             </div>
           </div>
