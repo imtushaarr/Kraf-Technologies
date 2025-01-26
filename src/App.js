@@ -9,18 +9,17 @@ import { useState, useEffect } from 'react';
 function App() {
   const [loading, setLoading] = useState(true);
 
-  // Simulate loading delay
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 3000); // 3 seconds delay
+    }, 3000); 
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <Router>
       {loading ? (
-        <Loader /> // Show loader while loading
+        <Loader /> 
       ) : (
         <Routes>
           <Route path="/" element={<Home />} />
