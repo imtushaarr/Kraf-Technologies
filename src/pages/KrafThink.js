@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Trophy, Award, Medal } from 'lucide-react';
 import { motion } from "framer-motion";
 import logo from "../assets/favicon.png";
@@ -9,6 +9,12 @@ import avatar3 from "../assets/Avatar3.jpeg";
 import avatar4 from "../assets/Avatar4.JPG";
 
 const KrafThink = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
       {/* Navigation */}
@@ -32,26 +38,48 @@ const KrafThink = () => {
               Contact
             </a>
           </div>
-          <button className="bg-emerald-400 hover:bg-emerald-500 text-black rounded-full px-6 py-1.5 text-sm font-normal transition-colors">
+          <button className="bg-emerald-400 hover:bg-emerald-500 text-black rounded-full px-6 py-1.5 text-sm font-normal transition-colors hidden md:block">
             Apply With Unstop
           </button>
+          <button className="md:hidden text-white" onClick={toggleMenu}>
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
         </div>
+        {/* Mobile Menu */}
+        {isMenuOpen && (
+          <div className="md:hidden bg-black/90 p-4">
+            <a href="/" className="block text-sm hover:text-emerald-400 transition-colors py-2">
+              Home
+            </a>
+            <a href="#" className="block text-sm hover:text-emerald-400 transition-colors py-2">
+              About Us
+            </a>
+            <a href="#" className="block text-sm hover:text-emerald-400 transition-colors py-2">
+              Our Team
+            </a>
+            <a href="#" className="block text-sm hover:text-emerald-400 transition-colors py-2">
+              Contact
+            </a>
+            <button className="bg-emerald-400 hover:bg-emerald-500 text-black rounded-full px-6 py-1.5 text-sm font-normal transition-colors w-full mt-2">
+              Apply With Unstop
+            </button>
+          </div>
+        )}
       </nav>
 
       {/* Main Content */}
       <main>
         {/* Hero Section */}
         <section className="relative text-center py-8 bg-cover bg-center h-screen" style={{ backgroundImage: `url(${heroImage})` }}>
-          {/* Background Image as Full Height */}
           <div className="absolute inset-0 bg-black opacity-20"></div>
-
-          {/* Hero Text */}
-          <div className="relative z-10 flex flex-col items-center justify-center h-full text-white">
+          <div className="relative z-10 flex flex-col items-center justify-center h-full text-white px-4">
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-5xl md:text-7xl font-normal mb-6"
+              className="text-4xl md:text-7xl font-normal mb-6"
             >
               #KrafThink2025
             </motion.h1>
@@ -64,8 +92,6 @@ const KrafThink = () => {
               Code Like a God, Innovate Like a Sage, and Conquer Challenges—Unleash Your Divine Potential!
             </motion.p>
           </div>
-
-          {/* Hero Illustration */}
           <div className="relative mt-12 max-w-6xl mx-auto">
             {[...Array(8)].map((_, i) => (
               <motion.div
@@ -95,7 +121,6 @@ const KrafThink = () => {
               className="absolute bottom-8 left-8 flex items-center"
             >
               <div className="flex -space-x-2">
-                {/* Replace Avatar with images */}
                 <img src={avatar1} alt="Avatar 1" className="w-10 h-10 rounded-full border-2 border-black object-cover" />
                 <img src={avatar2} alt="Avatar 2" className="w-10 h-10 rounded-full border-2 border-black object-cover" />
                 <img src={avatar3} alt="Avatar 3" className="w-10 h-10 rounded-full border-2 border-black object-cover" />
@@ -112,11 +137,11 @@ const KrafThink = () => {
 
         {/* About Section */}
         <div className="relative z-20 bg-gradient-to-b from-black to-purple-900/10">
-          <div className="container mx-auto px-8 py-24">
-            <div className="flex flex-col md:flex-row justify-between items-start gap-16">
+          <div className="container mx-auto px-4 md:px-8 py-24">
+            <div className="flex flex-col md:flex-row justify-between items-start gap-8 md:gap-16">
               <div className="md:w-1/2">
                 <h3 className="text-xl text-white font-medium mb-4">ABOUT KRAFTHINK</h3>
-                <h2 className="text-5xl font-semibold mb-6">What's the vibe at KrafThink?</h2>
+                <h2 className="text-3xl md:text-5xl font-semibold mb-6">What's the vibe at KrafThink?</h2>
               </div>
               <div className="md:w-1/2">
                 <p className="text-gray-300 leading-relaxed text-sm">
@@ -135,8 +160,8 @@ const KrafThink = () => {
 
         {/* Information Section */}
         <div className="relative z-20">
-          <div className="container mx-auto px-8 py-16">
-            <h3 className="text-xl text-white font-semibold mb-3">DETAIL INFORMATION ABOUT <br></br> KRAFTHINK</h3>
+          <div className="container mx-auto px-4 md:px-8 py-16">
+            <h3 className="text-xl text-white font-semibold mb-3">DETAIL INFORMATION ABOUT <br /> KRAFTHINK</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               <InfoCard
                 title="Workshops and Mentorship"
@@ -158,102 +183,55 @@ const KrafThink = () => {
           </div>
         </div>
 
-              {/* Prize Section */}
-              <div className="min-h-screen bg-black text-white">
-      <section className="container mx-auto px-4 py-8">
-        <h2 className="text-2xl text-white font-bold mb-12">
-          Prizes & Rewards
-        </h2>
-        
-        <div className="grid md:grid-cols-3 gap-8">
-          {/* First Prize */}
-          <div className="group relative bg-gradient-to-br from-purple-900/50 to-black border border-purple-500/30 rounded-xl p-8 transform transition-all duration-500 hover:scale-105 hover:shadow-[0_0_30px_rgba(168,85,247,0.3)] backdrop-blur-sm">
-            <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-gradient-to-br from-yellow-400 to-yellow-600 p-4 rounded-full shadow-lg animate-bounce">
-              <Trophy className="w-8 h-8 text-white" />
+        {/* Prize Section */}
+        <div className="bg-black text-white py-16">
+          <section className="container mx-auto px-4 md:px-8">
+            <h2 className="text-2xl font-bold mb-8">Prizes & Rewards</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {/* First Prize */}
+              <PrizeCard
+                icon={<Trophy className="w-8 h-8 text-yellow-400" />}
+                title="First Prize"
+                amount="₹5,000"
+                color="yellow"
+                items={[
+                  "Work With Kraf Team opportunities",
+                  "₹500 Krafcool Coupan",
+                  "Goodies",
+                ]}
+              />
+              {/* Second Prize */}
+              <PrizeCard
+                icon={<Award className="w-8 h-8 text-slate-400" />}
+                title="Second Prize"
+                amount="₹3,000"
+                color="slate"
+                items={[
+                  "₹100 Krafcool Coupan",
+                  "Kraf Team Mentorship",
+                  "Goodies"
+                ]}
+              />
+              {/* Third Prize */}
+              <PrizeCard
+                icon={<Medal className="w-8 h-8 text-orange-400" />}
+                title="Third Prize"
+                amount="₹2,000"
+                color="orange"
+                items={[
+                  "₹50 Krafcool Coupan",
+                  "Kraf Team Mentorship",
+                  "Goodies"
+                ]}
+              />
             </div>
-            <div className="pt-8">
-              <h3 className="text-2xl font-bold text-center mb-4 text-yellow-400">First Prize</h3>
-              <div className="space-y-4">
-                <p className="text-4xl font-bold text-center text-yellow-500">$10,000</p>
-                <ul className="space-y-2 text-gray-300">
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-yellow-400 rounded-full"></span>
-                    Direct mentorship opportunities
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-yellow-400 rounded-full"></span>
-                    Investor networking access
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-yellow-400 rounded-full"></span>
-                    1-year premium workspace
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* Second Prize */}
-          <div className="group relative bg-gradient-to-br from-slate-900/50 to-black border border-slate-500/30 rounded-xl p-8 transform transition-all duration-500 hover:scale-105 hover:shadow-[0_0_30px_rgba(148,163,184,0.3)] backdrop-blur-sm">
-            <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-gradient-to-br from-slate-400 to-slate-600 p-4 rounded-full shadow-lg animate-bounce delay-100">
-              <Award className="w-8 h-8 text-white" />
-            </div>
-            <div className="pt-8">
-              <h3 className="text-2xl font-bold text-center mb-4 text-slate-400">Second Prize</h3>
-              <div className="space-y-4">
-                <p className="text-4xl font-bold text-center text-slate-500">$5,000</p>
-                <ul className="space-y-2 text-gray-300">
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-slate-400 rounded-full"></span>
-                    6-month mentorship program
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-slate-400 rounded-full"></span>
-                    Cloud credits package
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-slate-400 rounded-full"></span>
-                    6-month workspace access
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* Third Prize */}
-          <div className="group relative bg-gradient-to-br from-orange-900/50 to-black border border-orange-500/30 rounded-xl p-8 transform transition-all duration-500 hover:scale-105 hover:shadow-[0_0_30px_rgba(249,115,22,0.3)] backdrop-blur-sm">
-            <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-gradient-to-br from-orange-400 to-orange-600 p-4 rounded-full shadow-lg animate-bounce delay-200">
-              <Medal className="w-8 h-8 text-white" />
-            </div>
-            <div className="pt-8">
-              <h3 className="text-2xl font-bold text-center mb-4 text-orange-400">Third Prize</h3>
-              <div className="space-y-4">
-                <p className="text-4xl font-bold text-center text-orange-500">$2,500</p>
-                <ul className="space-y-2 text-gray-300">
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-orange-400 rounded-full"></span>
-                    3-month mentorship program
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-orange-400 rounded-full"></span>
-                    Development tools package
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-orange-400 rounded-full"></span>
-                    3-month workspace access
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+          </section>
         </div>
-      </section>
-    </div>
 
         {/* Event Details */}
         <div className="relative z-20">
-        <div className="container mx-auto px-8 py-0 mb-16">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div className="container mx-auto px-4 md:px-8 py-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               <EventDetail title="Location" value="Chandigarh University" />
               <EventDetail title="Registration" value="Unstop Platform" />
               <EventDetail title="Process Start" value="15 Feb 2025" />
@@ -263,17 +241,17 @@ const KrafThink = () => {
         </div>
 
         {/* Contact Section */}
-        <div className="relative z-20 bg-white text-black rounded-t-[3rem] mt-10 mr-4 ml-4">
-          <div className="container mx-auto px-6 py-10">
-            <div className="flex flex-col md:flex-row justify-between items-center gap-12">
+        <div className="relative z-20 bg-white text-black rounded-t-[3rem] mt-10 mx-4">
+          <div className="container mx-auto px-4 md:px-6 py-10">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-8">
               <div className="md:w-1/2">
-                <h2 className="text-4xl font-bold mb-4">
-                  Ready to showcase your skills and ideas to the world?
-                Join us at KrafThink</h2>
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                  Ready to showcase your skills and ideas to the world? Join us at KrafThink
+                </h2>
               </div>
-              <div className="md:w-1/2 text-right">
+              <div className="md:w-1/2 text-center md:text-right">
                 <p className="mb-4 text-gray-600 text-lg">
-                  Get in touch and become part of the <br></br> innovation revolution
+                  Get in touch and become part of the innovation revolution
                 </p>
                 <p className="text-gray-600 mb-8 text-lg">info@kraftechnologies.com</p>
                 <button className="bg-emerald-400 text-black px-10 py-3 rounded-full text-sm font-normal hover:bg-emerald-500 transition-all">
@@ -282,15 +260,15 @@ const KrafThink = () => {
               </div>
             </div>
             <div className="mt-16 pt-8 border-t border-gray-200 text-center text-sm text-gray-900">
-  Created By{" "}
-  <a href="https://linkedin.com/in/imtushaarr" target="_blank" rel="noopener noreferrer">
-    <span className="hover:text-[#18CB96] cursor-pointer">@imtushaarr</span>
-  </a>{" "}
-  X{" "}
-  <a href="https://www.linkedin.com/company/kraftechnology/?viewAsMember=true" target="_blank" rel="noopener noreferrer">
-    <span className="hover:text-[#18CB96] cursor-pointer">@kraftechnology</span>
-  </a>
-</div>
+              Created By{" "}
+              <a href="https://linkedin.com/in/imtushaarr" target="_blank" rel="noopener noreferrer">
+                <span className="hover:text-[#18CB96] cursor-pointer">@imtushaarr</span>
+              </a>{" "}
+              X{" "}
+              <a href="https://www.linkedin.com/company/kraftechnology/?viewAsMember=true" target="_blank" rel="noopener noreferrer">
+                <span className="hover:text-[#18CB96] cursor-pointer">@kraftechnology</span>
+              </a>
+            </div>
           </div>
         </div>
       </main>
@@ -300,10 +278,28 @@ const KrafThink = () => {
 
 function InfoCard({ title, description }) {
   return (
-    <div className="group p-8 rounded-xl bg-white/5 hover:bg-white/10 transition-all cursor-pointer backdrop-blur-sm border border-white/10">
-      <div className="w-16 h-16 rounded-full bg-gradient-to-br from-white/10 to-white/5 mb-8 group-hover:scale-110 transition-transform" />
-      <h3 className="text-xl font-semibold mb-4">{title}</h3>
-      <p className="text-gray-400 text-base leading-relaxed">{description}</p>
+    <div className="group p-6 md:p-8 rounded-xl bg-white/5 hover:bg-white/10 transition-all cursor-pointer backdrop-blur-sm border border-white/10">
+      <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-gradient-to-br from-white/10 to-white/5 mb-6 md:mb-8 group-hover:scale-110 transition-transform" />
+      <h3 className="text-lg md:text-xl font-semibold mb-4">{title}</h3>
+      <p className="text-gray-400 text-sm md:text-base leading-relaxed">{description}</p>
+    </div>
+  );
+}
+
+function PrizeCard({ icon, title, amount, color, items }) {
+  return (
+    <div className="bg-white/5 rounded-xl p-6 border border-white/10 hover:border-emerald-400/30 transition-all">
+      <div className="flex justify-center mb-4">{icon}</div>
+      <h3 className={`text-2xl font-bold text-center mb-4 text-${color}-400`}>{title}</h3>
+      <p className={`text-4xl font-bold text-center mb-6 text-${color}-500`}>{amount}</p>
+      <ul className="space-y-2 text-gray-300">
+        {items.map((item, index) => (
+          <li key={index} className="flex items-center gap-2">
+            <span className={`w-2 h-2 bg-${color}-400 rounded-full`}></span>
+            {item}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
