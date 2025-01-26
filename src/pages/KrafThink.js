@@ -267,6 +267,7 @@ const KrafThink = () => {
               X{" "}
               <a href="https://www.linkedin.com/company/kraftechnology/?viewAsMember=true" target="_blank" rel="noopener noreferrer">
                 <span className="hover:text-[#18CB96] cursor-pointer">@kraftechnology</span>
+                <span>.</span>
               </a>
             </div>
           </div>

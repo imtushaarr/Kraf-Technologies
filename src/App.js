@@ -7,7 +7,6 @@ function App() {
   return (
     <Router>
       <Routes>
-        {/* Define routes */}
         <Route path="/" element={<Home />} />
         <Route path="/kraf-think-2025" element={<KrafThink />} />
       </Routes>
