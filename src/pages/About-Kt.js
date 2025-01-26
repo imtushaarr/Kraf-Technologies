@@ -72,16 +72,16 @@ function AboutKt() {
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden bg-black/90 p-4">
-            <a href="/" className="block text-sm hover:text-emerald-400 transition-colors py-2">
+            <a href="/kraf-think-2025" className="block text-sm hover:text-emerald-400 transition-colors py-2">
               Home
             </a>
-            <a href="#" className="block text-sm hover:text-emerald-400 transition-colors py-2">
+            <a href="/kraf-think-2025/about" className="block text-sm hover:text-emerald-400 transition-colors py-2">
               About Us
             </a>
-            <a href="#" className="block text-sm hover:text-emerald-400 transition-colors py-2">
+            <a href="/kraf-think-2025/our-team" className="block text-sm hover:text-emerald-400 transition-colors py-2">
               Our Team
             </a>
-            <a href="#" className="block text-sm hover:text-emerald-400 transition-colors py-2">
+            <a href="/contact-us" className="block text-sm hover:text-emerald-400 transition-colors py-2">
               Contact
             </a>
             <button className="bg-emerald-400 hover:bg-emerald-500 text-black rounded-full px-6 py-1.5 text-sm font-normal transition-colors w-full mt-2">
