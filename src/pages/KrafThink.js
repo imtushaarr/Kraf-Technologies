@@ -31,7 +31,7 @@ const KrafThink = () => {
             <a href="/kraf-think-2025/about" className="text-sm hover:text-emerald-400 transition-colors">
               About Us
             </a>
-            <a href="#" className="text-sm hover:text-emerald-400 transition-colors">
+            <a href="/kraf-think-2025/about" className="text-sm hover:text-emerald-400 transition-colors">
               Our Team
             </a>
             <a href="#" className="text-sm hover:text-emerald-400 transition-colors">
@@ -56,7 +56,7 @@ const KrafThink = () => {
             <a href="/kraf-think-2025/about" className="block text-sm hover:text-emerald-400 transition-colors py-2">
               About Us
             </a>
-            <a href="/kraf-think-2025/our-team" className="block text-sm hover:text-emerald-400 transition-colors py-2">
+            <a href="/kraf-think-2025/about" className="block text-sm hover:text-emerald-400 transition-colors py-2">
               Our Team
             </a>
             <a href="contact-us" className="block text-sm hover:text-emerald-400 transition-colors py-2">
@@ -126,7 +126,7 @@ const KrafThink = () => {
                 <img src={avatar3} alt="Avatar 3" className="w-10 h-10 rounded-full border-2 border-black object-cover" />
                 <img src={avatar4} alt="Avatar 4" className="w-10 h-10 rounded-full border-2 border-black object-cover" />
               </div>
-              <a href="/kt-about">
+              <a href="/kraf-think-2025/about">
                 <span className="ml-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm">
                   Meet Our Team <span aria-hidden="true">&rarr;</span>
                 </span>

@@ -53,7 +53,7 @@ function AboutKt() {
             <a href="/kraf-think-2025/about" className="text-sm hover:text-emerald-400 transition-colors">
               About Us
             </a>
-            <a href="/kraf-think-2025/our-team" className="text-sm hover:text-emerald-400 transition-colors">
+            <a href="/kraf-think-2025/about" className="text-sm hover:text-emerald-400 transition-colors">
               Our Team
             </a>
             <a href="/contact-  us" className="text-sm hover:text-emerald-400 transition-colors">
@@ -78,7 +78,7 @@ function AboutKt() {
             <a href="/kraf-think-2025/about" className="block text-sm hover:text-emerald-400 transition-colors py-2">
               About Us
             </a>
-            <a href="/kraf-think-2025/our-team" className="block text-sm hover:text-emerald-400 transition-colors py-2">
+            <a href="/kraf-think-2025/about" className="block text-sm hover:text-emerald-400 transition-colors py-2">
               Our Team
             </a>
             <a href="/contact-us" className="block text-sm hover:text-emerald-400 transition-colors py-2">
