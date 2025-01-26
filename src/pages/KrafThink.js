@@ -28,7 +28,7 @@ const KrafThink = () => {
             <a href="/" className="text-sm hover:text-emerald-400 transition-colors">
               Home
             </a>
-            <a href="#" className="text-sm hover:text-emerald-400 transition-colors">
+            <a href="/kraf-think-2025/about" className="text-sm hover:text-emerald-400 transition-colors">
               About Us
             </a>
             <a href="#" className="text-sm hover:text-emerald-400 transition-colors">
