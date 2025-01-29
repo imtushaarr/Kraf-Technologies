@@ -38,25 +38,34 @@ const KrafThink = () => {
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
       <main>
         {/* Hero Section */}
-        <section className="relative text-center py-20 bg-cover bg-center h-screen" style={{ backgroundImage: `url(${heroImage})` }}>
+        <section className="relative text-center py-16 bg-cover bg-center h-screen" style={{ backgroundImage: `url(${heroImage})` }}>
           <div className="absolute inset-0 bg-black opacity-20"></div>
-          <div className="relative z-10 flex flex-col items-center justify-center h-full text-white px-4">
+          <div className="relative z-10 flex flex-col items-center justify-start h-full text-white px-4 pt-24 md:pt-32">
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-4xl md:text-7xl font-normal mb-6"
+              className="text-9xl md:text-8xl font-medium mb-4 tracking-tighter"
             >
-              #KrafThink2025
+              Kraf Think 2025
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-emerald-400 text-lg md:text-xl max-w-4xl mx-auto"
+              className="text-emerald-300 text-xl md:text-2xl max-w-5xl mx-auto mb-8 leading-snug"
             >
-              Code Like a God, Innovate Like a Sage, and Conquer Challenges—Unleash Your Divine Potential!
+              Empowering innovation, fostering collaboration, and transforming ideas into reality – join the Kraf Think 2025 Hackathon revolution!
             </motion.p>
+            {/* Register Now Button */}
+            <motion.button
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="bg-emerald-500 hover:bg-emerald-600 text-black px-10 py-2 rounded-full text-lg font-medium transition-all duration-300 transform hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 hover:text-white"
+            >
+              Register Now
+            </motion.button>
           </div>
           <div className="relative mt-12 max-w-6xl mx-auto">
             {[...Array(8)].map((_, i) => (
