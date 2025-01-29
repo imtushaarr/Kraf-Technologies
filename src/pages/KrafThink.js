@@ -64,7 +64,7 @@ const KrafThink = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="bg-emerald-500 hover:bg-emerald-600 text-black px-10 py-2 rounded-full text-lg font-medium transition-all duration-300 transform hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 hover:text-white"
             >
-              Register Now
+              Coming Soon
             </motion.button>
           </div>
           <div className="relative mt-12 max-w-6xl mx-auto">
