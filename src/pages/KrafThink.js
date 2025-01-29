@@ -121,7 +121,8 @@ const KrafThink = () => {
           <div className="absolute inset-0 bg-gradient-to-b from-black via-black/95 to-black"></div>
         </div>
         <div className="max-w-6xl mx-auto relative">
-          <h2 className="text-white text-5xl font-bold mb-8 text-center animate-on-scroll">About KrafThink 2025</h2>
+          <h2 className="text-white text-5xl font-bold mb-2 text-center animate-on-scroll">About Kraf Think 2025</h2>
+          <div className="w-40 h-1 bg-[#18CB96] mx-auto mb-6"></div>
           <div className="grid lg:grid-cols-2 gap-16 items-center mb-24">
             <div className="space-y-6 animate-on-scroll">
               <p className="text-xl text-gray-300 leading-relaxed text-justify">
@@ -137,11 +138,11 @@ const KrafThink = () => {
                 </div>
                 <div className="flex items-center gap-2 bg-[#18CB96]/10 px-4 py-2 rounded-lg">
                   <Globe className="text-[#18CB96]" />
-                  <span>20+ Countries</span>
+                  <span>20+ Universities</span>
                 </div>
                 <div className="flex items-center gap-2 bg-[#18CB96]/10 px-4 py-2 rounded-lg">
                   <Trophy className="text-[#18CB96]" />
-                  <span>$17,500 in Prizes</span>
+                  <span>₹10,000 in Prizes</span>
                 </div>
               </div>
             </div>
@@ -220,7 +221,8 @@ const KrafThink = () => {
       <section className="py-20 px-8 bg-gradient-to-b from-black via-gray-900/50 to-black relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80')] opacity-5 bg-cover bg-center"></div>
         <div className="max-w-6xl mx-auto relative">
-          <h2 className="text-white text-5xl font-bold mb-16 text-center animate-on-scroll">Prizes & Awards</h2>
+          <h2 className="text-white text-5xl font-bold mb-2 text-center animate-on-scroll">Prizes & Awards</h2>
+          <div className="w-40 h-1 bg-[#18CB96] mx-auto mb-16"></div>
           <div className="grid md:grid-cols-3 gap-8">
             <PrizeCard
               icon={<Trophy className="w-12 h-12" />}
@@ -262,7 +264,8 @@ const KrafThink = () => {
       {/* Timeline Section */}
       <section className="py-10 px-8 bg-black relative overflow-hidden">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-white text-5xl font-bold mb-16 text-center animate-on-scroll">Event Timeline</h2>
+          <h2 className="text-white text-5xl font-bold mb-2 text-center animate-on-scroll">Event Timeline</h2>
+          <div className="w-40 h-1 bg-[#18CB96] mx-auto mb-16"></div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <TimelineCard 
               icon={<Users />}
@@ -308,7 +311,8 @@ const KrafThink = () => {
             <section className="py-10 px-8 bg-gradient-to-b from-gray-900 to-black relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1492571350019-22de08371fd3?auto=format&fit=crop&q=80')] opacity-5 bg-cover bg-fixed"></div>
         <div className="max-w-6xl mx-auto relative">
-          <h2 className="text-white text-5xl font-bold mb-16 text-center animate-on-scroll">Event Details</h2>
+          <h2 className="text-white text-5xl font-bold mb-2 text-center animate-on-scroll">Event Details</h2>
+          <div className="w-40 h-1 bg-[#18CB96] mx-auto mb-16"></div>
           <div className="grid md:grid-cols-2 gap-12">
             <div className="bg-black/50 p-8 rounded-xl border border-[#18CB96]/20 backdrop-blur-sm hover:border-[#18CB96]/50 transition-all duration-300">
               <h3 className="text-2xl font-bold mb-6 text-white/8">Venue Information</h3>
@@ -363,7 +367,8 @@ const KrafThink = () => {
       {<section className="py-20 px-8 bg-white text-black rounded-t-[3rem] mt-10 mx-4">
   {/* Team Section */}
   <div className="max-w-6xl mx-auto relative">
-    <h2 className="text-black text-5xl font-bold mb-16 text-center animate-on-scroll">Our Team</h2>
+    <h2 className="text-black text-5xl font-bold mb-2 text-center animate-on-scroll">Our Team</h2>
+    <div className="w-40 h-1 bg-[#18CB96] mx-auto mb-16"></div>
     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
       <TeamMember
         image={tushar}
@@ -398,7 +403,7 @@ const KrafThink = () => {
       <div className="flex flex-col md:flex-row justify-between items-center gap-8">
         <div className="md:w-1/2">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Ready to showcase your skills and ideas to the world? Join us at KrafThink
+            Ready to showcase your skills and ideas to the world? Join us at Kraf Think 2025
           </h2>
         </div>
         <div className="md:w-1/2 text-center md:text-right">
