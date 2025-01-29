@@ -1,5 +1,26 @@
 import React, { useState } from "react";
-import { Trophy, Award, Medal } from 'lucide-react';
+import { Trophy, 
+Award, 
+Medal,
+Calendar, 
+Mail, 
+MapPin, 
+Send, 
+Users, 
+Code, 
+Presentation as FilePresentation, 
+Timer, 
+Github, 
+Globe, 
+Gift, 
+Target, 
+Rocket, 
+Zap, 
+Building2, 
+Cpu, 
+Brain, 
+Lightbulb, 
+Laptop } from 'lucide-react';
 import { motion } from "framer-motion";
 import logo from "../assets/favicon.png";
 import heroImage from "../assets/Serendale.png";
@@ -7,72 +28,17 @@ import avatar1 from "../assets/Avatar1.jpeg";
 import avatar2 from "../assets/Avatar2.jpg";
 import avatar3 from "../assets/Avatar3.jpeg";
 import avatar4 from "../assets/Avatar4.JPG";
+import tushar from '../assets/Avatar1.jpeg';
+import animesh from '../assets/Avatar2.jpg';
+import punnet from '../assets/Avatar3.jpeg';
+import yash from '../assets/Avatar4.JPG'
 
 const KrafThink = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-sm">
-        <div className="flex items-center justify-between p-4 lg:px-8 max-w-7xl mx-auto">
-          <a href="/" className="flex items-center gap-2">
-            <img src={logo} alt="KrafThink Logo" className="h-6 w-auto" />
-            <span className="font-semibold text-xl tracking-tight">KRAFTHINK</span>
-          </a>
-          <div className="hidden md:flex items-center gap-8">
-            <a href="/" className="text-sm hover:text-emerald-400 transition-colors">
-              Home
-            </a>
-            <a href="/kraf-think-2025/about" className="text-sm hover:text-emerald-400 transition-colors">
-              About Us
-            </a>
-            <a href="/kraf-think-2025/about" className="text-sm hover:text-emerald-400 transition-colors">
-              Our Team
-            </a>
-            <a href="#" className="text-sm hover:text-emerald-400 transition-colors">
-              Contact
-            </a>
-          </div>
-          <button className="bg-emerald-400 hover:bg-emerald-500 text-black rounded-full px-6 py-1.5 text-sm font-normal transition-colors hidden md:block">
-            Apply With Unstop
-          </button>
-          <button className="md:hidden text-white" onClick={toggleMenu}>
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
-            </svg>
-          </button>
-        </div>
-        {/* Mobile Menu */}
-        {isMenuOpen && (
-          <div className="md:hidden bg-black/90 p-4">
-            <a href="/" className="block text-sm hover:text-emerald-400 transition-colors py-2">
-              Home
-            </a>
-            <a href="/kraf-think-2025/about" className="block text-sm hover:text-emerald-400 transition-colors py-2">
-              About Us
-            </a>
-            <a href="/kraf-think-2025/about" className="block text-sm hover:text-emerald-400 transition-colors py-2">
-              Our Team
-            </a>
-            <a href="contact-us" className="block text-sm hover:text-emerald-400 transition-colors py-2">
-              Contact
-            </a>
-            <button className="bg-emerald-400 hover:bg-emerald-500 text-black rounded-full px-6 py-1.5 text-sm font-normal transition-colors w-full mt-2">
-              Apply With Unstop
-            </button>
-          </div>
-        )}
-      </nav>
-
-      {/* Main Content */}
       <main>
         {/* Hero Section */}
-        <section className="relative text-center py-8 bg-cover bg-center h-screen" style={{ backgroundImage: `url(${heroImage})` }}>
+        <section className="relative text-center py-20 bg-cover bg-center h-screen" style={{ backgroundImage: `url(${heroImage})` }}>
           <div className="absolute inset-0 bg-black opacity-20"></div>
           <div className="relative z-10 flex flex-col items-center justify-center h-full text-white px-4">
             <motion.h1
@@ -126,7 +92,7 @@ const KrafThink = () => {
                 <img src={avatar3} alt="Avatar 3" className="w-10 h-10 rounded-full border-2 border-black object-cover" />
                 <img src={avatar4} alt="Avatar 4" className="w-10 h-10 rounded-full border-2 border-black object-cover" />
               </div>
-              <a href="/kraf-think-2025/about">
+              <a href="/kraf-think-2025">
                 <span className="ml-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm">
                   Meet Our Team <span aria-hidden="true">&rarr;</span>
                 </span>
@@ -135,100 +101,245 @@ const KrafThink = () => {
           </div>
         </section>
 
-        {/* About Section */}
-        <div className="relative z-20 bg-gradient-to-b from-black to-purple-900/10">
-          <div className="container mx-auto px-4 md:px-8 py-24">
-            <div className="flex flex-col md:flex-row justify-between items-start gap-8 md:gap-16">
-              <div className="md:w-1/2">
-                <h3 className="text-xl text-white font-medium mb-4">ABOUT KRAFTHINK</h3>
-                <h2 className="text-3xl md:text-5xl font-semibold mb-6">What's the vibe at KrafThink?</h2>
+        {/* Enhanced About Section */}
+      <section className="py-20 px-8 relative overflow-hidden">
+        <div className="absolute inset-0">
+          <img 
+            src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80"
+            alt="Innovation Background"
+            className="w-full h-full object-cover opacity-5"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black via-black/95 to-black"></div>
+        </div>
+        <div className="max-w-6xl mx-auto relative">
+          <h2 className="text-white text-5xl font-bold mb-8 text-center animate-on-scroll">About KrafThink 2025</h2>
+          <div className="grid lg:grid-cols-2 gap-16 items-center mb-24">
+            <div className="space-y-6 animate-on-scroll">
+              <p className="text-xl text-gray-300 leading-relaxed text-justify">
+              KrafThink 2025 is Kraf Technologies premier hackathon, bringing together over 500 innovators, developers, and creative minds from across the globe. This 36-hour intensive coding competition pushes the boundaries of technology and innovation.
+              </p>
+              <p className="text-xl text-gray-300 leading-relaxed text-justify">
+                Organized by industry leaders Krafcool and Kraf Technologies, this event offers participants the unique opportunity to transform their groundbreaking ideas into working prototypes while competing for substantial prizes and networking with industry experts.
+              </p>
+              <div className="flex flex-wrap gap-4 mt-8">
+                <div className="flex items-center gap-2 bg-[#18CB96]/10 px-4 py-2 rounded-lg">
+                  <Users className="text-[#18CB96]" />
+                  <span>500+ Participants</span>
+                </div>
+                <div className="flex items-center gap-2 bg-[#18CB96]/10 px-4 py-2 rounded-lg">
+                  <Globe className="text-[#18CB96]" />
+                  <span>20+ Countries</span>
+                </div>
+                <div className="flex items-center gap-2 bg-[#18CB96]/10 px-4 py-2 rounded-lg">
+                  <Trophy className="text-[#18CB96]" />
+                  <span>$17,500 in Prizes</span>
+                </div>
               </div>
-              <div className="md:w-1/2">
-                <p className="text-gray-300 leading-relaxed text-sm">
-                  We're about creating real solutions to real-world problems. With a focus on creativity,
-                  collaboration, and cutting-edge tools, we make sure your KrafThink experience is
-                  unforgettable (and insta-worthy).
-                </p>
-                <button className="mt-8 text-emerald-400 hover:text-emerald-300 transition-colors flex items-center space-x-2 group">
-                  <span>More About Us</span>
-                  <span className="group-hover:translate-x-1 transition-transform">→</span>
-                </button>
+            </div>
+            <div className="relative group animate-on-scroll">
+              <img 
+                src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80"
+                alt="Hackathon Collaboration"
+                className="rounded-xl shadow-2xl group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-24">
+            <ThemeCard
+              icon={<Cpu className="w-8 h-8" />}
+              title="AI & Machine Learning"
+              description="Develop cutting-edge AI solutions and ML models"
+            />
+            <ThemeCard
+              icon={<Globe className="w-8 h-8" />}
+              title="Web3 & Blockchain"
+              description="Create decentralized applications and smart contracts"
+            />
+            <ThemeCard
+              icon={<Brain className="w-8 h-8" />}
+              title="Healthcare Tech"
+              description="Innovate in digital health and medical technology"
+            />
+            <ThemeCard
+              icon={<Laptop className="w-8 h-8" />}
+              title="Climate Tech"
+              description="Build solutions for environmental sustainability"
+            />
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="relative group animate-on-scroll order-2 lg:order-1">
+              <img 
+                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80"
+                alt="Team Collaboration"
+                className="rounded-xl shadow-2xl group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            <div className="space-y-6 animate-on-scroll order-1 lg:order-2">
+              <h3 className="text-3xl font-bold text-white">Why Participate?</h3>
+              <ul className="space-y-4">
+                <WhyParticipateItem
+                  icon={<Lightbulb className="w-6 h-6" />}
+                  title="Innovation Platform"
+                  description="Access to cutting-edge tools, APIs, and technologies to bring your ideas to life"
+                />
+                <WhyParticipateItem
+                  icon={<Users className="w-6 h-6" />}
+                  title="Networking"
+                  description="Connect with industry leaders, mentors, and fellow innovators"
+                />
+                <WhyParticipateItem
+                  icon={<Target className="w-6 h-6" />}
+                  title="Career Growth"
+                  description="Opportunities for internships and full-time positions with leading tech companies"
+                />
+                <WhyParticipateItem
+                  icon={<Trophy className="w-6 h-6" />}
+                  title="Amazing Prizes"
+                  description="Win from a prize pool of $17,500 and additional perks worth over $50,000"
+                />
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+             {/* Prize Section */}
+      <section className="py-20 px-8 bg-gradient-to-b from-black via-gray-900/50 to-black relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80')] opacity-5 bg-cover bg-center"></div>
+        <div className="max-w-6xl mx-auto relative">
+          <h2 className="text-white text-5xl font-bold mb-16 text-center animate-on-scroll">Prizes & Awards</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <PrizeCard
+              icon={<Trophy className="w-12 h-12" />}
+              place="1st Place"
+              prize="$10,000"
+              perks={[
+                'Direct VC Pitch Opportunity',
+                'AWS Credits worth $5,000',
+                '1-Year Business Mentorship',
+                'Featured at Krafcool Tech Summit'
+              ]}
+            />
+            <PrizeCard
+              icon={<Award className="w-12 h-12" />}
+              place="2nd Place"
+              prize="$5,000"
+              perks={[
+                'Startup Incubator Access',
+                'AWS Credits worth $3,000',
+                '6-Month Business Mentorship',
+                'Kraf Technologies Internship'
+              ]}
+            />
+            <PrizeCard
+              icon={<Gift className="w-12 h-12" />}
+              place="3rd Place"
+              prize="$2,500"
+              perks={[
+                'Networking Event Access',
+                'AWS Credits worth $1,000',
+                '3-Month Business Mentorship',
+                'Tech Workshop Access'
+              ]}
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Timeline Section */}
+      <section className="py-10 px-8 bg-black relative overflow-hidden">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-white text-5xl font-bold mb-16 text-center animate-on-scroll">Event Timeline</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <TimelineCard 
+              icon={<Users />}
+              title="Registration Opens"
+              date="February 15, 2024"
+              description="Early bird registration begins with team formation"
+            />
+            <TimelineCard 
+              icon={<Github />}
+              title="Project Submission"
+              date="March 15, 2024"
+              description="Submit your project proposal and team details"
+            />
+            <TimelineCard 
+              icon={<FilePresentation />}
+              title="PPT Presentation"
+              date="March 20, 2024"
+              description="Present your initial concept and implementation plan"
+            />
+            <TimelineCard 
+              icon={<Code />}
+              title="36-Hour Coding Round"
+              date="March 25-26, 2024"
+              description="Intense coding sprint to bring your ideas to life"
+            />
+            <TimelineCard 
+              icon={<Send />}
+              title="Prototype Submission"
+              date="March 26, 2024 (11:59 PM PST)"
+              description="Submit your working prototype for evaluation"
+            />
+            <TimelineCard 
+              icon={<Trophy />}
+              title="Final Results"
+              date="March 30, 2024"
+              description="Winners announcement and prize distribution ceremony"
+            />
+          </div>
+        </div>
+      </section>
+
+            {/* Platform & Venue Section */}
+            <section className="py-10 px-8 bg-gradient-to-b from-gray-900 to-black relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1492571350019-22de08371fd3?auto=format&fit=crop&q=80')] opacity-5 bg-cover bg-fixed"></div>
+        <div className="max-w-6xl mx-auto relative">
+          <h2 className="text-white text-5xl font-bold mb-16 text-center animate-on-scroll">Event Details</h2>
+          <div className="grid md:grid-cols-2 gap-12">
+            <div className="bg-black/50 p-8 rounded-xl border border-[#18CB96]/20 backdrop-blur-sm hover:border-[#18CB96]/50 transition-all duration-300">
+              <h3 className="text-2xl font-bold mb-6 text-white/8">Venue Information</h3>
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <MapPin className="text-[#18CB96] mt-1" />
+                  <div>
+                    <p className="font-semibold">Chandigarh University</p>
+                    <p className="text-gray-400">2000 Innovation Drive</p>
+                    <p className="text-gray-400">Ludhiana Highway, Mohali, Punjab</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Calendar className="text-[#18CB96]" />
+                  <p>March 25-26, 2024 (9:00 AM PST Start)</p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-black/50 p-8 rounded-xl border border-[#18CB96]/20 backdrop-blur-sm hover:border-[#18CB96]/50 transition-all duration-300">
+              <h3 className="text-2xl font-bold mb-6 text-white/8">Virtual Platform</h3>
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <Globe className="text-[#18CB96] mt-1" />
+                  <div>
+                    <p className="font-semibold">HackEdge</p>
+                    <p className="text-gray-400">Team collaboration via Discord</p>
+                    <p className="text-gray-400">Presentations and workshops via Zoom</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Code className="text-[#18CB96]" />
+                  <p>GitHub for project submissions</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
 
-        {/* Information Section */}
-        <div className="relative z-20">
-          <div className="container mx-auto px-4 md:px-8 py-16">
-            <h3 className="text-xl text-white font-semibold mb-3">DETAIL INFORMATION ABOUT <br /> KRAFTHINK</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              <InfoCard
-                title="Workshops and Mentorship"
-                description="Unlock the power of hands-on learning through expert-led workshops, guiding participants to transform ideas into reality."
-              />
-              <InfoCard
-                title="Problem-Solving Challenges"
-                description="Tackle real-world challenges and develop innovative solutions through our carefully crafted problem-solving scenarios."
-              />
-              <InfoCard
-                title="Networking and Collaboration"
-                description="Connect with like-minded innovators and industry experts to build lasting relationships and expand your professional network."
-              />
-              <InfoCard
-                title="Prizes and Recognition"
-                description="Get rewarded for your innovation and creativity with exciting prizes, certificates, and industry recognition."
-              />
-            </div>
-          </div>
-        </div>
-
-        {/* Prize Section */}
-        <div className="bg-black text-white py-16">
-          <section className="container mx-auto px-4 md:px-8">
-            <h2 className="text-2xl font-bold mb-8">Prizes & Rewards</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {/* First Prize */}
-              <PrizeCard
-                icon={<Trophy className="w-8 h-8 text-yellow-400" />}
-                title="First Prize"
-                amount="₹5,000"
-                color="yellow"
-                items={[
-                  "Work With Kraf Team opportunities",
-                  "₹500 Krafcool Coupan",
-                  "Goodies",
-                ]}
-              />
-              {/* Second Prize */}
-              <PrizeCard
-                icon={<Award className="w-8 h-8 text-slate-400" />}
-                title="Second Prize"
-                amount="₹3,000"
-                color="slate"
-                items={[
-                  "₹100 Krafcool Coupan",
-                  "Kraf Team Mentorship",
-                  "Goodies"
-                ]}
-              />
-              {/* Third Prize */}
-              <PrizeCard
-                icon={<Medal className="w-8 h-8 text-orange-400" />}
-                title="Third Prize"
-                amount="₹2,000"
-                color="orange"
-                items={[
-                  "₹50 Krafcool Coupan",
-                  "Kraf Team Mentorship",
-                  "Goodies"
-                ]}
-              />
-            </div>
-          </section>
-        </div>
-
-        {/* Event Details */}
+       {/* Event Details */}
         <div className="relative z-20">
           <div className="container mx-auto px-4 md:px-8 py-16">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -240,66 +351,84 @@ const KrafThink = () => {
           </div>
         </div>
 
-        {/* Contact Section */}
-        <div className="relative z-20 bg-white text-black rounded-t-[3rem] mt-10 mx-4">
-          <div className="container mx-auto px-4 md:px-6 py-10">
-            <div className="flex flex-col md:flex-row justify-between items-center gap-8">
-              <div className="md:w-1/2">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                  Ready to showcase your skills and ideas to the world? Join us at KrafThink
-                </h2>
-              </div>
-              <div className="md:w-1/2 text-center md:text-right">
-                <p className="mb-4 text-gray-600 text-lg">
-                  Get in touch and become part of the innovation revolution
-                </p>
-                <p className="text-gray-600 mb-8 text-lg">info@kraftechnologies.com</p>
-                <button className="bg-emerald-400 text-black px-10 py-3 rounded-full text-sm font-normal hover:bg-emerald-500 transition-all">
-                  Contact Us
-                </button>
-              </div>
-            </div>
-            <div className="mt-16 pt-8 border-t border-gray-200 text-center text-sm text-gray-900">
-              Created By{" "}
-              <a href="https://linkedin.com/in/imtushaarr" target="_blank" rel="noopener noreferrer">
-                <span className="hover:text-[#18CB96] cursor-pointer">@imtushaarr</span>
-              </a>{" "}
-              X{" "}
-              <a href="https://www.linkedin.com/company/kraftechnology/?viewAsMember=true" target="_blank" rel="noopener noreferrer">
-                <span className="hover:text-[#18CB96] cursor-pointer">@kraftechnology</span>
-                <span>.</span>
-              </a>
-            </div>
-          </div>
+      {<section className="py-20 px-8 bg-white text-black rounded-t-[3rem] mt-10 mx-4">
+  {/* Team Section */}
+  <div className="max-w-6xl mx-auto relative">
+    <h2 className="text-black text-5xl font-bold mb-16 text-center animate-on-scroll">Our Team</h2>
+    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+      <TeamMember
+        image={tushar}
+        name="Tushar Gupta"
+        role="Founder Of Kraf Technologies"
+        bio="Former Google Tech Lead with 15+ years of experience in organizing tech events"
+      />
+      <TeamMember
+        image={animesh}
+        name="Animesh Upadhyay"
+        role="Co-Founder Of Kraf Technologies"
+        bio="AI/ML expert and startup founder with multiple successful exits"
+      />
+      <TeamMember
+        image={punnet}
+        name="Puneet"
+        role="Co-Founder Of Kraf Technologies"
+        bio="Community building expert with a focus on developer relations"
+      />
+      <TeamMember
+        image={yash}
+        name="Yash Singh"
+        role="Co-Founder Of Kraf Technologies"
+        bio="Serial entrepreneur and tech evangelist with global event experience"
+      />
+    </div>
+  </div>
+  <div className="border-t border-gray-400 mt-20 text-center"></div>
+  {/* Contact Section */}
+  <div className="relative z-10 bg-white text-black rounded-t-[3rem] mt-10 mx-4">
+    <div className="container mx-auto px-4 md:px-6 py-10">
+      <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+        <div className="md:w-1/2">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Ready to showcase your skills and ideas to the world? Join us at KrafThink
+          </h2>
         </div>
+        <div className="md:w-1/2 text-center md:text-right">
+          <p className="mb-4 text-gray-600 text-lg">
+            Get in touch and become part of the innovation revolution
+          </p>
+          <p className="text-gray-600 mb-8 text-lg">info@kraftechnologies.com</p>
+          <button className="bg-emerald-400 text-black px-10 py-3 rounded-full text-sm font-normal hover:bg-emerald-500 transition-all">
+            Contact Us
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+}
       </main>
     </div>
   );
 };
 
-function InfoCard({ title, description }) {
-  return (
-    <div className="group p-6 md:p-8 rounded-xl bg-white/5 hover:bg-white/10 transition-all cursor-pointer backdrop-blur-sm border border-white/10">
-      <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-gradient-to-br from-white/10 to-white/5 mb-6 md:mb-8 group-hover:scale-110 transition-transform" />
-      <h3 className="text-lg md:text-xl font-semibold mb-4">{title}</h3>
-      <p className="text-gray-400 text-sm md:text-base leading-relaxed">{description}</p>
-    </div>
-  );
-}
 
-function PrizeCard({ icon, title, amount, color, items }) {
+function PrizeCard({ icon, title, amount, color, items = [] }) {
   return (
     <div className="bg-white/5 rounded-xl p-6 border border-white/10 hover:border-emerald-400/30 transition-all">
       <div className="flex justify-center mb-4">{icon}</div>
       <h3 className={`text-2xl font-bold text-center mb-4 text-${color}-400`}>{title}</h3>
       <p className={`text-4xl font-bold text-center mb-6 text-${color}-500`}>{amount}</p>
       <ul className="space-y-2 text-gray-300">
-        {items.map((item, index) => (
-          <li key={index} className="flex items-center gap-2">
-            <span className={`w-2 h-2 bg-${color}-400 rounded-full`}></span>
-            {item}
-          </li>
-        ))}
+        {items.length > 0 ? (
+          items.map((item, index) => (
+            <li key={index} className="flex items-center gap-2">
+              <span className={`w-2 h-2 bg-${color}-400 rounded-full`}></span>
+              {item}
+            </li>
+          ))
+        ) : (
+          <li>No items available</li> // Handle case when items are empty
+        )}
       </ul>
     </div>
   );
@@ -310,6 +439,65 @@ function EventDetail({ title, value }) {
     <div className="text-center">
       <h3 className="text-emerald-400 text-2xl font-medium mb-3">{title}</h3>
       <p className="text-sm font-normal">{value}</p>
+    </div>
+  );
+}
+
+function ThemeCard({ icon, title, description }) {
+  return (
+    <div className="bg-gradient-to-br from-[#18CB96]/10 to-transparent p-6 rounded-xl border border-[#18CB96]/20 hover:border-[#18CB96]/50 transition-all duration-300 group animate-on-scroll">
+      <div className="text-[#18CB96] mb-4 group-hover:scale-110 transition-transform duration-300">{icon}</div>
+      <h3 className="text-xl font-bold mb-2">{title}</h3>
+      <p className="text-gray-400">{description}</p>
+    </div>
+  );
+}
+
+function WhyParticipateItem({ icon, title, description }) {
+  return (
+    <li className="flex gap-4 items-start p-4 rounded-lg bg-[#18CB96]/5 hover:bg-[#18CB96]/10 transition-colors duration-300">
+      <div className="text-[#18CB96] mt-1">{icon}</div>
+      <div>
+        <h4 className="font-semibold mb-1">{title}</h4>
+        <p className="text-gray-400">{description}</p>
+      </div>
+    </li>
+  );
+}
+
+function TeamMember({ image, name, role, company, bio }) {
+  return (
+    <div className="group">
+      <div className="relative mb-6">
+        <div className="aspect-square overflow-hidden rounded-2xl">
+          <img 
+            src={image} 
+            alt={name} 
+            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+            <p className="text-sm text-gray-300">{bio}</p>
+          </div>
+        </div>
+        <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-[#18CB96] text-black px-4 py-1 rounded-full text-sm font-medium">
+          {company}
+        </div>
+      </div>
+      <div className="text-center">
+        <h3 className="text-xl font-bold mb-1">{name}</h3>
+        <p className="text-[#18CB96]">{role}</p>
+      </div>
+    </div>
+  );
+}
+
+function TimelineCard({ icon, title, date, description }) {
+  return (
+    <div className="bg-gray-900/50 p-8 rounded-xl hover:transform hover:scale-105 transition-all duration-300 border border-[#18CB96]/10 hover:border-[#18CB96]/30 backdrop-blur-sm group">
+      <div className="text-[#18CB96] mb-6 flex justify-center group-hover:scale-110 transition-transform duration-300">{icon}</div>
+      <h3 className="text-xl font-bold mb-2 text-center">{title}</h3>
+      <p className="text-[#18CB96] text-sm mb-4 text-center">{date}</p>
+      <p className="text-gray-400 text-center">{description}</p>
     </div>
   );
 }
