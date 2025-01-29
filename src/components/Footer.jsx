@@ -37,28 +37,27 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Connect With Us */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Connect With Us</h4>
             <div className="flex gap-6">
-              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-                <Linkedin className="w-6 h-6 text-blue-600 hover:text-blue-800 transition-colors" />
-              </a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-                <Github className="w-6 h-6 text-gray-900 hover:text-black transition-colors" />
-              </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                <Twitter className="w-6 h-6 text-blue-400 hover:text-blue-500 transition-colors" />
-              </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                <Instagram className="w-6 h-6 text-pink-500 hover:text-pink-600 transition-colors" />
-              </a>
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                <Facebook className="w-6 h-6 text-blue-700 hover:text-blue-800 transition-colors" />
-              </a>
-            </div>
+            <a href="https://www.linkedin.com/company/kraftechnologies/?viewAsMember=true" target="_blank" rel="noopener noreferrer">
+              <Linkedin className="w-6 h-6 text-white hover:text-[#18CB96] transition-colors" />
+            </a>
+            <a href="https://github.com/KRAF-TECHNOLOGY" target="_blank" rel="noopener noreferrer">
+              <Github className="w-6 h-6 text-white hover:text-[#18CB96] transition-colors" />
+            </a>
+            <a href="https://x.com/kraftechnologies" target="_blank" rel="noopener noreferrer">
+              <Twitter className="w-6 h-6 text-white hover:text-[#18CB96] transition-colors" />
+            </a>
+            <a href="https://instagram.com/kraftechnologies" target="_blank" rel="noopener noreferrer">
+              <Instagram className="w-6 h-6 text-white hover:text-[#18CB96] transition-colors" />
+            </a>
+            <a href="https://facebook.com/kraftechnologies" target="_blank" rel="noopener noreferrer">
+              <Facebook className="w-6 h-6 text-white hover:text-[#18CB96] transition-colors" />
+            </a>
           </div>
         </div>
+          </div>
 
         {/* Bottom Line */}
         <div className="border-t border-gray-700 pt-4 text-center">
