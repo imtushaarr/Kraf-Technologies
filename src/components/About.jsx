@@ -22,11 +22,11 @@ export default function About() {
                
               <div className="absolute bottom-0 left-0 right-0 p-8 grid grid-cols-2 gap-8">
                 <div>
-                  <div className="text-[#18CB96] text-4xl font-bold mb-2">10+</div>
+                  <div className="text-[#18CB96] text-4xl font-bold mb-2">3+</div>
                   <div className="text-white text-sm">Years Experience</div>
                 </div>
                 <div>
-                  <div className="text-[#18CB96] text-4xl font-bold mb-2">200+</div>
+                  <div className="text-[#18CB96] text-4xl font-bold mb-2">20+</div>
                   <div className="text-white text-sm">Projects Completed</div>
                 </div>
               </div>
@@ -35,13 +35,10 @@ export default function About() {
 
           <div>
             <h2 className="text-4xl font-semibold text-white mb-6">
-              Transforming Ideas into Digital Reality
+            Transforming Businesses Through Next-Gen SaaS Innovation
             </h2>
             <p className="text-gray-400 mb-8 text-lg leading-relaxed text-justify">
-              Since our inception, we've been at the forefront of digital innovation, 
-              crafting sophisticated software solutions that empower businesses to thrive 
-              in the digital age. Our commitment to excellence and cutting-edge technology 
-              has made us a trusted partner for organizations worldwide.
+            At Kraf Technologies, we are pioneers in delivering cutting-edge Software-as-a-Service (SaaS) solutions tailored for B2B enterprises. Our mission is to empower businesses with tools that not only solve today’s challenges but also unlock tomorrow’s opportunities. By blending technical excellence with industry insights, we craft scalable platforms that drive efficiency, fuel growth, and redefine what’s possible.
             </p>
 
             <div className="grid grid-cols-2 gap-8">
@@ -50,7 +47,7 @@ export default function About() {
                   <Code2 className="text-[#18CB96] w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="text-white font-semibold mb-2">Custom Development</h3>
+                  <h3 className="text-white font-semibold mb-2">Custom SaaS Development:</h3>
                   <p className="text-gray-400">Tailored solutions for unique challenges</p>
                 </div>
               </div>

@@ -331,3 +331,30 @@
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(to bottom, #1ae0aa, #18CB96);
 }
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out forwards;
+}
+
+@layer base {
+  body {
+    @apply bg-black;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#18CB96] to-[#15b585];
+  }
+}

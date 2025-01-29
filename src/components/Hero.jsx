@@ -59,7 +59,7 @@ export default function Hero() {
           </div>
           
           <p className="text-xl text-[#18CB96] max-w-2xl mb-12 animate-fade-in-delay-1 leading-relaxed">
-            Transforming businesses through cutting-edge software development and B2B solutions that drive growth and efficiency.
+          Highlights your role in driving measurable outcomes through adaptable, future-ready tools.
           </p>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 animate-fade-in-delay-2">

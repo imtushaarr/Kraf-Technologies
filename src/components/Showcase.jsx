@@ -22,7 +22,7 @@ export default function Showcase() {
 
       <div className="container mx-auto px-6 relative">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl font-bold text-white mb-4">Project Showcase</h2>
+          <h2 className="text-4xl font-bold text-white mb-4">What We’ve Built</h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
             Explore our latest projects and innovative solutions that have helped our clients
             achieve their business objectives.
@@ -42,7 +42,7 @@ export default function Showcase() {
                 </div>
                 <div className="flex-1 flex justify-center">
                   <div className="bg-gray-700/50 rounded-md px-3 py-1 text-sm text-gray-400">
-                    enterprise-dashboard.app
+                    kraftech-krafx.app
                   </div>
                 </div>
               </div>
@@ -53,8 +53,8 @@ export default function Showcase() {
                   className="rounded-lg shadow-2xl transform group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="mt-6 flex-1">
-                  <h3 className="text-white/3 text-xl font-semibold mb-2">Enterprise Analytics Dashboard</h3>
-                  <p className="text-gray-400 mb-4">Real-time data visualization and analytics platform for enterprise decision-making.</p>
+                  <h3 className="text-white/3 text-xl font-semibold mb-2">KrafX - Futuristic Payment Wallet</h3>
+                  <p className="text-gray-400 mb-4">A secure, NFC-based digital payment solution for merchants and businesses.</p>
                   <div className="flex gap-3">
                     <span className="px-3 py-1 bg-[#18CB96]/10 text-[#18CB96] rounded-full text-sm">React</span>
                     <span className="px-3 py-1 bg-[#18CB96]/10 text-[#18CB96] rounded-full text-sm">TypeScript</span>
