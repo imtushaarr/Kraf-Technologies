@@ -124,6 +124,7 @@ export default function RegistrationForm() {
 
                       {step === 1 && (
                         <form onSubmit={handleTeamLeaderSubmit} className="space-y-2">
+                          <div className="mt-4">
                             <label htmlFor="teamName" className="text-sm text-white">
                                 Team Name
                             </label>
@@ -136,17 +137,23 @@ export default function RegistrationForm() {
                                 onChange={(e) => setTeamLeader({ ...teamLeader, teamName: e.target.value })}
                                 required
                             />
-                             <label htmlFor="teamName" className="text-sm text-white">
-                            Leader Name
+                            </div>
+
+                            <div className="mt-4">
+                            <label htmlFor="teamName" className="text-sm text-whit">
+                              Leader Name
                             </label>
-                          <input
-                            type="text"
-                            placeholder="Enter Full Name"
-                            className="w-full bg-gray-800 border-2 border-gray-700 text-white px-4 py-2 rounded-md focus:outline-none focus:border-[#18CB96] transition duration-300"
-                            value={teamLeader.name}
-                            onChange={(e) => setTeamLeader({ ...teamLeader, name: e.target.value })}
-                            required
-                          />
+                            <input
+                              type="text"
+                              placeholder="Enter Full Name"
+                              className="w-full bg-gray-800 border-2 border-gray-700 text-white px-4 py-2 rounded-md focus:outline-none focus:border-[#18CB96] transition duration-300"
+                              value={teamLeader.name}
+                              onChange={(e) => setTeamLeader({ ...teamLeader, name: e.target.value })}
+                              required
+                            />
+                          </div>
+
+                          <div className="mt-4">
                           <label htmlFor="teamName" className="text-sm text-white">
                             Email
                           </label>
@@ -158,6 +165,9 @@ export default function RegistrationForm() {
                             onChange={(e) => setTeamLeader({ ...teamLeader, email: e.target.value })}
                             required
                           />
+                          </div>
+
+                          <div className="mt-4">
                             <label htmlFor="teamName" className="text-sm text-white">
                             Mobile Number
                             </label>
@@ -170,9 +180,12 @@ export default function RegistrationForm() {
                             onChange={(e) => setTeamLeader({ ...teamLeader, mobile: e.target.value })}
                             required
                             />
-                            <label htmlFor="teamName" className="text-sm text-white">
+                          </div>
+
+                          <div className="mt-4">
+                          <label htmlFor="teamName" className="text-sm text-white">
                               University UID
-                            </label>
+                          </label>
                           <input
                             type="text"
                             placeholder="21XXX51"
@@ -181,6 +194,9 @@ export default function RegistrationForm() {
                             onChange={(e) => setTeamLeader({ ...teamLeader, universityId: e.target.value })}
                             required
                           />
+                          </div>
+
+                          <div className="mt-4">
                           <label htmlFor="teamName" className="text-sm text-white">
                             University Name
                           </label>
@@ -192,6 +208,9 @@ export default function RegistrationForm() {
                             readOnly
                             required
                           />
+                          </div>
+
+                          <div className="mt-4">
                           <label htmlFor="teamName" className="text-sm text-white">
                             Branch
                           </label>
@@ -203,6 +222,8 @@ export default function RegistrationForm() {
                             onChange={(e) => setTeamLeader({ ...teamLeader, branch: e.target.value })}
                             required
                           />
+                          </div>
+                          <div className="mt-4">
                           <label htmlFor="teamName" className="text-sm text-white">
                             Current Semester
                           </label>
@@ -214,6 +235,8 @@ export default function RegistrationForm() {
                             onChange={(e) => setTeamLeader({ ...teamLeader, currentSemester: e.target.value })}
                             required
                           />
+                          </div>
+                          <div className="mt-4">
                           <label htmlFor="teamName" className="text-sm text-white">
                             Passing Year
                           </label>
@@ -225,6 +248,7 @@ export default function RegistrationForm() {
                             onChange={(e) => setTeamLeader({ ...teamLeader, passingYear: e.target.value })}
                             required
                           />
+                          </div>
                           <button type="submit" className="w-full bg-[#18CB96] py-2 rounded-md text-black">
                           Next Step
                           </button>
@@ -261,6 +285,7 @@ export default function RegistrationForm() {
                         <form onSubmit={handleFinalSubmit} className="space-y-8">
                           {teamMembers.map((member, index) => (
                             <div key={index} className="space-y-4">
+                              <div className="mt-4">
                             <label htmlFor="teamName" className="text-sm text-white">
                             {`Member ${index + 1} Name`}
                         </label>
@@ -271,6 +296,8 @@ export default function RegistrationForm() {
                             onChange={(e) => updateTeamMember(index, "name", e.target.value)}
                             required
                           />
+                          </div>
+                          <div className="mt-4">
                           <label htmlFor="teamName" className="text-sm text-white">
                           {`Member ${index + 1} Email`}
                         </label>
@@ -281,6 +308,8 @@ export default function RegistrationForm() {
                             onChange={(e) => updateTeamMember(index, "email", e.target.value)}
                             required
                           />
+                          </div>
+                          <div className="mt-4">
                           <label htmlFor="teamName" className="text-sm text-white">
                           {`Member ${index + 1} Mobile`}
                         </label>
@@ -292,6 +321,8 @@ export default function RegistrationForm() {
                             onChange={(e) => updateTeamMember(index, "mobile", e.target.value)}
                             required
                           />
+                          </div>
+                          <div className="mt-4">
                           <label htmlFor="teamName" className="text-sm text-white">
                           {`Member ${index + 1} University UID`}
                         </label>
@@ -301,6 +332,8 @@ export default function RegistrationForm() {
                             onChange={(e) => updateTeamMember(index, "universityId", e.target.value)}
                             required
                           />
+                          </div>
+                          <div className="mt-4">
                           <label htmlFor="teamName" className="text-sm text-white">
                           {`Member ${index + 1} University Name`}
                         </label>
@@ -311,6 +344,8 @@ export default function RegistrationForm() {
                             required
                             readOnly
                           />
+                          </div>
+                          <div className="mt-4">
                           <label htmlFor="teamName" className="text-sm text-white">
                           {`Member ${index + 1} Branch`}
                         </label>
@@ -321,6 +356,8 @@ export default function RegistrationForm() {
                             onChange={(e) => updateTeamMember(index, "branch", e.target.value)}
                             required
                           />
+                          </div>
+                          <div className="mt-4">
                           <label htmlFor="teamName" className="text-sm text-white">
                           {`Member ${index + 1} Current Semester`}
                         </label>
@@ -331,6 +368,8 @@ export default function RegistrationForm() {
                             onChange={(e) => updateTeamMember(index, "currentSemester", e.target.value)}
                             required
                           />
+                          </div>
+                          <div className="mt-4">
                           <label htmlFor="teamName" className="text-sm text-white">
                           {`Member ${index + 1} Passing Year`}
                         </label>
@@ -341,6 +380,7 @@ export default function RegistrationForm() {
                             onChange={(e) => updateTeamMember(index, "passingYear", e.target.value)}
                             required
                           />
+                          </div>
                         </div>
                           ))}
                           <div className="flex gap-4">
