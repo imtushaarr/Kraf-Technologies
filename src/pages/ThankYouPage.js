@@ -1,20 +1,25 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Calendar, Users, Lightbulb, Bell, CheckCircle } from "lucide-react";
+
+
 
 export default function ThankYouPage() {
   const [teamLeaderName, setTeamLeaderName] = useState("");
+  const navigate = useNavigate();
 
   useEffect(() => {
     // Get the team leader's name from localStorage
     const storedName = localStorage.getItem("teamLeaderName");
     if (storedName) {
       setTeamLeaderName(storedName);
+    } else {
+      navigate("/kraf-think-2025");  // Redirect back if the name isn't found
     }
 
-    // Remove the flag from localStorage when the Thank You page is loaded
+    // Remove the registration flag from localStorage when the Thank You page is loaded
     localStorage.removeItem("registrationCompleted");
-  }, []);
+  }, [navigate]);
 
   return (
     <div className="min-h-screen bg-black text-white font-sans antialiased relative overflow-hidden">

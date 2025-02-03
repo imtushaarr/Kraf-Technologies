@@ -62,7 +62,9 @@ export default function RegistrationForm() {
     
       try {
         localStorage.setItem("teamLeaderName", teamLeader.name);
-        navigate("/thank-you");
+        localStorage.setItem("registrationCompleted", "true");  // Mark registration as completed
+        navigate("/kraf-think-2025/thank-you");
+        
         await addDoc(collection(db, "hackathon_registrations"), {
           teamName: teamLeader.teamName,  
           teamLeader,
