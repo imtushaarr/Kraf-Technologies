@@ -22,38 +22,37 @@ Brain,
 Lightbulb, 
 Laptop } from 'lucide-react';
 import { motion } from "framer-motion";
-import logo from "../assets/favicon.png";
 import heroImage from "../assets/Serendale.png";
-import avatar1 from "../assets/Avatar1.jpeg";
 import avatar2 from "../assets/Avatar2.jpg";
 import avatar3 from "../assets/Avatar3.jpeg";
-import avatar4 from "../assets/Avatar3.jpeg";
-import tushar from '../assets/Avatar1.jpeg';
+import avatar4 from "../assets/yash.jpeg";
 import animesh from '../assets/Avatar2.jpg';
 import punnet from '../assets/Avatar3.jpeg';
-import yash from '../assets/Avatar2.jpg'
+import yash from '../assets/yash.jpeg';
+import {useNavigate} from "react-router-dom"
 
 const KrafThink = () => {
+  const navigate = useNavigate()
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
       <main>
         {/* Hero Section */}
-        <section className="relative text-center py-16 bg-cover bg-center h-screen" style={{ backgroundImage: `url(${heroImage})` }}>
+        <section className="relative text-center md:py-16 bg-cover bg-center h-screen" style={{ backgroundImage: `url(${heroImage})` }}>
           <div className="absolute inset-0 bg-black opacity-20"></div>
-          <div className="relative z-10 flex flex-col items-center justify-start h-full text-white px-4 pt-24 md:pt-32">
+          <div className="relative z-10 flex flex-col items-center justify-start h-full text-white px-4 pt-8 sm:pt-4 md:pt-32">
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-9xl md:text-8xl font-medium mb-4 tracking-tighter"
+              className="text-6xl md:text-8xl font-medium mb-4 tracking-tighter"
             >
-              Kraf Think 2025
+              Kraf Think 2025 Hackathon
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-emerald-300 text-xl md:text-2xl max-w-5xl mx-auto mb-8 leading-snug"
+              className="text-xl text-[#18CB96] max-w-3xl mb-12 animate-fade-in-delay-1 leading-relaxed"
             >
               Empowering innovation, fostering collaboration, and transforming ideas into reality – join the Kraf Think 2025 Hackathon revolution!
             </motion.p>
@@ -93,19 +92,14 @@ const KrafThink = () => {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 1 }}
-              className="absolute bottom-8 left-8 flex items-center"
+              className="absolute bottom-32 md:bottom-24 left-8 flex items-center"
             >
               <div className="flex -space-x-2">
-                <img src={avatar1} alt="Avatar 1" className="w-10 h-10 rounded-full border-2 border-black object-cover" />
+                <img src="https://media.licdn.com/dms/image/v2/D4D03AQGtShejOc4ofg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1713016106826?e=1744243200&v=beta&t=DtjxhTrp_abWlVEoZkwYOTOak15FHntdHgLJzjJQ9n8" alt="Avatar 1" className="w-10 h-10 rounded-full border-2 border-black object-cover" />
                 <img src={avatar2} alt="Avatar 2" className="w-10 h-10 rounded-full border-2 border-black object-cover" />
                 <img src={avatar3} alt="Avatar 3" className="w-10 h-10 rounded-full border-2 border-black object-cover" />
                 <img src={avatar4} alt="Avatar 4" className="w-10 h-10 rounded-full border-2 border-black object-cover" />
               </div>
-              <a href="/kraf-think-2025">
-                <span className="ml-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm">
-                  Meet Our Team <span aria-hidden="true">&rarr;</span>
-                </span>
-              </a>
             </motion.div>
           </div>
         </section>
@@ -126,10 +120,10 @@ const KrafThink = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center mb-24">
             <div className="space-y-6 animate-on-scroll">
               <p className="text-xl text-gray-300 leading-relaxed text-justify">
-              KrafThink 2025 is Kraf Technologies premier hackathon, bringing together over 500 innovators, developers, and creative minds from across the globe. This 36-hour intensive coding competition pushes the boundaries of technology and innovation.
+              KrafThink 2025 is Kraf Technologies premier hackathon, bringing together over 500 innovators, developers, and creative minds from across the globe. An exciting coding competition designed to test creativity, problem-solving, and innovation in technology.
               </p>
               <p className="text-xl text-gray-300 leading-relaxed text-justify">
-                Organized by industry leaders Krafcool and Kraf Technologies, this event offers participants the unique opportunity to transform their groundbreaking ideas into working prototypes while competing for substantial prizes and networking with industry experts.
+                Organized by industry leaders Krafcool and Kraf Technologies, this event offers participants the unique opportunity to transform their groundbreaking ideas into working softwares while competing for substantial prizes and networking with industry experts.
               </p>
               <div className="flex flex-wrap gap-4 mt-8">
                 <div className="flex items-center gap-2 bg-[#18CB96]/10 px-4 py-2 rounded-lg">
@@ -138,7 +132,7 @@ const KrafThink = () => {
                 </div>
                 <div className="flex items-center gap-2 bg-[#18CB96]/10 px-4 py-2 rounded-lg">
                   <Globe className="text-[#18CB96]" />
-                  <span>20+ Universities</span>
+                  <span>Chandigarh University</span>
                 </div>
                 <div className="flex items-center gap-2 bg-[#18CB96]/10 px-4 py-2 rounded-lg">
                   <Trophy className="text-[#18CB96]" />
@@ -164,18 +158,18 @@ const KrafThink = () => {
             />
             <ThemeCard
               icon={<Globe className="w-8 h-8" />}
-              title="Web3 & Blockchain"
+              title="Blockchain"
               description="Create decentralized applications and smart contracts"
             />
             <ThemeCard
               icon={<Brain className="w-8 h-8" />}
-              title="Healthcare Tech"
-              description="Innovate in digital health and medical technology"
+              title="Full Stack Development"
+              description="Build solutions for environmental sustainability"
             />
             <ThemeCard
               icon={<Laptop className="w-8 h-8" />}
-              title="Climate Tech"
-              description="Build solutions for environmental sustainability"
+              title="Open Innovation"
+              description="Give your own idea related to AI & Machine Learning, Blockchain, Full Stack Development"
             />
           </div>
 
@@ -209,7 +203,7 @@ const KrafThink = () => {
                 <WhyParticipateItem
                   icon={<Trophy className="w-6 h-6" />}
                   title="Amazing Prizes"
-                  description="Win from a prize pool of $17,500 and additional perks worth over $50,000"
+                  description="Win from a prize pool of &#8377;10,000 and additional perks"
                 />
               </ul>
             </div>
@@ -226,35 +220,33 @@ const KrafThink = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <PrizeCard
               icon={<Trophy className="w-12 h-12" />}
-              place="1st Place"
-              prize="$10,000"
-              perks={[
-                'Direct VC Pitch Opportunity',
-                'AWS Credits worth $5,000',
-                '1-Year Business Mentorship',
-                'Featured at Krafcool Tech Summit'
+              title="Winner"
+              amount="&#8377;5K"
+              items={[
+                'Kraf Technologies Internship',
+                'Get 50% off vouchers for Krafcool!',
+                'Earn certificates from Chandigarh University and Kraf Technologies!',
               ]}
             />
             <PrizeCard
               icon={<Award className="w-12 h-12" />}
-              place="2nd Place"
-              prize="$5,000"
-              perks={[
-                'Startup Incubator Access',
-                'AWS Credits worth $3,000',
-                '6-Month Business Mentorship',
-                'Kraf Technologies Internship'
+              title="1st Runner-Up"
+              amount="&#8377;3K"
+              items={[
+                'Kraf Technologies Internship',
+                'Get 30% off vouchers for Krafcool!',
+                'Earn certificates from Chandigarh University and Kraf Technologies!',
+                
               ]}
             />
             <PrizeCard
               icon={<Gift className="w-12 h-12" />}
-              place="3rd Place"
-              prize="$2,500"
-              perks={[
-                'Networking Event Access',
-                'AWS Credits worth $1,000',
-                '3-Month Business Mentorship',
-                'Tech Workshop Access'
+              title="2nd Runner-Up"
+              amount="&#8377;2K"
+              items={[
+                'Kraf Technologies Internship',
+                'Get 20% off vouchers for Krafcool!',
+                'Earn certificates from Chandigarh University and Kraf Technologies!',
               ]}
             />
           </div>
@@ -269,39 +261,39 @@ const KrafThink = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <TimelineCard 
               icon={<Users />}
-              title="Registration Opens"
-              date="February 15, 2024"
-              description="Early bird registration begins with team formation"
+              title="Registrations"
+              date="February 04-13, 2025"
+              description="Early bird registration begins with team formation at Kraf Technology"
             />
             <TimelineCard 
               icon={<Github />}
-              title="Project Submission"
-              date="March 15, 2024"
-              description="Submit your project proposal and team details"
+              title="PPT Submissions"
+              date="February 15-19, 2025"
+              description="Submit your project's presentaion at KrafX-Q1"
             />
             <TimelineCard 
               icon={<FilePresentation />}
-              title="PPT Presentation"
-              date="March 20, 2024"
-              description="Present your initial concept and implementation plan"
+              title="Presentation Result" 
+              date="February 22, 2025"
+              description="Result will be declared at KrafX-Q1 and top 15 teams will move to next phase"
             />
             <TimelineCard 
               icon={<Code />}
-              title="36-Hour Coding Round"
-              date="March 25-26, 2024"
-              description="Intense coding sprint to bring your ideas to life"
+              title="Coding Round"
+              date="February 23-25, 2025"
+              description="Intense coding to bring your ideas to life and submission of project at KrafX-Q1"
             />
             <TimelineCard 
               icon={<Send />}
-              title="Prototype Submission"
-              date="March 26, 2024 (11:59 PM PST)"
-              description="Submit your working prototype for evaluation"
+              title="Mentoring Session"
+              date="February 24, 2025"
+              description="We will provide ideas to enhance and improve your project at Chandigarh University"
             />
             <TimelineCard 
               icon={<Trophy />}
-              title="Final Results"
-              date="March 30, 2024"
-              description="Winners announcement and prize distribution ceremony"
+              title="Grand Finale"
+              date="February 26, 2025"
+              description="Winners announcement and prize distribution ceremony at Chandigarh University"
             />
           </div>
         </div>
@@ -320,31 +312,31 @@ const KrafThink = () => {
                 <div className="flex items-start gap-3">
                   <MapPin className="text-[#18CB96] mt-1" />
                   <div>
-                    <p className="font-semibold">Chandigarh University</p>
-                    <p className="text-gray-400">2000 Innovation Drive</p>
+                    <p className="font-semibold">D-1 Seminar Hall, Chandigarh University</p>
+                    {/* <p className="text-gray-400">2000 Innovation Drive</p> */}
                     <p className="text-gray-400">Ludhiana Highway, Mohali, Punjab</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
                   <Calendar className="text-[#18CB96]" />
-                  <p>March 25-26, 2024 (9:00 AM PST Start)</p>
+                  <p>February 26, 2025 (9:30 AM IST Start)</p>
                 </div>
               </div>
             </div>
             <div className="bg-black/50 p-8 rounded-xl border border-[#18CB96]/20 backdrop-blur-sm hover:border-[#18CB96]/50 transition-all duration-300">
-              <h3 className="text-2xl font-bold mb-6 text-white/8">Virtual Platform</h3>
+              <h3 className="text-2xl font-bold mb-6 text-white/8">Platform</h3>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <Globe className="text-[#18CB96] mt-1" />
                   <div>
-                    <p className="font-semibold">HackEdge</p>
-                    <p className="text-gray-400">Team collaboration via Discord</p>
-                    <p className="text-gray-400">Presentations and workshops via Zoom</p>
+                    <p className="font-semibold">Kraf Technology/KrafX-Q1</p>
+                    <p className="text-gray-400">Team registraion</p>
+                    <p className="text-gray-400">Presentations and mentoring sessions by KT and Chanidgarh University</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Code className="text-[#18CB96]" />
-                  <p>GitHub for project submissions</p>
+                  {/* <Code className="text-[#18CB96]" /> */}
+                  {/* <p>GitHub for project submissions</p> */}
                 </div>
               </div>
             </div>
@@ -357,9 +349,9 @@ const KrafThink = () => {
           <div className="container mx-auto px-4 md:px-8 py-16">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               <EventDetail title="Location" value="Chandigarh University" />
-              <EventDetail title="Registration" value="Unstop Platform" />
-              <EventDetail title="Process Start" value="15 Feb 2025" />
-              <EventDetail title="Result Date" value="05 March 2025" />
+              <EventDetail title="Registration" value="at Kraf Technologies/KrafX-Q1" />
+              <EventDetail title="Registration Start" value="4 Feb 2025" />
+              <EventDetail title="Grand Finale" value="26 Feb 2025" />
             </div>
           </div>
         </div>
@@ -371,28 +363,28 @@ const KrafThink = () => {
     <div className="w-40 h-1 bg-[#18CB96] mx-auto mb-16"></div>
     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
       <TeamMember
-        image={tushar}
+        image="https://media.licdn.com/dms/image/v2/D4D03AQGtShejOc4ofg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1713016106826?e=1744243200&v=beta&t=DtjxhTrp_abWlVEoZkwYOTOak15FHntdHgLJzjJQ9n8"
         name="Tushar Gupta"
         role="Founder Of Kraf Technologies"
-        bio="Former Google Tech Lead with 15+ years of experience in organizing tech events"
-      />
+        bio="Software Developer skilled in designing, developing, and optimizing scalable applications across various platforms and technologies."
+        />
       <TeamMember
         image={animesh}
         name="Animesh Upadhyay"
         role="Co-Founder Of Kraf Technologies"
-        bio="AI/ML expert and startup founder with multiple successful exits"
-      />
+        bio="Software Developer crafted innovative solutions and seamless user experiences."
+        />
       <TeamMember
         image={punnet}
         name="Puneet"
         role="Co-Founder Of Kraf Technologies"
-        bio="Community building expert with a focus on developer relations"
+        bio="Java Developer with expertise in building scalable, efficient, and secure applications using Java technologies"
       />
       <TeamMember
         image={yash}
         name="Yash Singh"
         role="Co-Founder Of Kraf Technologies"
-        bio="Serial entrepreneur and tech evangelist with global event experience"
+        bio="Data Engineer with expertise in building and optimizing data pipelines for efficient processing and storage"
       />
     </div>
   </div>
@@ -411,7 +403,8 @@ const KrafThink = () => {
             Get in touch and become part of the innovation revolution
           </p>
           <p className="text-gray-600 mb-8 text-lg">info@kraftechnologies.com</p>
-          <button className="bg-emerald-400 text-black px-10 py-3 rounded-full text-sm font-normal hover:bg-emerald-500 transition-all">
+          <button onClick={() => navigate("/")}
+          className="bg-emerald-400 text-black px-10 py-3 rounded-full text-sm font-normal hover:bg-emerald-500 transition-all">
             Contact Us
           </button>
         </div>
@@ -424,7 +417,9 @@ const KrafThink = () => {
     </div>
   );
 };
-
+function redirectContactUs(){
+  window.location.href="/contact-us";
+}
 
 function PrizeCard({ icon, title, amount, color, items = [] }) {
   return (
@@ -435,8 +430,12 @@ function PrizeCard({ icon, title, amount, color, items = [] }) {
       <ul className="space-y-2 text-gray-300">
         {items.length > 0 ? (
           items.map((item, index) => (
-            <li key={index} className="flex items-center gap-2">
-              <span className={`w-2 h-2 bg-${color}-400 rounded-full`}></span>
+            <li key={index} className="flex items-start gap-2">
+              <span className={`w-2 h-2 bg-${color}-400 rounded-full`}>
+              <svg width="10" height="10" className="mt-2">
+                  <circle cx="5" cy="5" r="5" fill="#18CB96" />
+              </svg>
+              </span>
               {item}
             </li>
           ))
@@ -505,7 +504,7 @@ function TeamMember({ image, name, role, company, bio }) {
   );
 }
 
-function TimelineCard({ icon, title, date, description }) {
+function TimelineCard({ icon, title, date, platform, description }) {
   return (
     <div className="bg-gray-900/50 p-8 rounded-xl hover:transform hover:scale-105 transition-all duration-300 border border-[#18CB96]/10 hover:border-[#18CB96]/30 backdrop-blur-sm group">
       <div className="text-[#18CB96] mb-6 flex justify-center group-hover:scale-110 transition-transform duration-300">{icon}</div>

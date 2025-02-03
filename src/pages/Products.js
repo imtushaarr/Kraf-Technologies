@@ -21,12 +21,16 @@ const App: React.FC = () => {
               Powering the next generation of business transformation with advanced SaaS solutions
             </p>
             <div className="flex flex-col md:flex-row gap-4 w-full md:w-auto">
+              <a href='/src/pages/contact-us' target="_blank" aria-label="Schedule a 30-minute call with Kraf Technologies">
               <button className="bg-[#18CB96] text-black px-6 py-3 md:px-8 md:py-3 rounded-lg font-semibold hover:bg-[#15b585] transition-all flex items-center justify-center gap-2">
-                View Solutions 
+                Book Demo 
               </button>
-              <button className="border border-[#18CB96] text-[#18CB96] px-6 py-3 md:px-8 md:py-3 rounded-lg font-semibold hover:bg-[#18CB96]/10 transition-all">
-                Schedule Demo
+              </a>
+              <a href='https://calendly.com/kraftechnologies-info/30min' target="_blank" aria-label="Schedule a 30-minute call with Kraf Technologies">
+              <button className="border border-[#18CB96] text-[#18CB96] px-6 py-3 md:px-8 md:py-3 rounded-lg font-semibold hover:bg-[#18CB96]/10 focus:outline-none focus:ring-2 focus:ring-[#18CB96] transition-all">
+                Schedule A Call
               </button>
+              </a>
             </div>
           </div>
 
