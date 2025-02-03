@@ -58,13 +58,16 @@ export default function AboutUs() {
   return (
     <div className="min-h-screen bg-black text-gray-900">
       {/* Hero Section */}
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8">
+      <section className="relative py-10 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <motion.div style={{ opacity, scale }} className="text-center">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white mb-6">
-              <AnimatedText text="About Kraf Technologies" />
+            <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-4 md:mb-6 animate-fade-in">
+              <span className="text-[#18CB96] bg-clip-text animate-pulse"><AnimatedText text="About Kraf Technologies" /></span>
             </h1>
-            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-gray-400">
+              
+            </h1>
+            <p className="text-base md:text-xl mb-8 max-w-3xl mx-auto text-gray-300 md:mb-8 max-w-2xl">
               Revolutionizing B2B Software Solutions with Cutting-Edge Technology and Innovative Approaches
             </p>
           </motion.div>
@@ -79,44 +82,32 @@ export default function AboutUs() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <h2 className="text-3xl sm:text-4xl font-bold mb-10 text-center text-white">Our Story</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-2 md:mb-2 text-center bg-clip-text text-transparent bg-white to-emerald-300">Our Story</h2>
+            <div className="w-40 h-1 bg-[#18CB96] mx-auto mb-16"></div>
             <div className="grid md:grid-cols-2 gap-12 items-start">
               <div>
                 <p className="text-lg mb-6 leading-relaxed text-justify text-gray-400">
-                  Founded in 2018 by a team of visionary tech entrepreneurs, TechNova Solutions emerged from a shared
-                  passion for leveraging cutting-edge technology to solve complex business challenges. Our journey began
-                  with a simple yet powerful idea: to create B2B software solutions that not only meet the current needs
-                  of businesses but anticipate and adapt to future demands.
+                Kraf Technologies, founded in 2022, is a cutting-edge software and B2B development company dedicated to delivering innovative solutions across multiple industries. With a strong focus on technology-driven advancements, Kraf Technologies specializes in building software products that streamline business operations, enhance user experiences, and drive digital transformation. The company was established with a vision to revolutionize the tech industry by offering robust, scalable, and secure solutions tailored to meet the evolving needs of businesses and consumers alike. Through a commitment to innovation, Kraf Technologies has successfully developed a diverse portfolio of products and brands, catering to a wide range of industries, from fintech and event management to e-commerce and project collaboration.
                 </p>
                 <p className="text-lg mb-6 leading-relaxed text-justify text-gray-400">
-                  In our early days, we focused on developing robust analytics tools for small to medium-sized
-                  enterprises. Our flagship product, DataInsight Pro, quickly gained traction for its user-friendly
-                  interface and powerful predictive capabilities. This early success fueled our growth and allowed us to
-                  expand our offerings.
+                One of Kraf Technologies’ flagship and most successful products is KRAFX-Q1, a futuristic event management system designed to revolutionize large-scale events with seamless organization, digital transactions, and real-time data insights. This advanced solution integrates NFC-based cashless payments, automated attendee management, and live event analytics, providing organizers with a comprehensive tool to enhance efficiency and engagement. KRAFX-Q1 ensures secure, contactless transactions using NFC-enabled cards, eliminating the hassle of cash handling and long queues. Event organizers and merchants can leverage this cutting-edge system to streamline ticketing, access control, vendor payments, and financial operations, offering attendees a smooth and hassle-free experience. 
+                </p>
+                <p className="text-lg mb-6 leading-relaxed text-justify text-gray-400">
+                Another key product developed by Kraf Technologies is InnovateX, a bill management system designed to simplify and automate financial transactions for businesses. This solution helps companies manage their invoices, track expenses, and generate reports, reducing the complexities associated with manual financial handling. InnovateX is built with smart analytics and AI-powered automation, allowing businesses to gain real-time insights into their financial data. Whether it’s subscription-based billing, utility payments, or business-to-business transactions, InnovateX ensures transparency and efficiency, making it a vital tool for organizations looking to modernize their billing processes.
                 </p>
               </div>
               <div>
                 <p className="text-lg mb-6 leading-relaxed text-justify text-gray-400">
-                  By 2020, TechNova had established itself as a key player in the B2B SaaS market. We broadened our
-                  portfolio to include cloud-based project management tools, AI-driven customer relationship management
-                  systems, and blockchain-enabled supply chain solutions. Our commitment to innovation and
-                  customer-centric approach has been the cornerstone of our success.
+                Beyond its B2B solutions, Kraf Technologies has also expanded its reach into consumer-facing markets with its in-house brands. Krafcool is an e-commerce clothing brand tailored for the youth, offering trendy and stylish apparel. With a focus on quality, affordability, and the latest fashion trends, Krafcool aims to redefine the online shopping experience for young consumers. Additionally, the company has launched ProjectVerse, a developer collaboration platform designed to connect professionals, students, and tech enthusiasts. ProjectVerse acts as a hub for project management, idea sharing, and team collaborations, making it easier for developers to work on software projects, find partners, and contribute to open-source initiatives.
                 </p>
                 <p className="text-lg mb-6 leading-relaxed text-justify text-gray-400">
-                  Today, TechNova Solutions serves over 500 clients across 30 countries, ranging from agile startups to
-                  Fortune 500 companies. Our team has grown to over 200 talented individuals, including expert
-                  developers, visionary designers, data scientists, and dedicated customer success managers.
+                With a strong foundation in technology and a vision for future innovation, Kraf Technologies continues to push the boundaries of digital transformation. The company is committed to expanding its product line, exploring emerging technologies like AI, blockchain, and IoT, and fostering an ecosystem where businesses and individuals can thrive. As it grows, Kraf Technologies remains dedicated to delivering high-quality, scalable, and user-centric solutions that empower businesses and consumers alike, shaping the future of technology with its innovative approach.
                 </p>
-                <p className="text-lg mb-6 leading-relaxed text-justify text-gray-400">
-                  We pride ourselves on our culture of continuous learning and adaptation. Our annual "InnovateTech"
-                  conference has become a much-anticipated event in the tech industry, showcasing emerging technologies
-                  and fostering collaboration between innovators and businesses.
-                </p>
-                {/* <img
-                  src="/placeholder.svg?height=400&width=600&text=TechNova+Team"
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1683120730432-b5ea74bd9047?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="TechNova Team"
-                  className="rounded-lg shadow-2xl mb-6 hover:shadow-blue-200 transition-shadow duration-300"
-                />*/}
+                  className="rounded-lg shadow-2xl mb-6"
+                />
               </div>
             </div>
           </motion.div>
@@ -126,7 +117,8 @@ export default function AboutUs() {
       {/* Founders Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center text-white">Meet Our Founders</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-2 md:mb-2 text-center bg-clip-text text-transparent bg-white to-emerald-300">Meet Our Founders</h2>
+          <div className="w-40 h-1 bg-[#18CB96] mx-auto mb-16"></div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {founders.map((founder, index) => (
               <motion.div
@@ -180,13 +172,10 @@ export default function AboutUs() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-100">
         <div className="max-w-7xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-            <h2 className="text-3xl sm:text-4xl font-bold mb-10 text-center text-gray-900">
+            <h2 className="text-4xl md:text-5xl font-bold mb-2 md:mb-2 text-center bg-clip-text text-black">
               Our Innovations & Technologies
             </h2>
-            <p className="text-lg md:text-xl mb-12 text-center max-w-3xl mx-auto text-gray-600">
-              At TechNova Solutions, we leverage cutting-edge technologies to deliver innovative solutions that drive
-              business growth and efficiency.
-            </p>
+            <div className="w-40 h-1 bg-[#18CB96] mx-auto mb-16"></div>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
                 {
@@ -230,16 +219,17 @@ export default function AboutUs() {
       {/* Case Studies Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center text-gray-900">Success Stories</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-2 md:mb-2 text-center bg-clip-text text-transparent bg-white to-emerald-300">Success Stories</h2>
+          <div className="w-40 h-1 bg-[#18CB96] mx-auto mb-16"></div>
           <div className="grid md:grid-cols-2 gap-12">
             {[
               {
                 title: "E-commerce Giant Boosts Sales by 200%",
-                image: "/placeholder.svg?height=400&width=600&text=E-commerce+Case+Study",
+                image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
               },
               {
                 title: "Fintech Startup Scales to 1M Users",
-                image: "/placeholder.svg?height=400&width=600&text=Fintech+Case+Study",
+                image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
               },
             ].map((study, index) => (
               <motion.div
@@ -261,7 +251,7 @@ export default function AboutUs() {
                     <motion.button
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
-                      className="bg-blue-600 text-white px-6 py-2 rounded-md font-semibold hover:bg-blue-700 transition-all duration-300 flex items-center"
+                      className="bg-[#18CB96] text-task px-6 py-2 rounded-md font-base flex items-center"
                     >
                       Read Case Study
                     </motion.button>
