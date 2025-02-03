@@ -9,7 +9,7 @@
 /coverage
 
 # Pages
-../pages/HackathonRegistration
+src/services/*
 
 # production
 /build
