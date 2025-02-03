@@ -96,7 +96,10 @@ export default function RegistrationForm() {
             });
 
             resetForm();
-            navigate("/kraf-think-2025/thank-you");
+            navigate("/kraf-think-2025/thank-you", {
+                state: { fromRegistration: true }
+            });
+            
         } catch (error) {
             console.error("Error adding document: ", error);
             alert("Error in registration. Try again.");

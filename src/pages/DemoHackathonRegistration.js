@@ -52,7 +52,6 @@ export default function RegistrationForm() {
     const handleFinalSubmit = async (e) => {
       e.preventDefault();
     
-      // Check if all team members are filled out
       for (const member of teamMembers) {
         if (!member.name || !member.email || !member.mobile || !member.universityId || !member.universityName || !member.branch || !member.passingYear || !member.currentSemester) {
           alert("Please fill out all the team member details.");
