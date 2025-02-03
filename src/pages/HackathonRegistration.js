@@ -128,6 +128,7 @@ export default function RegistrationForm() {
                                 Team Name
                             </label>
                             <input
+                              type="text"
                                 id="teamName"
                                 placeholder="Enter Team Name"
                                 className="w-full bg-gray-800 border-2 border-gray-700 text-white px-4 py-2 rounded-md focus:outline-none focus:border-[#18CB96] transition duration-300"
@@ -139,16 +140,18 @@ export default function RegistrationForm() {
                             Leader Name
                             </label>
                           <input
+                            type="text"
                             placeholder="Enter Full Name"
                             className="w-full bg-gray-800 border-2 border-gray-700 text-white px-4 py-2 rounded-md focus:outline-none focus:border-[#18CB96] transition duration-300"
                             value={teamLeader.name}
                             onChange={(e) => setTeamLeader({ ...teamLeader, name: e.target.value })}
                             required
                           />
-                                                      <label htmlFor="teamName" className="text-sm text-white">
-                                                      Email
-                            </label>
+                          <label htmlFor="teamName" className="text-sm text-white">
+                            Email
+                          </label>
                           <input
+                          type="email"
                             placeholder="user@example.com"
                             className="w-full bg-gray-800 border-2 border-gray-700 text-white px-4 py-2 rounded-md focus:outline-none focus:border-[#18CB96] transition duration-300"
                             value={teamLeader.email}
@@ -167,19 +170,20 @@ export default function RegistrationForm() {
                             onChange={(e) => setTeamLeader({ ...teamLeader, mobile: e.target.value })}
                             required
                             />
-                                                      <label htmlFor="teamName" className="text-sm text-white">
-                                                      University UID
+                            <label htmlFor="teamName" className="text-sm text-white">
+                              University UID
                             </label>
                           <input
+                            type="text"
                             placeholder="21XXX51"
                             className="w-full bg-gray-800 border-2 border-gray-700 text-white px-4 py-2 rounded-md focus:outline-none focus:border-[#18CB96] transition duration-300"
                             value={teamLeader.universityId}
                             onChange={(e) => setTeamLeader({ ...teamLeader, universityId: e.target.value })}
                             required
                           />
-                                                      <label htmlFor="teamName" className="text-sm text-white">
-                                                      University Name
-                            </label>
+                          <label htmlFor="teamName" className="text-sm text-white">
+                            University Name
+                          </label>
                           <input
                             placeholder="Chandigarh University"
                             className="w-full bg-gray-800 border-2 border-gray-700 text-white px-4 py-2 rounded-md focus:outline-none focus:border-[#18CB96] transition duration-300"
@@ -188,30 +192,33 @@ export default function RegistrationForm() {
                             readOnly
                             required
                           />
-                                                      <label htmlFor="teamName" className="text-sm text-white">
-                                                      Branch
-                            </label>
+                          <label htmlFor="teamName" className="text-sm text-white">
+                            Branch
+                          </label>
                           <input
+                          type="text"
                             placeholder="Bechelor of Technology"
                             className="w-full bg-gray-800 border-2 border-gray-700 text-white px-4 py-2 rounded-md focus:outline-none focus:border-[#18CB96] transition duration-300"
                             value={teamLeader.branch}
                             onChange={(e) => setTeamLeader({ ...teamLeader, branch: e.target.value })}
                             required
                           />
-                                                      <label htmlFor="teamName" className="text-sm text-white">
-                                                      Current Semester
-                            </label>
+                          <label htmlFor="teamName" className="text-sm text-white">
+                            Current Semester
+                          </label>
                           <input
+                            type="number"
                             placeholder="7"
                             className="w-full bg-gray-800 border-2 border-gray-700 text-white px-4 py-2 rounded-md focus:outline-none focus:border-[#18CB96] transition duration-300"
                             value={teamLeader.currentSemester}
                             onChange={(e) => setTeamLeader({ ...teamLeader, currentSemester: e.target.value })}
                             required
                           />
-                                                      <label htmlFor="teamName" className="text-sm text-white">
-                                                      Passing Year
-                            </label>
+                          <label htmlFor="teamName" className="text-sm text-white">
+                            Passing Year
+                          </label>
                           <input
+                            type="number"
                             placeholder="2026"
                             className="w-full bg-gray-800 border-2 border-gray-700 text-white px-4 py-2 rounded-md focus:outline-none focus:border-[#18CB96] transition duration-300"
                             value={teamLeader.passingYear}
@@ -258,6 +265,7 @@ export default function RegistrationForm() {
                             {`Member ${index + 1} Name`}
                         </label>
                           <input
+                          type="text"
                             placeholder="Enter Full Name"
                             className="w-full bg-gray-800 border-2 border-gray-700 text-white px-4 py-2 rounded-md focus:outline-none focus:border-[#18CB96] transition duration-300"
                             onChange={(e) => updateTeamMember(index, "name", e.target.value)}
@@ -267,6 +275,7 @@ export default function RegistrationForm() {
                           {`Member ${index + 1} Email`}
                         </label>
                           <input
+                          type="email"
                             placeholder="user@example.com"
                             className="w-full bg-gray-800 border-2 border-gray-700 text-white px-4 py-2 rounded-md focus:outline-none focus:border-[#18CB96] transition duration-300"
                             onChange={(e) => updateTeamMember(index, "email", e.target.value)}
@@ -276,6 +285,7 @@ export default function RegistrationForm() {
                           {`Member ${index + 1} Mobile`}
                         </label>
                           <input
+                            type="tel"
                             placeholder="8839XXXXX59"
                             pattern="[0-9]{10}"
                             className="w-full bg-gray-800 border-2 border-gray-700 text-white px-4 py-2 rounded-md focus:outline-none focus:border-[#18CB96] transition duration-300"
@@ -305,6 +315,7 @@ export default function RegistrationForm() {
                           {`Member ${index + 1} Branch`}
                         </label>
                           <input
+                            type="text"
                             placeholder="Bachelor of Engineering"
                             className="w-full bg-gray-800 border-2 border-gray-700 text-white px-4 py-2 rounded-md focus:outline-none focus:border-[#18CB96] transition duration-300"
                             onChange={(e) => updateTeamMember(index, "branch", e.target.value)}
@@ -314,6 +325,7 @@ export default function RegistrationForm() {
                           {`Member ${index + 1} Current Semester`}
                         </label>
                           <input
+                            type="number"
                             placeholder="7"
                             className="w-full bg-gray-800 border-2 border-gray-700 text-white px-4 py-2 rounded-md focus:outline-none focus:border-[#18CB96] transition duration-300"
                             onChange={(e) => updateTeamMember(index, "currentSemester", e.target.value)}
@@ -323,6 +335,7 @@ export default function RegistrationForm() {
                           {`Member ${index + 1} Passing Year`}
                         </label>
                           <input
+                            type="number"
                             placeholder="2026"
                             className="w-full bg-gray-800 border-2 border-gray-700 text-white px-4 py-2 rounded-md focus:outline-none focus:border-[#18CB96] transition duration-300"
                             onChange={(e) => updateTeamMember(index, "passingYear", e.target.value)}
