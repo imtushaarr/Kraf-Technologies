@@ -581,7 +581,7 @@ export default function RegistrationForm() {
                             </label>
                             <input
                             type="tel"
-                            pattern="[1-9]{10}"
+                            pattern="[0-9]{10}"
                             placeholder="8839XXXXX59"
                             className="w-full bg-gray-800 border-2 border-gray-700 text-white px-4 py-2 rounded-md focus:outline-none focus:border-[#18CB96] transition duration-300"
                             value={teamLeader.mobile}
@@ -698,7 +698,7 @@ export default function RegistrationForm() {
                         </label>
                           <input
                             placeholder="8839XXXXX59"
-                            pattern="[1-9]{10}"
+                            pattern="[0-9]{10}"
                             className="w-full bg-gray-800 border-2 border-gray-700 text-white px-4 py-2 rounded-md focus:outline-none focus:border-[#18CB96] transition duration-300"
                             onChange={(e) => updateTeamMember(index, "mobile", e.target.value)}
                             required
