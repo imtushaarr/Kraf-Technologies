@@ -14,7 +14,7 @@ export default function Example() {
     { name: 'Home', href: '/' },
     { name: 'Products', href: '/products' },
     { name: 'Services', href: '/services' },
-    { name: 'About Us', href: '/about-us' },
+    { name: 'About Us', href: '/about' },
   ];
 
   return (

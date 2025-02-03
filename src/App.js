@@ -7,6 +7,9 @@ import KrafThink from './pages/KrafThink';
 import Products from './pages/Products';
 import Loader from './components/Loader';
 import { useState, useEffect } from 'react';
+import About from './pages/About';
+import HackathonRoute from './routes/HackathonRoute';
+import ThankYouPage from './pages/ThankYouPage';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -28,6 +31,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
           <Route path="/kraf-think-2025" element={<KrafThink />} />
+          <Route path="/kraf-think-2025/*" element={<HackathonRoute />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/thank-you" element={<ThankYouPage />} />
         </Routes>
       )}
       <Footer />

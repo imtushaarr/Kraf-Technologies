@@ -1,8 +1,8 @@
 import Logo1 from "../assets/comimgs/1 copy.png";
 import Logo2 from "../assets/comimgs/3 copy.png";
 import Logo4 from "../assets/comimgs/Project.png";
-import Logo5 from '../assets/comimgs/2ff.png';
-import Logo6 from '../assets/comimgs/innovate.png';
+import Logo5 from '../assets/comimgs/1 copy.png';
+import Logo6 from '../assets/comimgs/3 copy.png';
 
 export default function LogoCloud() {
   return (

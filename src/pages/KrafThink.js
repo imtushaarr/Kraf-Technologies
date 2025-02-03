@@ -27,11 +27,11 @@ import heroImage from "../assets/Serendale.png";
 import avatar1 from "../assets/Avatar1.jpeg";
 import avatar2 from "../assets/Avatar2.jpg";
 import avatar3 from "../assets/Avatar3.jpeg";
-import avatar4 from "../assets/Avatar4.JPG";
+import avatar4 from "../assets/Avatar3.jpeg";
 import tushar from '../assets/Avatar1.jpeg';
 import animesh from '../assets/Avatar2.jpg';
 import punnet from '../assets/Avatar3.jpeg';
-import yash from '../assets/Avatar4.JPG'
+import yash from '../assets/Avatar2.jpg'
 
 const KrafThink = () => {
   return (
