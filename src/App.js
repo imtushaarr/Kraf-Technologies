@@ -12,6 +12,7 @@ import About from './pages/About';
 import HackathonRoute from './routes/HackathonRoute';
 import ThankYouPage from './pages/ThankYouPage';
 import Career from './pages/Career';
+import ContactUs from './pages/Contact';
 
 // Protected Route Component
 const ProtectedThankYou = ({ children }) => {
@@ -46,6 +47,7 @@ function App() {
                     <Route path="/" element={<Home />} />
                     <Route path="/products" element={<Products />} />
                     <Route path="/about" element={<About />} />
+                    <Route path="/contact-us" element={<ContactUs />} />
                     <Route path="/career" element={<Career />} />
                     <Route path="/kraf-think-2025" element={<KrafThink />} />
                     <Route path="/kraf-think-2025/*" element={<HackathonRoute />} />
