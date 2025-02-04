@@ -24,7 +24,9 @@ import avatar4 from "../assets/yash.jpeg";
 import animesh from '../assets/Avatar2.jpg';
 import punnet from '../assets/Avatar3.jpeg';
 import yash from '../assets/yash.jpeg';
-import {useNavigate} from "react-router-dom"
+import {useNavigate} from "react-router-dom";
+import sonu from '../assets/sonu.png';
+import tarveen from "../assets/tarveen.jpg";
 
 const KrafThink = () => {
   const navigate = useNavigate()
@@ -352,48 +354,79 @@ const KrafThink = () => {
 
       {<section className="py-20 px-8 bg-white text-black rounded-t-[3rem] mt-10 mx-4">
   {/* Team Section */}
-  <div className="max-w-6xl mx-auto relative">
-    <h2 className="text-black text-5xl font-bold mb-2 text-center animate-on-scroll">Our Team</h2>
-    <div className="w-40 h-1 bg-[#18CB96] mx-auto mb-16"></div>
-    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
-      <TeamMember
-        image="https://media.licdn.com/dms/image/v2/D4D03AQGtShejOc4ofg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1713016106826?e=1744243200&v=beta&t=DtjxhTrp_abWlVEoZkwYOTOak15FHntdHgLJzjJQ9n8"
-        name="Tushar Gupta"
-        role="Founder & Lead Developer"
-        bio="Software Developer skilled in designing, developing, and optimizing scalable applications across various platforms and technologies."
-        linkedin="https://www.linkedin.com/in/imtushaarr"
-        instagram="https://www.instagram.com/imtushaarr"
-        twitter="https://x.com/imtushaarr"
-        />
-      <TeamMember
-        image={animesh}
-        name="Animesh Upadhyay"
-        role="Co-Founder & Software Developer"
-        bio="Software Developer crafted innovative solutions and seamless user experiences."
-        linkedin="https://www.linkedin.com/in/animesh-upadhyay-74a32a1b5/"
-        instagram="https://www.instagram.com/aniiiimeshhh/"
-        twitter="https://x.com/Animesh09528786"
-        />
-      <TeamMember
-        image={punnet}
-        name="Puneet"
-        role="Co-Founder & Java Developer"
-        bio="Java Developer with expertise in building scalable, efficient, and secure applications using Java technologies"
-        linkedin="https://www.linkedin.com/in/puneetyadav09"
-        instagram="https://www.instagram.com/yadav_puneet_009"
-        twitter="https://x.com/PuneetY45565355"
-      />
-      <TeamMember
-        image={yash}
-        name="Yash Singh"
-        role="Co-founder & Lead Data Analyst"
-        bio="Data Engineer with expertise in building and optimizing data pipelines for efficient processing and storage"
-        linkedin="https://www.linkedin.com/in/yash-singh2109"
-        instagram="https://www.instagram.com/yash_ys_23"
-        twitter="https://x.com/yash-singh2109"
-      />
-    </div>
+  <div className="max-w-4xl mx-auto relative">
+  <h2 className="text-black text-5xl font-bold mb-2 text-center animate-on-scroll">
+    Meet Our Team
+  </h2>
+  <div className="w-40 h-1 bg-[#18CB96] mx-auto mb-16"></div>
+
+  {/* Team Members Grid */}
+  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+    {/* Team Member 1 */}
+    <TeamMember
+      image="https://media.licdn.com/dms/image/v2/D4D03AQGtShejOc4ofg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1713016106826?e=1744243200&v=beta&t=DtjxhTrp_abWlVEoZkwYOTOak15FHntdHgLJzjJQ9n8"
+      name="Tushar Gupta"
+      role="Founder & Lead Developer"
+      bio="Software Developer skilled in designing, developing, and optimizing scalable applications across various platforms and technologies."
+      linkedin="https://www.linkedin.com/in/imtushaarr"
+      instagram="https://www.instagram.com/imtushaarr"
+      twitter="https://x.com/imtushaarr"
+    />
+    
+    {/* Team Member 2 */}
+    <TeamMember
+      image={animesh}
+      name="Animesh Upadhyay"
+      role="Co-Founder & Software Developer"
+      bio="Software Developer crafted innovative solutions and seamless user experiences."
+      linkedin="https://www.linkedin.com/in/animesh-upadhyay-74a32a1b5/"
+      instagram="https://www.instagram.com/aniiiimeshhh/"
+      twitter="https://x.com/Animesh09528786"
+    />
+    
+    {/* Team Member 3 */}
+    <TeamMember
+      image={punnet}
+      name="Puneet"
+      role="Co-Founder & Java Developer"
+      bio="Java Developer with expertise in building scalable, efficient, and secure applications using Java technologies"
+      linkedin="https://www.linkedin.com/in/puneetyadav09"
+      instagram="https://www.instagram.com/yadav_puneet_009"
+      twitter="https://x.com/PuneetY45565355"
+    />
+    
+    {/* Team Member 4 */}
+    <TeamMember
+      image={yash}
+      name="Yash Singh"
+      role="Co-founder & Lead Data Analyst"
+      bio="Data Engineer with expertise in building and optimizing data pipelines for efficient processing and storage"
+      linkedin="https://www.linkedin.com/in/yash-singh2109"
+      instagram="https://www.instagram.com/yash_ys_23"
+      twitter="https://x.com/yash-singh2109"
+    />
+
+    {/* Team Member 5 */}
+    <TeamMember
+      image={sonu}
+      name="Sonu Kumar"
+      role="Secretary AIT Triads"
+      // bio="Data Engineer with expertise in building and optimizing data pipelines for efficient processing and storage"
+      linkedin="https://www.linkedin.com/in/"
+      instagram="https://www.instagram.com/"
+    />
+
+    {/* Team Member 6 */}
+    <TeamMember
+      image={tarveen}
+      name="Tarveen Kaur"
+      role="Member Of AIT Triads"
+      // bio="Data Engineer with expertise in building and optimizing data pipelines for efficient processing and storage"
+      linkedin="https://www.linkedin.com/in/tarveen-kaur-01984024b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+      instagram="https://www.instagram.com/tkaur2714?igsh=MXd5eTBiamt0bmVjag%3D%3D&utm_source=qr"
+    />
   </div>
+</div>
   <div className="border-t border-gray-400 mt-20 text-center"></div>
   {/* Contact Section */}
   <div className="relative z-10 bg-white text-black rounded-t-[3rem] mt-10 mx-4">
@@ -484,23 +517,23 @@ function WhyParticipateItem({ icon, title, description }) {
   );
 }
 
-function TeamMember({ image, name, role, bio, linkedin, instagram, twitter }) {
-  return (
-    <div className="group">
-      <div className="relative mb-6">
-        <div className="aspect-square overflow-hidden rounded-2xl">
-          <img 
-            src={image} 
-            alt={name} 
-            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+  function TeamMember({ image, name, role, bio, linkedin, instagram, twitter }) {
+    return (
+      <div className="group">
+        <div className="relative mb-6">
+          <div className="aspect-square overflow-hidden rounded-2xl">
+            <img 
+              src={image} 
+              alt={name} 
+              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
             <p className="text-sm text-gray-300">{bio}</p>
           </div>
         </div>
       </div>
       <div className="text-center">
-        <h3 className="text-white text-xl font-bold mb-1">{name}</h3>
+        <h3 className="text-black text-xl font-bold mb-1">{name}</h3>
         <p className="text-[#18CB96]">{role}</p>
       </div>
       <div className="flex justify-center gap-4 mt-4">

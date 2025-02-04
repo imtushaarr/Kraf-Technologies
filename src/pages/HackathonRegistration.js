@@ -401,9 +401,31 @@ export default function RegistrationForm() {
                                                     className="w-full bg-gray-800 border-2 border-gray-700 text-white px-4 py-2 rounded-md focus:outline-none focus:border-[#18CB96] transition duration-300"
                                                 >
                                                     <option value="">Select a Problem Statement</option>
-                                                    <option value="AI for Climate Change">AI Solutions for Climate Change</option>
-                                                    <option value="Smart Education">Smart Education Systems</option>
-                                                    <option value="Healthcare Access">Democratizing Healthcare Access</option>
+
+                                                    <option value="Smart Student Attendance System" data-description="Develop a web-based system to track student attendance efficiently. It will include features like automatic attendance marking using facial recognition, NFC tags, or QR codes, with an admin dashboard to view and manage attendance data.">Smart Student Attendance System
+                                                    </option>
+
+                                                    <option value="Virtual Campus Tour for Universities" data-description="Build a platform that offers prospective students a virtual tour of the university campus. Integrate interactive maps, 360-degree images or videos, and real-time chat for guiding and providing information.
+">Virtual Campus Tour for Universities</option>
+
+                                                    <option value="AI-Powered Career Guidance Platform" data-description="Create a platform that uses Artificial Intelligence to suggest career paths to students based on their skills, interests, and academic performance. It will recommend relevant courses, internships, and job opportunities.">AI-Powered Career Guidance Platform</option>
+
+                                                    <option value="Virtual Campus Tour for Universities" data-description="Build a platform that offers prospective students a virtual tour of the university campus. Integrate interactive maps, 360-degree images or videos, and real-time chat for guiding and providing information.">Virtual Campus Tour for Universities</option>
+
+                                                    <option value="Real-Time Collaborative Coding Platform" data-description="Build a web-based IDE (like Google Docs for code) where multiple users can collaborate on coding projects. The platform will have live syncing, syntax highlighting, and video chat integration for enhanced collaboration.">Real-Time Collaborative Coding Platform</option>
+
+                                                    <option value="AI-Powered Expense Tracker for Students" data-description="Design an AI-based expense tracker tailored for students. It will automatically categorize expenses, provide insights on spending patterns, and suggest ways to save money based on the user’s financial goals.
+">AI-Powered Expense Tracker for Students</option>
+
+                                                    <option value="Automated Tax Filing Software" data-description="A software tool that simplifies the tax filing process by analyzing financial records, automatically generating tax returns, and ensuring compliance with current tax regulations. It can also offer suggestions to minimize tax liabilities.">Automated Tax Filing Software</option>
+
+                                                    <option value=" NFT Marketplace for Digital Art and Collectibles" data-description="Develop an online platform for the creation, buying, and selling of NFTs (Non-Fungible Tokens). This marketplace will allow digital artists and collectors to trade unique digital assets, integrated with blockchain technology for authenticity and ownership verification.">NFT Marketplace for Digital Art and Collectibles</option>
+
+                                                    <option value="NFC and Crypto-Based Payment Systems" data-description="Design a payment system that integrates NFC (Near Field Communication) with cryptocurrency transactions. This will allow users to make fast and secure payments through their NFC-enabled devices and cryptocurrency wallets.">NFC and Crypto-Based Payment Systems</option>
+
+                                                    <option value="AR/VR Shopping Platform" data-description="Create an e-commerce website that uses Augmented Reality (AR) or Virtual Reality (VR) to let customers try on products like clothes, accessories, or furniture virtually. This will provide an immersive shopping experience before making a purchase.">AR/VR Shopping Platform</option>
+
+                                                    <option value="AI-powered Dynamic Pricing System" data-description="Develop an AI-driven dynamic pricing model for an e-commerce platform. The system will adjust prices in real-time based on demand, competition, inventory levels, and other market factors, providing personalized pricing for customers to maximize sales and profit margins.">AI-powered Dynamic Pricing System</option>
                                                 </select>
 
                                                 <p className="text-center text-gray-400">OR</p>
