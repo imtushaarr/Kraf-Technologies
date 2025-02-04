@@ -273,16 +273,16 @@ const KrafThink = () => {
               description="Result will be declared at KrafX-Q1 and top 15 teams will move to next phase"
             />
             <TimelineCard 
-              icon={<Code />}
-              title="Implementation"
-              date="February 23 to 25, 2025"
-              description="Intense coding to bring your ideas to life and submission of project at KrafX-Q1"
-            />
-            <TimelineCard 
               icon={<Send />}
               title="Mentoring Session"
               date="February 24, 2025"
               description="We will provide ideas to enhance and improve your project at D3 Block, Chandigarh University"
+            />
+            <TimelineCard 
+              icon={<Code />}
+              title="Code Submission"
+              date="February 25, 2025"
+              description="Intense coding to bring your ideas to life and submission of project at KrafX-Q1"
             />
             <TimelineCard 
               icon={<Trophy />}
