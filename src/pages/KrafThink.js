@@ -115,7 +115,7 @@ const KrafThink = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center mb-24">
             <div className="space-y-6 animate-on-scroll">
               <p className="text-xl text-gray-300 leading-relaxed text-justify">
-              KrafThink 2025 is Kraf Technologies premier hackathon, bringing together over 500 innovators, developers, and creative minds from across the globe. An exciting coding competition designed to test creativity, problem-solving, and innovation in technology.
+              Kraf Think 2025 is Kraf Technologies premier hackathon, bringing together over 500 innovators, developers, and creative minds from across the globe. An exciting coding competition designed to test creativity, problem-solving, and innovation in technology.
               </p>
               <p className="text-xl text-gray-300 leading-relaxed text-justify">
                 Organized by industry leaders Krafcool and Kraf Technologies, this event offers participants the unique opportunity to transform their groundbreaking ideas into working softwares while competing for substantial prizes and networking with industry experts.

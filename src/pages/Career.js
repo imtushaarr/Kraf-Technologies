@@ -28,12 +28,12 @@ const openings = [
   {
     position: "Wordpress Developer",
     experience: "2 Years",
-    date: "2023-05-08"
+    date: "2024-05-08"
   },
   {
-    position: "Javascript",
+    position: "Javascript Developer",
     experience: "1 Years",
-    date: "2023-05-08"
+    date: "2025-01-08"
   },
   {
     position: "Apps Developer",
@@ -64,9 +64,11 @@ export default function Career() {
             Be part of our growing team and experience the bright future of innovation in a workplace setting.
           </p>
           <div className="space-x-4">
+            <a href='https://www.linkedin.com/company/kraftechnologies' target='_blank' rel='noreferrer'>
             <button className="bg-[#18CB96] text-white px-6 py-2 rounded-md hover:bg-[#15b587] transition">
               Apply Now
             </button>
+            </a>
             <a href='/about'>
             <button className="border border-white px-6 py-2 rounded-md hover:bg-white/10 transition">
               Learn More
@@ -116,7 +118,7 @@ export default function Career() {
                     <td className="py-4 px-6">{job.date}</td>
                     <td className="py-4 px-6">
                       <button className="bg-gray-600 text-red-200 px-4 py-1 rounded-md text-sm hover:bg-[#15b587] transition">
-                        Application Close
+                        Application Closed
                       </button>
                     </td>
                   </tr>
