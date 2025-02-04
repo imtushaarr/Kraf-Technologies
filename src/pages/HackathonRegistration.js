@@ -459,7 +459,7 @@ export default function RegistrationForm() {
                         <div className="text-center bg-gray-900 p-8 rounded-lg shadow-lg space-y-4">
                             <Rocket className="w-12 h-12 mx-auto text-[#18CB96]" />
                             <h3 className="text-2xl font-bold text-white">Fast Track</h3>
-                            <p className="text-gray-400">Get direct access to experts and mentors</p>
+                            <p className="text-gray-400">Get a Chance to Intern at Kraf Technologies.</p>
                         </div>
                     </div>
                 </div>

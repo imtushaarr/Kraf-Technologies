@@ -1,54 +1,11 @@
 import { motion, useScroll, useTransform } from "framer-motion";
-import { FaLinkedinIn, FaTwitter, FaGithub } from "react-icons/fa";
 import { SiBlockchaindotcom, SiOpenai, SiQuantcast, SiAmazons3 } from "react-icons/si";
+import { FaLinkedin, FaInstagram, FaTwitter } from 'react-icons/fa';
 import AnimatedText from "../components/AnimatedText";
+import animesh from "../assets/Avatar2.jpg"
+import punnet from "../assets/Avatar3.jpeg"
+import yash from "../assets/yash.jpeg"
 
-const founders = [
-  {
-    name: "Tushar Gupta",
-    role: "Founder & Lead Developer",
-    image: "../assets/Avatar1.jpeg",
-    bio: "With over 3 years of experience in tech leadership, Tushar drives the vision and strategy of TechNova Solutions.",
-    social: {
-      linkedin: "https://linkedin.com/in/imtushaarr",
-      twitter: "https://twitter.com/imtushaarr",
-      github: "https://github.com/imtushaarr",
-    },
-  },
-  {
-    name: "Animesh Upadhyay",
-    role: "Co-Founder & Software Developer",
-    image: "../assets/Avatar2.jpg",
-    bio: "Sarah's expertise in AI and machine learning shapes our innovative product development.",
-    social: {
-      linkedin: "https://linkedin.com/in/sarahjohnson",
-      twitter: "https://twitter.com/sarahjohnson",
-      github: "https://github.com/sarahjohnson",
-    },
-  },
-  {
-    name: "Puneet",
-    role: "Co-Founder & Java Developer",
-    image: "../assets/Avatar3.jpeg",
-    bio: "Michael's background in operations and finance ensures smooth scaling of our solutions.",
-    social: {
-      linkedin: "https://linkedin.com/in/michaellee",
-      twitter: "https://twitter.com/michaellee",
-      github: "https://github.com/michaellee",
-    },
-  },
-  {
-    name: "Yash Singh",
-    role: "Co-founder & Lead Data Analyst",
-    image: "../assets/Avatar4.jpg",
-    bio: "Emily's innovative marketing strategies have positioned TechNova as a leader in the B2B SaaS space.",
-    social: {
-      linkedin: "https://linkedin.com/in/emilyrodriguez",
-      twitter: "https://twitter.com/emilyrodriguez",
-      github: "https://github.com/emilyrodriguez",
-    },
-  },
-];
 
 export default function AboutUs() {
   const { scrollYProgress } = useScroll();
@@ -118,53 +75,48 @@ export default function AboutUs() {
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold mb-2 md:mb-2 text-center bg-clip-text text-transparent bg-white to-emerald-300">Meet Our Founders</h2>
+        {/* Team Section */}
+        <div className="max-w-6xl mx-auto relative">
           <div className="w-40 h-1 bg-[#18CB96] mx-auto mb-16"></div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {founders.map((founder, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
-              >
-                <img
-                  src={founder.image || "/placeholder.svg"}
-                  alt={founder.name}
-                  className="rounded-full mx-auto mb-6 border-4 border-blue-100"
-                />
-                <h3 className="text-xl font-semibold mb-2 text-center text-gray-900">{founder.name}</h3>
-                <p className="text-blue-600 mb-4 text-center">{founder.role}</p>
-                <p className="text-sm mb-6 text-gray-600">{founder.bio}</p>
-                <div className="flex justify-center space-x-4">
-                  <a
-                    href={founder.social.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-400 hover:text-blue-600 transition-colors"
-                  >
-                    <FaLinkedinIn className="w-5 h-5" />
-                  </a>
-                  <a
-                    href={founder.social.twitter}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-400 hover:text-blue-400 transition-colors"
-                  >
-                    <FaTwitter className="w-5 h-5" />
-                  </a>
-                  <a
-                    href={founder.social.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-400 hover:text-gray-900 transition-colors"
-                  >
-                    <FaGithub className="w-5 h-5" />
-                  </a>
-                </div>
-              </motion.div>
-            ))}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+            <TeamMember
+              image="https://media.licdn.com/dms/image/v2/D4D03AQGtShejOc4ofg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1713016106826?e=1744243200&v=beta&t=DtjxhTrp_abWlVEoZkwYOTOak15FHntdHgLJzjJQ9n8"
+              name="Tushar Gupta"
+              role="Founder & Lead Developer"
+              bio="Software Developer skilled in designing, developing, and optimizing scalable applications across various platforms and technologies."
+              linkedin="https://www.linkedin.com/in/imtushaarr"
+              instagram="https://www.instagram.com/imtushaarr"
+              twitter="https://twitter.com/imtushaarr"
+              />
+            <TeamMember
+              image={animesh}
+              name="Animesh Upadhyay"
+              role="Co-Founder & Software Developer"
+              bio="Software Developer crafted innovative solutions and seamless user experiences."
+              linkedin="https://www.linkedin.com/in/animesh-upadhyay-74a32a1b5/"
+              instagram="https://www.instagram.com/aniiiimeshhh/"
+              twitter="https://twitter.com/Animesh09528786"
+              />
+            <TeamMember
+              image={punnet}
+              name="Puneet"
+              role="Co-Founder & Java Developer"
+              bio="Java Developer with expertise in building scalable, efficient, and secure applications using Java technologies"
+              linkedin="https://www.linkedin.com/in/puneetyadav09"
+              instagram="https://www.instagram.com/yadav_puneet_009"
+              twitter="https://twitter.com/PuneetY45565355"
+            />
+            <TeamMember
+              image={yash}
+              name="Yash Singh"
+              role="Co-founder & Lead Data Analyst"
+              bio="Data Engineer with expertise in building and optimizing data pipelines for efficient processing and storage"
+              linkedin="https://www.linkedin.com/in/yash-singh2109"
+              instagram="https://www.instagram.com/yash_ys_23"
+              twitter="https://twitter.com/yash-singh2109"
+            />
           </div>
+        </div>
         </div>
       </section>
 
@@ -263,6 +215,46 @@ export default function AboutUs() {
         </div>
       </section>
 
+    </div>
+  );
+}
+
+function TeamMember({ image, name, role, bio, linkedin, instagram, twitter }) {
+  return (
+    <div className="group">
+      <div className="relative mb-6">
+        <div className="aspect-square overflow-hidden rounded-2xl">
+          <img 
+            src={image} 
+            alt={name} 
+            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+            <p className="text-sm text-gray-300">{bio}</p>
+          </div>
+        </div>
+      </div>
+      <div className="text-center">
+        <h3 className="text-white text-xl font-bold mb-1">{name}</h3>
+        <p className="text-[#18CB96]">{role}</p>
+      </div>
+      <div className="flex justify-center gap-4 mt-4">
+        {linkedin && (
+          <a href={linkedin} target="_blank" rel="noopener noreferrer">
+            <FaLinkedin className="text-white text-2xl hover:text-[#18CB96] transition-colors duration-300" />
+          </a>
+        )}
+        {instagram && (
+          <a href={instagram} target="_blank" rel="noopener noreferrer">
+            <FaInstagram className="text-white text-2xl hover:text-[#18CB96] transition-colors duration-300" />
+          </a>
+        )}
+        {twitter && (
+          <a href={twitter} target="_blank" rel="noopener noreferrer">
+            <FaTwitter className="text-white text-2xl hover:text-[#18CB96] transition-colors duration-300" />
+          </a>
+        )}
+      </div>
     </div>
   );
 }
