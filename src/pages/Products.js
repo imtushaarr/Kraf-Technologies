@@ -21,9 +21,9 @@ const App: React.FC = () => {
               Powering the next generation of business transformation with advanced SaaS solutions
             </p>
             <div className="flex flex-col md:flex-row gap-4 w-full md:w-auto">
-              <a href='/src/pages/contact-us' target="_blank" aria-label="Schedule a 30-minute call with Kraf Technologies">
+              <a href='/contact-us' target="_blank" aria-label="Schedule a 30-minute call with Kraf Technologies">
               <button className="bg-[#18CB96] text-black px-6 py-3 md:px-8 md:py-3 rounded-lg font-semibold hover:bg-[#15b585] transition-all flex items-center justify-center gap-2">
-                Book Demo 
+                Book a Demo 
               </button>
               </a>
               <a href='https://calendly.com/kraftechnologies-info/30min' target="_blank" aria-label="Schedule a 30-minute call with Kraf Technologies">
@@ -111,9 +111,10 @@ const App: React.FC = () => {
       {/* Current Products */}
       <section className="py-16 md:py-32 relative">
         <div className="container mx-auto px-4 relative">
-          <h2 className="text-4xl md:text-5xl font-bold mb-12 md:mb-16 text-center bg-clip-text text-transparent bg-white to-emerald-300">
+          <h2 className="text-4xl md:text-5xl font-bold mb-2 md:mb-2 text-center bg-clip-text text-transparent bg-white to-emerald-300">
             Enterprise Solutions
           </h2>
+          <div className="w-40 h-1 bg-[#18CB96] mx-auto mb-16"></div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {products.map((product, index) => (
               <div key={index} 
@@ -136,9 +137,10 @@ const App: React.FC = () => {
       {/* Future Projects */}
       <section className="py-16 md:py-32 relative">
         <div className="container mx-auto px-4 relative">
-          <h2 className="text-4xl md:text-5xl font-bold mb-12 md:mb-16 text-center bg-clip-text text-transparent bg-white to-emerald-300">
+          <h2 className="text-4xl md:text-5xl font-bold mb-2 md:mb-2 text-center bg-clip-text text-transparent bg-white to-emerald-300">
             Future Innovations
           </h2>
+          <div className="w-40 h-1 bg-[#18CB96] mx-auto mb-16"></div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
             {futureProjects.map((project, index) => (
               <div key={index} className="relative group">

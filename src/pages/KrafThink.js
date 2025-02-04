@@ -197,7 +197,7 @@ const KrafThink = () => {
                 />
                 <WhyParticipateItem
                   icon={<Trophy className="w-6 h-6" />}
-                  title="Amazing Prizes"
+                  title="Grand Prizes"
                   description="Win from a prize pool of &#8377;10,000 and additional perks"
                 />
               </ul>
@@ -274,7 +274,7 @@ const KrafThink = () => {
             />
             <TimelineCard 
               icon={<Code />}
-              title="Coding Round"
+              title="Implementation"
               date="February 23 to 25, 2025"
               description="Intense coding to bring your ideas to life and submission of project at KrafX-Q1"
             />
@@ -343,7 +343,7 @@ const KrafThink = () => {
           <div className="container mx-auto px-4 md:px-8 py-16">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               <EventDetail title="Location" value="Chandigarh University" />
-              <EventDetail title="Registration" value="At Kraf Technologies" />
+              <EventDetail title="Register" value="At Kraf Technologies" />
               <EventDetail title="Registration Start" value="04 February 2025" />
               <EventDetail title="Grand Finale" value="26 February 2025" />
             </div>
@@ -363,7 +363,7 @@ const KrafThink = () => {
         bio="Software Developer skilled in designing, developing, and optimizing scalable applications across various platforms and technologies."
         linkedin="https://www.linkedin.com/in/imtushaarr"
         instagram="https://www.instagram.com/imtushaarr"
-        twitter="https://twitter.com/imtushaarr"
+        twitter="https://x.com/imtushaarr"
         />
       <TeamMember
         image={animesh}
@@ -372,7 +372,7 @@ const KrafThink = () => {
         bio="Software Developer crafted innovative solutions and seamless user experiences."
         linkedin="https://www.linkedin.com/in/animesh-upadhyay-74a32a1b5/"
         instagram="https://www.instagram.com/aniiiimeshhh/"
-        twitter="https://twitter.com/Animesh09528786"
+        twitter="https://x.com/Animesh09528786"
         />
       <TeamMember
         image={punnet}
@@ -381,7 +381,7 @@ const KrafThink = () => {
         bio="Java Developer with expertise in building scalable, efficient, and secure applications using Java technologies"
         linkedin="https://www.linkedin.com/in/puneetyadav09"
         instagram="https://www.instagram.com/yadav_puneet_009"
-        twitter="https://twitter.com/PuneetY45565355"
+        twitter="https://x.com/PuneetY45565355"
       />
       <TeamMember
         image={yash}
@@ -390,7 +390,7 @@ const KrafThink = () => {
         bio="Data Engineer with expertise in building and optimizing data pipelines for efficient processing and storage"
         linkedin="https://www.linkedin.com/in/yash-singh2109"
         instagram="https://www.instagram.com/yash_ys_23"
-        twitter="https://twitter.com/yash-singh2109"
+        twitter="https://x.com/yash-singh2109"
       />
     </div>
   </div>
