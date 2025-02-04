@@ -412,15 +412,15 @@ const KrafThink = () => {
       name="Sonu Kumar"
       role="Secretary AIT Triads"
       // bio="Data Engineer with expertise in building and optimizing data pipelines for efficient processing and storage"
-      linkedin="https://www.linkedin.com/in/"
-      instagram="https://www.instagram.com/"
+      linkedin="https://www.linkedin.com/in/sonukumarmandal?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+      instagram="https://www.instagram.com/_____sonu______1102?igsh=YnJ4Z2NqcWR4Nms0"
     />
 
     {/* Team Member 6 */}
     <TeamMember
       image={tarveen}
       name="Tarveen Kaur"
-      role="Member Of AIT Triads"
+      role="Society Coordinator Of AIT Triads"
       // bio="Data Engineer with expertise in building and optimizing data pipelines for efficient processing and storage"
       linkedin="https://www.linkedin.com/in/tarveen-kaur-01984024b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
       instagram="https://www.instagram.com/tkaur2714?igsh=MXd5eTBiamt0bmVjag%3D%3D&utm_source=qr"

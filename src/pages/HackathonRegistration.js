@@ -106,6 +106,7 @@ export default function RegistrationForm() {
         } finally {
             setLoading(false);
         }
+        
     };
 
     return (
@@ -428,7 +429,7 @@ export default function RegistrationForm() {
                                                     <option value="AI-powered Dynamic Pricing System" data-description="Develop an AI-driven dynamic pricing model for an e-commerce platform. The system will adjust prices in real-time based on demand, competition, inventory levels, and other market factors, providing personalized pricing for customers to maximize sales and profit margins.">AI-powered Dynamic Pricing System</option>
                                                 </select>
 
-                                                <p className="text-center text-gray-400">OR</p>
+                                                <p className="text-center text-gray-400"> ------- OR ------- </p>
 
                                                 <textarea
                                                     placeholder="Describe your problem statement"
@@ -445,6 +446,14 @@ export default function RegistrationForm() {
                                                     >
                                                         {loading ? "Submitting..." : "Final Submission"}
                                                     </button>
+                                                    <a
+                                                        href="https://drive.google.com/file/d/1X_5Il1V4yHRGNtlXE78QV_U2eGhSS1LA/view?usp=drive_link"
+                                                        target="_blank"
+                                                        rel="noreferrer"
+                                                        className="w-full bg-[#18CB96] py-2 rounded-md text-black text-center flex justify-center items-center"
+                                                    >
+                                                        Download
+                                                    </a>
                                                     <button
                                                         type="button"
                                                         onClick={() => setStep(3)}
