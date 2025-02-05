@@ -20,11 +20,8 @@ export default function AboutUs() {
       <section className="relative py-10 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <motion.div style={{ opacity, scale }} className="text-center">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white mb-6">
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-4 md:mb-6 animate-fade-in">
               <span className="text-[#18CB96] bg-clip-text animate-pulse"><AnimatedText text="About Kraf Technologies" /></span>
-            </h1>
-              
             </h1>
             <p className="text-base md:text-xl mb-8 max-w-3xl mx-auto text-gray-300 md:mb-8 max-w-2xl">
               Revolutionizing B2B Software Solutions with Cutting-Edge Technology and Innovative Approaches
@@ -178,8 +175,8 @@ export default function AboutUs() {
           <div className="grid md:grid-cols-2 gap-12">
             {[
               {
-                title: "E-commerce Giant Boosts Sales by 200%",
-                image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                title: "KrafX-Q: The Future of Hackathon Management",
+                image: "https://unsplash.com/photos/woman-in-white-shirt-sitting-beside-man-in-red-crew-neck-t-shirt-DvQIwyafV7A?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash",
               },
               {
                 title: "Fintech Startup Scales to 1M Users",
@@ -201,7 +198,7 @@ export default function AboutUs() {
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-3 text-gray-900">{study.title}</h3>
                   <p className="text-gray-600 mb-4">Learn how our solutions transformed their business</p>
-                  <a href="/case-studies" className="inline-block">
+                  <a href="https://www.linkedin.com/pulse/krafx-q-future-hackathon-management-kraftechnologies-gj06f/"  target="_blank" className="inline-block">
                     <motion.button
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
