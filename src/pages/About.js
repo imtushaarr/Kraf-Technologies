@@ -176,7 +176,7 @@ export default function AboutUs() {
             {[
               {
                 title: "KrafX-Q: The Future of Hackathon Management",
-                image: "https://unsplash.com/photos/woman-in-white-shirt-sitting-beside-man-in-red-crew-neck-t-shirt-DvQIwyafV7A?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash",
+                image: "https://media.licdn.com/dms/image/v2/D4D12AQHx_s7GnKZxFA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1738789892377?e=1744243200&v=beta&t=xp4EdyRp0lrPL7406-9mWrCII023gJVeerUpkvwwI3s",
               },
               {
                 title: "Fintech Startup Scales to 1M Users",
