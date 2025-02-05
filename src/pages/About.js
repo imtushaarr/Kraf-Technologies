@@ -2,9 +2,11 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { SiBlockchaindotcom, SiOpenai, SiQuantcast, SiAmazons3 } from "react-icons/si";
 import { FaLinkedin, FaInstagram, FaTwitter } from 'react-icons/fa';
 import AnimatedText from "../components/AnimatedText";
-import animesh from "../assets/Avatar2.jpg"
-import punnet from "../assets/Avatar3.jpeg"
-import yash from "../assets/yash.jpeg"
+import animesh from "../assets//founders/animesh.JPG"
+import punnet from "../assets/founders/puneet.JPG"
+import yash from "../assets/founders/yash.JPG"
+import tushar from "../assets/founders/tushar.JPG"
+import allFounders from '../assets/founders/all.jpg'
 
 
 export default function AboutUs() {
@@ -61,7 +63,7 @@ export default function AboutUs() {
                 With a strong foundation in technology and a vision for future innovation, Kraf Technologies continues to push the boundaries of digital transformation. The company is committed to expanding its product line, exploring emerging technologies like AI, blockchain, and IoT, and fostering an ecosystem where businesses and individuals can thrive. As it grows, Kraf Technologies remains dedicated to delivering high-quality, scalable, and user-centric solutions that empower businesses and consumers alike, shaping the future of technology with its innovative approach.
                 </p>
                 <img
-                  src="https://plus.unsplash.com/premium_photo-1683120730432-b5ea74bd9047?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src={allFounders}
                   alt="TechNova Team"
                   className="rounded-lg shadow-2xl mb-6"
                 />
@@ -80,7 +82,7 @@ export default function AboutUs() {
           <div className="w-40 h-1 bg-[#18CB96] mx-auto mb-16"></div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
             <TeamMember
-              image="https://media.licdn.com/dms/image/v2/D4D03AQGtShejOc4ofg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1713016106826?e=1744243200&v=beta&t=DtjxhTrp_abWlVEoZkwYOTOak15FHntdHgLJzjJQ9n8"
+              image={tushar}
               name="Tushar Gupta"
               role="Founder & Lead Developer"
               bio="Software Developer skilled in designing, developing, and optimizing scalable applications across various platforms and technologies."

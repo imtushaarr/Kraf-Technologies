@@ -18,12 +18,10 @@ Lightbulb,
 Laptop } from 'lucide-react';
 import { motion } from "framer-motion";
 import heroImage from "../assets/Serendale.png";
-import avatar2 from "../assets/Avatar2.jpg";
-import avatar3 from "../assets/Avatar3.jpeg";
-import avatar4 from "../assets/yash.jpeg";
-import animesh from '../assets/Avatar2.jpg';
-import punnet from '../assets/Avatar3.jpeg';
-import yash from '../assets/yash.jpeg';
+import tushar from "../assets/founders/tushar.JPG";
+import animesh from '../assets/founders/animesh.JPG';
+import punnet from '../assets/founders/puneet.JPG';
+import yash from '../assets/founders/yash.JPG';
 import {useNavigate} from "react-router-dom";
 import sonu from '../assets/sonu.png';
 import tarveen from "../assets/tarveen.jpg";
@@ -94,10 +92,10 @@ const KrafThink = () => {
               className="absolute bottom-32 md:bottom-24 left-8 flex items-center"
             >
               <div className="flex -space-x-2">
-                  <img src="https://media.licdn.com/dms/image/v2/D4D03AQGtShejOc4ofg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1713016106826?e=1744243200&v=beta&t=DtjxhTrp_abWlVEoZkwYOTOak15FHntdHgLJzjJQ9n8" alt="Avatar 1" className="w-10 h-10 rounded-full border-2 border-black object-cover" />
-                  <img src={avatar2} alt="Avatar 2" className="w-10 h-10 rounded-full border-2 border-black object-cover" />
-                  <img src={avatar3} alt="Avatar 3" className="w-10 h-10 rounded-full border-2 border-black object-cover" />
-                  <img src={avatar4} alt="Avatar 4" className="w-10 h-10 rounded-full border-2 border-black object-cover" />
+                  <img src={tushar} alt="Avatar 1" className="w-10 h-10 rounded-full border-2 border-black object-cover" />
+                  <img src={animesh} alt="Avatar 2" className="w-10 h-10 rounded-full border-2 border-black object-cover" />
+                  <img src={punnet} alt="Avatar 3" className="w-10 h-10 rounded-full border-2 border-black object-cover" />
+                  <img src={yash} alt="Avatar 4" className="w-10 h-10 rounded-full border-2 border-black object-cover" />
               </div>
             </motion.div>
           </div>
@@ -366,7 +364,7 @@ const KrafThink = () => {
   <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
     {/* Team Member 1 */}
     <TeamMember
-      image="https://media.licdn.com/dms/image/v2/D4D03AQGtShejOc4ofg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1713016106826?e=1744243200&v=beta&t=DtjxhTrp_abWlVEoZkwYOTOak15FHntdHgLJzjJQ9n8"
+      image={tushar}
       name="Tushar Gupta"
       role="Founder & Lead Developer"
       bio="Software Developer skilled in designing, developing, and optimizing scalable applications across various platforms and technologies."
