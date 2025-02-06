@@ -410,7 +410,7 @@ const KrafThink = () => {
     <TeamMember
       image={sonu}
       name="Sonu Kumar"
-      role="Secretary AIT Triads"
+      role="Secretary AIT Triads, Chandigarh University"
       // bio="Data Engineer with expertise in building and optimizing data pipelines for efficient processing and storage"
       linkedin="https://www.linkedin.com/in/sonukumarmandal?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
       instagram="https://www.instagram.com/_____sonu______1102?igsh=YnJ4Z2NqcWR4Nms0"
@@ -420,7 +420,7 @@ const KrafThink = () => {
     <TeamMember
       image={tarveen}
       name="Tarveen Kaur"
-      role="Society Coordinator Of AIT Triads"
+      role="Society Coordinator Of AIT Triads, Chandigarh University"
       // bio="Data Engineer with expertise in building and optimizing data pipelines for efficient processing and storage"
       linkedin="https://www.linkedin.com/in/tarveen-kaur-01984024b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
       instagram="https://www.instagram.com/tkaur2714?igsh=MXd5eTBiamt0bmVjag%3D%3D&utm_source=qr"
