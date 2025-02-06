@@ -1,4 +1,3 @@
-// App.js
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
@@ -14,8 +13,9 @@ import ThankYouPage from './pages/ThankYouPage';
 import Career from './pages/Career';
 import ContactUs from './pages/Contact';
 import HackathonDashboard from './pages/HackathonDashboard';
+import AdminLogin from "./pages/AdminLogin";
 
-// Protected Route Component
+
 const ProtectedThankYou = ({ children }) => {
     const location = useLocation();
     const hasAccess = localStorage.getItem("thankYouAccess") || location.state?.fromRegistration;
@@ -27,7 +27,11 @@ const ProtectedThankYou = ({ children }) => {
     return children;
   };
 
-// Main App Component
+  const ProtectedRoute = ({ children }) => {
+    return localStorage.getItem("adminAuth") ? children : <Navigate to="/admin-hackathon-dashboard" replace />;
+};
+
+
 function App() {
     const [loading, setLoading] = useState(true);
 
@@ -52,7 +56,15 @@ function App() {
                     <Route path="/career" element={<Career />} />
                     <Route path="/kraf-think-2025" element={<KrafThink />} />
                     <Route path="/kraf-think-2025/*" element={<HackathonRoute />} />
-                    <Route path="/admin-hackathon-dashboard" element={<HackathonDashboard />} />
+                    <Route path="/admin-hackathon-dashboard" element={<AdminLogin />} />
+                    <Route 
+                        path="/hackathon-dashboard" 
+                        element={
+                            <ProtectedRoute>
+                                <HackathonDashboard />
+                            </ProtectedRoute>
+                        } 
+                    />
                     <Route 
                         path="/kraf-think-2025/thank-you" 
                         element={
@@ -68,4 +80,4 @@ function App() {
     );
 }
 
-export default App; // Make sure this is at the end
+export default App;
