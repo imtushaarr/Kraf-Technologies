@@ -14,6 +14,7 @@ import Career from './pages/Career';
 import ContactUs from './pages/Contact';
 import HackathonDashboard from './pages/HackathonDashboard';
 import AdminLogin from "./pages/AdminLogin";
+import NotFound from './pages/404Page';
 
 
 const ProtectedThankYou = ({ children }) => {
@@ -73,6 +74,7 @@ function App() {
                             </ProtectedThankYou>
                         } 
                     />
+                    <Route path="*" element={<NotFound />}  />
                 </Routes>
             )}
             <Footer />
