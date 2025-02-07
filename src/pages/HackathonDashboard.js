@@ -148,7 +148,6 @@ const HackathonDashboard = () => {
     const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
-        // Check authentication
         if (!localStorage.getItem("adminAuth")) {
             navigate("/admin-hackathon-dashboard");
         }
@@ -199,6 +198,22 @@ const HackathonDashboard = () => {
         };
         fetchApplications();
     }, []);
+
+    useEffect(() => {
+        if (!localStorage.getItem("adminAuth")) {
+            navigate("/admin-hackathon-dashboard");
+        }
+    
+        const handleTabClose = () => {
+            localStorage.removeItem("adminAuth");
+        };
+    
+        window.addEventListener("beforeunload", handleTabClose);
+    
+        return () => {
+            window.removeEventListener("beforeunload", handleTabClose);
+        };
+    }, [navigate]);
 
     const logout = () => {
         localStorage.removeItem("adminAuth");
