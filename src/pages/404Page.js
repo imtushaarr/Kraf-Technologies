@@ -14,7 +14,7 @@ export default function NotFound() {
         <div className="mt-10 flex items-center justify-center gap-x-6">
           <a
             href="/"
-            className="rounded-md bg-[#18CB96] px-4 py-2 text-sm font-semibold text-black shadow hover:bg-indigo-500 focus:outline focus:ring-2 focus:ring-indigo-600"
+            className="rounded-md bg-[#18CB96] px-4 py-2 text-sm font-semibold text-black shadow hover:bg-[#18CB96]/80 focus:outline focus:ring-2 focus:ring-indigo-600"
           >
             Go back home
           </a>
