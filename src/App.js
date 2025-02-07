@@ -15,6 +15,7 @@ import ContactUs from './pages/Contact';
 import HackathonDashboard from './pages/HackathonDashboard';
 import AdminLogin from "./pages/AdminLogin";
 import NotFound from './pages/404Page';
+import Service from './pages/Service';
 
 
 const ProtectedThankYou = ({ children }) => {
@@ -54,6 +55,7 @@ function App() {
                     <Route path="/products" element={<Products />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/contact-us" element={<ContactUs />} />
+                    <Route path="/our-servies" element={<Service />} />
                     <Route path="/career" element={<Career />} />
                     <Route path="/kraf-think-2025" element={<KrafThink />} />
                     <Route path="/kraf-think-2025/*" element={<HackathonRoute />} />

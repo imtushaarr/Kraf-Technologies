@@ -13,7 +13,7 @@ export default function Example() {
   const navigation = [
     { name: 'Home', href: '/' },
     { name: 'Products', href: '/products' },
-    { name: 'Services', href: '/services' },
+    { name: 'Services', href: '/our-servies' },
     { name: 'About Us', href: '/about' },
   ];
 
