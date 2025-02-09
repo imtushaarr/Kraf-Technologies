@@ -95,7 +95,7 @@ export default function ThankYouPage() {
             {
               icon: PartyPopper,
               title: "Grand Finale",
-              content: "March 06, 2025 Final presentations, winners announcement, and prize distribution ceremony at D1 Seminar Hall, Chandigarh University.",
+              content: "March 06, 2025 Final presentations, winners announcement, and prize distribution ceremony at D7 Seminar Hall, Chandigarh University.",
             },
             {
               icon: Bell,
