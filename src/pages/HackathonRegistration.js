@@ -410,9 +410,6 @@ export default function RegistrationForm() {
 ">Virtual Campus Tour for Universities</option>
 
                                                     <option value="AI-Powered Career Guidance Platform" data-description="Create a platform that uses Artificial Intelligence to suggest career paths to students based on their skills, interests, and academic performance. It will recommend relevant courses, internships, and job opportunities.">AI-Powered Career Guidance Platform</option>
-
-                                                    <option value="Virtual Campus Tour for Universities" data-description="Build a platform that offers prospective students a virtual tour of the university campus. Integrate interactive maps, 360-degree images or videos, and real-time chat for guiding and providing information.">Virtual Campus Tour for Universities</option>
-
                                                     <option value="Real-Time Collaborative Coding Platform" data-description="Build a web-based IDE (like Google Docs for code) where multiple users can collaborate on coding projects. The platform will have live syncing, syntax highlighting, and video chat integration for enhanced collaboration.">Real-Time Collaborative Coding Platform</option>
 
                                                     <option value="AI-Powered Expense Tracker for Students" data-description="Design an AI-based expense tracker tailored for students. It will automatically categorize expenses, provide insights on spending patterns, and suggest ways to save money based on the user’s financial goals.
