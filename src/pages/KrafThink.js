@@ -347,7 +347,7 @@ const KrafThink = () => {
               <EventDetail title="Location" value="Chandigarh University" />
               <EventDetail title="Register" value="At Kraf Technologies" />
               <EventDetail title="Registration Start" value="04 February 2025" />
-              <EventDetail title="Grand Finale" value="26 February 2025" />
+              <EventDetail title="Grand Finale" value="06 March 2025" />
             </div>
           </div>
         </div>
