@@ -259,38 +259,38 @@ const KrafThink = () => {
             <TimelineCard 
               icon={<Users />}
               title="Registrations"
-              date="February 04 to 13, 2025"
+              date="February 04 to 18, 2025"
               description="Early bird registration begins with team formation at Kraf Technology"
             />
             <TimelineCard 
               icon={<Github />}
               title="PPT Submissions"
-              date="February 15 to 19, 2025"
+              date="February 22 to 24, 2025"
               description="Submit your project's presentaion at KrafX-Q1"
             />
             <TimelineCard 
               icon={<FilePresentation />}
               title="Presentation Result" 
-              date="February 22, 2025"
+              date="February 26, 2025"
               description="Result will be declared at KrafX-Q1 and top 15 teams will move to next phase"
             />
             <TimelineCard 
               icon={<Send />}
               title="Mentoring Session"
-              date="February 24, 2025"
-              description="We will provide ideas to enhance and improve your project at D3 Block, Chandigarh University"
+              date="February 28, 2025"
+              description="We will provide ideas to enhance and improve your project at KrafX-Q1 Platform"
             />
             <TimelineCard 
               icon={<Code />}
               title="Code Submission"
-              date="February 25, 2025"
+              date="March 02, 2025"
               description="Intense coding to bring your ideas to life and submission of project at KrafX-Q1"
             />
             <TimelineCard 
               icon={<Trophy />}
               title="Grand Finale"
-              date="February 26, 2025"
-              description="Winners announcement and prize distribution ceremony at D1 Seminar Hall Chandigarh University"
+              date="March 06, 2025"
+              description="Winners announcement and prize distribution ceremony at D-7 Block, Seminar Hall Chandigarh University"
             />
           </div>
         </div>
@@ -309,14 +309,14 @@ const KrafThink = () => {
                 <div className="flex items-start gap-3">
                   <MapPin className="text-[#18CB96] mt-1" />
                   <div>
-                    <p className="font-semibold">D-1 Seminar Hall, Chandigarh University</p>
+                    <p className="font-semibold">D-7 Block, Seminar Hall, Chandigarh University</p>
                     {/* <p className="text-gray-400">2000 Innovation Drive</p> */}
                     <p className="text-gray-400">NH05, Chandigarh-Ludhiana Highway, Gharuan, Mohali, Punjab, India</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
                   <Calendar className="text-[#18CB96]" />
-                  <p>February 26, 2025 (9:30 AM IST Start)</p>
+                  <p>March 03, 2025 (9:30 AM IST Start)</p>
                 </div>
               </div>
             </div>

@@ -75,27 +75,27 @@ export default function ThankYouPage() {
             {
               icon: Send,
               title: "PPT Submissions",
-              content: "February 15 to 19, 2025 Submit your project presentation at KrafX-Q1",
+              content: "February 22 to 24, 2025 Submit your project presentation at KrafX-Q1",
             },
             {
               icon: Users,
               title: "Presentation Result",
-              content: "February 22, 2025 Top 15 teams will be selected and announced on KrafX-Q1",
-            },
-            {
-              icon: Braces,
-              title: "Coding Round",
-              content: "February 23 to 25, 2025 Bring your ideas to life with intense coding and submit your project at KrafX-Q1",
+              content: "February 26, 2025 Top 15 teams will be selected and announced on KrafX-Q1",
             },
             {
               icon: Lightbulb,
               title: "Mentoring Session",
-              content: "February 24, 2025 Get expert guidance to refine and improve your project at D3 Block, Chandigarh University",
+              content: "February 28, 2025 We will provide ideas to enhance and improve your project at KrafX-Q1 Platform",
+            },
+            {
+              icon: Braces,
+              title: "Coding Submission",
+              content: "March 02, 2025 Bring your ideas to life with intense coding and submit your project at KrafX-Q1",
             },
             {
               icon: PartyPopper,
               title: "Grand Finale",
-              content: "February 26, 2025 Final presentations, winners announcement, and prize distribution ceremony at D1 Seminar Hall, Chandigarh University.",
+              content: "March 06, 2025 Final presentations, winners announcement, and prize distribution ceremony at D1 Seminar Hall, Chandigarh University.",
             },
             {
               icon: Bell,
