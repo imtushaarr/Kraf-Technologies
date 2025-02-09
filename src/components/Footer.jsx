@@ -53,7 +53,7 @@ export default function Footer() {
             <a href="https://www.linkedin.com/company/kraftechnologies/?viewAsMember=true" target="_blank" rel="noopener noreferrer">
               <Linkedin className="w-6 h-6 text-gray-400 hover:text-[#18CB96] transition-colors" />
             </a>
-            <a href="https://github.com/KRAF-TECHNOLOGY" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/Kraf-Technologies" target="_blank" rel="noopener noreferrer">
               <Github className="w-6 h-6 text-gray-400 hover:text-[#18CB96] transition-colors" />
             </a>
             <a href="https://x.com/kraftechnologies" target="_blank" rel="noopener noreferrer">

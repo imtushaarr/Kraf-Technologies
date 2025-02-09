@@ -73,7 +73,7 @@ function ContactUs() {
               <a href="https://www.linkedin.com/company/kraftechnologies/?viewAsMember=true" className="text-blue-400 hover:text-blue-300 transition-colors">
                 <Linkedin size={24} />
               </a>
-              <a href="https://github.com/KRAF-TECHNOLOGY" className="text-blue-600 hover:text-blue-500 transition-colors">
+              <a href="https://github.com/Kraf-Technologies" className="text-blue-600 hover:text-blue-500 transition-colors">
                 <Github size={24} />
               </a>
               <a href="https://instagram.com/kraftechnologies" className="text-pink-600 hover:text-pink-500 transition-colors">
