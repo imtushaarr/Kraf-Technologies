@@ -316,7 +316,7 @@ const KrafThink = () => {
                 </div>
                 <div className="flex items-center gap-3">
                   <Calendar className="text-[#18CB96]" />
-                  <p>March 03, 2025 (9:30 AM IST Start)</p>
+                  <p>March 06, 2025 (9:30 AM IST Start)</p>
                 </div>
               </div>
             </div>
