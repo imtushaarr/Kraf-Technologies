@@ -260,6 +260,7 @@ const HackathonDashboard = () => {
                     className="p-3 bg-gray-800 rounded-md w-full max-w-xs" 
                     onChange={searchApplications}
                 />
+                <span className="text-gray-400 ml-4">Total Applications: {filteredApplications.length}</span>
             </div>
             <div className="space-y-4">
                 {displayApplications.length ? displayApplications.map(app => (
