@@ -16,7 +16,6 @@ import HackathonDashboard from './pages/HackathonDashboard';
 import AdminLogin from "./pages/AdminLogin";
 import NotFound from './pages/404Page';
 import Service from './pages/Service';
-import Popup from './pages/Popup';
 
 const ProtectedThankYou = ({ children }) => {
     const location = useLocation();
