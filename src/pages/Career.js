@@ -64,7 +64,7 @@ export default function Career() {
             Be part of our growing team and experience the bright future of innovation in a workplace setting.
           </p>
           <div className="space-x-4">
-            <a href='https://www.linkedin.com/company/kraftechnologies' target='_blank' rel='noreferrer'>
+            <a href='/career/registration' target='_blank' rel='noreferrer'>
             <button className="bg-[#18CB96] text-white px-6 py-2 rounded-md hover:bg-[#15b587] transition">
               Apply Now
             </button>

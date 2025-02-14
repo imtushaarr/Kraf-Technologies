@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Twitter, Facebook, Instagram, Linkedin, Github } from 'lucide-react';
+import {Instagram, Linkedin, Github } from 'lucide-react';
 import { Phone, Mail, MapPin } from 'lucide-react';
+import { db, collection, addDoc } from "../services/firebase";
 function ContactUs() {
   const [formData, setFormData] = useState({
     firstName: '',
@@ -10,10 +11,20 @@ function ContactUs() {
     message: ''
   });
 
-  const handleSubmit = (e) => {
+  const [loading, setLoading] = useState(false);
+  const [successMessage, setSuccessMessage] = useState("");
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
+    setLoading(true);
+    try {
+      await addDoc(collection(db, "kt_contact"), formData);
+      setSuccessMessage("Message sent successfully! We will get back to you soon.");
+      setFormData({ firstName: "", lastName: "", email: "", phone: "", message: "" });
+    } catch (error) {
+      console.error("Error submitting form: ", error);
+    }
+    setLoading(false);
   };
 
   const handleChange = (e) => {
@@ -87,61 +98,24 @@ function ContactUs() {
             <div className="bg-[#111827] bg-opacity-80 p-8 rounded-lg">
               <h2 className="text-2xl font-bold text-white mb-2">Raise a ticket</h2>
               <p className="text-gray-400 mb-6">We will get back to you in 24 hours</p>
-              
+
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <input
-                    type="text"
-                    name="firstName"
-                    placeholder="First Name"
-                    value={formData.firstName}
-                    onChange={handleChange}
-                    className="bg-[#1F2937] text-white px-4 py-3 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-green-500"
-                  />
-                  <input
-                    type="text"
-                    name="lastName"
-                    placeholder="Last Name"
-                    value={formData.lastName}
-                    onChange={handleChange}
-                    className="bg-[#1F2937] text-white px-4 py-3 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-green-500"
-                  />
+                  <input type="text" name="firstName" placeholder="First Name" value={formData.firstName} onChange={handleChange} required className="bg-[#1F2937] text-white px-4 py-3 rounded-md w-full"/>
+                  <input type="text" name="lastName" placeholder="Last Name" value={formData.lastName} onChange={handleChange} required className="bg-[#1F2937] text-white px-4 py-3 rounded-md w-full"/>
                 </div>
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="bg-[#1F2937] text-white px-4 py-3 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-green-500"
-                  />
-                  <input
-                    type="tel"
-                    name="phone"
-                    placeholder="Phone Number"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    className="bg-[#1F2937] text-white px-4 py-3 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-green-500"
-                  />
+                  <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange} required className="bg-[#1F2937] text-white px-4 py-3 rounded-md w-full"/>
+                  <input type="tel" name="phone" placeholder="Phone Number" value={formData.phone} onChange={handleChange} required className="bg-[#1F2937] text-white px-4 py-3 rounded-md w-full"/>
                 </div>
-                
-                <textarea
-                  name="message"
-                  placeholder="Type a message here"
-                  value={formData.message}
-                  onChange={handleChange}
-                  rows={6}
-                  className="bg-[#1F2937] text-white px-4 py-3 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-green-500"
-                />
-                
-                <button
-                  type="submit"
-                  className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-md transition-colors"
-                >
-                  Raise
+
+                <textarea name="message" placeholder="Type a message here" value={formData.message} onChange={handleChange} required rows={6} className="bg-[#1F2937] text-white px-4 py-3 rounded-md w-full"/>
+
+                <button type="submit" disabled={loading} className="w-full bg-green-500 hover:bg-green-600 text-white font-normal py-3 px-6 rounded-md transition-colors">
+                  {loading ? "Sending..." : "Submit"}
                 </button>
+                {successMessage && <p className="text-green-500">{successMessage}</p>}
               </form>
             </div>
           </div>

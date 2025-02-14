@@ -16,6 +16,7 @@ import HackathonDashboard from './pages/HackathonDashboard';
 import AdminLogin from "./pages/AdminLogin";
 import NotFound from './pages/404Page';
 import Service from './pages/Service';
+import CareerRegistration from './pages/CareerRegistration';
 
 const ProtectedThankYou = ({ children }) => {
     const location = useLocation();
@@ -56,6 +57,7 @@ function App() {
                     <Route path="/contact-us" element={<ContactUs />} />
                     <Route path="/our-servies" element={<Service />} />
                     <Route path="/career" element={<Career />} />
+                    <Route path="/career/registration" element={<CareerRegistration />} />
                     <Route path="/kraf-think-2025" element={<KrafThink />} />
                     <Route path="/kraf-think-2025/*" element={<HackathonRoute />} />
                     <Route path="/admin-hackathon-dashboard" element={<AdminLogin />} />
