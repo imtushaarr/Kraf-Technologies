@@ -52,16 +52,16 @@ const KrafThink = () => {
               Empowering innovation, fostering collaboration, and transforming ideas into reality – join the Kraf Think 2025 Hackathon revolution!
             </motion.p>
             {/* Register Now Button */}
-            <a href="/kraf-think-2025/register">
+            {/* <a href="/kraf-think-2025/register"> */}
             <motion.button
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="bg-emerald-500 hover:bg-emerald-600 text-black px-10 py-2 rounded-full text-lg font-medium transition-all duration-300 transform hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 hover:text-white"
+              className="bg-gray-500 hover:bg-red-600 text-black px-10 py-2 rounded-full text-lg font-medium transition-all duration-300 transform hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 hover:text-white cursor-not-allowed"
             >
-              Register Now
+              Registration Closed
             </motion.button>
-            </a>
+            {/* </a> */}
           </div>
           <div className="relative mt-12 max-w-6xl mx-auto">
             {[...Array(8)].map((_, i) => (
