@@ -69,7 +69,7 @@ const KrafThink = () => {
               onClick={handleDownload}
               className="bg-[#18CB96] hover:bg-green-700 text-black px-10 py-2 rounded-full text-lg font-medium transition-all duration-300 transform hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
             >
-              ownload PPT Template
+              Download PPT Template
             </motion.button>
             {/* </a> */}
           </div>
