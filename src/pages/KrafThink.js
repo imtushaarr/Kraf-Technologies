@@ -28,6 +28,16 @@ import tarveen from "../assets/tarveen.jpg";
 
 const KrafThink = () => {
   const navigate = useNavigate()
+
+  const handleDownload = () => {
+    const fileUrl = "/KrafThink-2025-ppt-format.pptx"; // File must be in public/ folder
+    const link = document.createElement("a");
+    link.href = fileUrl;
+    link.download = "KrafThink-2025-ppt-format.pptx"; // Rename file if needed
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
       <main>
@@ -52,14 +62,14 @@ const KrafThink = () => {
               Empowering innovation, fostering collaboration, and transforming ideas into reality – join the Kraf Think 2025 Hackathon revolution!
             </motion.p>
             {/* Register Now Button */}
-            {/* <a href="/kraf-think-2025/register"> */}
             <motion.button
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="bg-gray-500 hover:bg-red-600 text-black px-10 py-2 rounded-full text-lg font-medium transition-all duration-300 transform hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 hover:text-white cursor-not-allowed"
+              onClick={handleDownload}
+              className="bg-[#18CB96] hover:bg-green-700 text-black px-10 py-2 rounded-full text-lg font-medium transition-all duration-300 transform hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
             >
-              Registration Closed
+              ownload PPT Template
             </motion.button>
             {/* </a> */}
           </div>
