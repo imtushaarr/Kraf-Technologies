@@ -62,15 +62,28 @@ const KrafThink = () => {
               Empowering innovation, fostering collaboration, and transforming ideas into reality – join the Kraf Think 2025 Hackathon revolution!
             </motion.p>
             {/* Register Now Button */}
-            <motion.button
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              onClick={handleDownload}
-              className="bg-[#18CB96] hover:bg-green-700 text-black px-10 py-2 rounded-full text-lg font-medium transition-all duration-300 transform hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
-            >
-              Download PPT Template
-            </motion.button>
+            <div className="flex flex-wrap justify-center md:justify-start gap-4">
+              <motion.button
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                onClick={handleDownload}
+                className="bg-[#18CB96] hover:bg-[#18CB70] text-black px-6 py-2 rounded text-sm font-regular transition-all duration-300 transform hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
+              >
+                Download PPT Template
+              </motion.button>
+              
+              <a href="/ppt-submission">
+              <motion.button
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                className="bg-[#18CB96] hover:bg-[#18CB70] text-black px-6 py-2 rounded text-sm font-regular transition-all duration-300 transform hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
+              >
+                PPT Submission
+              </motion.button>
+              </a>
+            </div>
             {/* </a> */}
           </div>
           <div className="relative mt-12 max-w-6xl mx-auto">

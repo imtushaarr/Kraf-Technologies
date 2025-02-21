@@ -106,7 +106,9 @@ import AdminLogin from "./pages/AdminLogin";
 import NotFound from './pages/404Page';
 import Service from './pages/Service';
 import CareerRegistration from './pages/CareerRegistration';
-import Announcement from './components/Announcement';  // ✅ Fixed missing import
+import Announcement from './components/Announcement'; 
+import PPTSubmission from "../src/pages/pptSubmission"
+
 
 // ✅ Protected Route for Thank You Page
 const ProtectedThankYou = ({ children }) => {
@@ -148,6 +150,7 @@ function App() {
                         <Route path="/contact-us" element={<ContactUs />} />
                         <Route path="/our-services" element={<Service />} />  {/* ✅ Fixed Typo */}
                         <Route path="/career" element={<Career />} />
+                        <Route path="/ppt-submission" element={<PPTSubmission />} />
                         <Route path="/career/registration" element={<CareerRegistration />} />
                         <Route 
                             path="/kraf-think-2025" 
