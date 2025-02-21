@@ -73,7 +73,7 @@ const KrafThink = () => {
                 Download PPT Template
               </motion.button>
               
-              <a href="/ppt-submission">
+              <a href="/kraf-think-2025/ppt-submission">
               <motion.button
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
