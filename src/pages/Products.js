@@ -3,6 +3,7 @@ import {
   LineChart, Server, Shield, Globe, Box, Terminal, 
   Cpu, Brain, Command, Layers, Database, Network 
 } from 'lucide-react';
+import KrafX from '../assets/MacBook Pro 14_ - 1.png';
 
 // ... (keep existing interfaces and data arrays the same)
 
@@ -171,11 +172,11 @@ const App: React.FC = () => {
 
 const projects: Project[] = [
   {
-    name: "KrafX - Futuristic Payment Wallet",
-    description: "A secure, NFC-based digital payment solution for merchants and businesses, featuring real-time transaction processing and advanced fraud detection.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200",
-    url: "kraftech-krafx.app",
-    technologies: ["React Native", "Node.js", "NFC", "Blockchain"]
+    name: "KrafX-Q1: Business Solution & Hackathon Management Platform",
+    description: "KrafX-Q1 is a B2B SaaS solution designed to help companies and organizations efficiently manage hackathons. It streamlines the entire hackathon process, from listing and registration to evaluation, team collaboration, and final submission.",
+    image: KrafX,
+    url: "krafx-q1.kraftechnologies.com",
+    technologies: ["React", "Redux", "WebRTC", "Blockchain"]
   },
   {
     name: "Fintech Mobile Platform",

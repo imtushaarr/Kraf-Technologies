@@ -1,5 +1,6 @@
 import React from 'react';
 import { Monitor, Laptop, Phone, BarChart, Users, Cog, ArrowRight, Globe, Shield, Database } from 'lucide-react';
+import KrafX from '../assets/MacBook Pro 14_ - 1.png';
 
 export default function Showcase() {
   return (
@@ -42,23 +43,23 @@ export default function Showcase() {
                 </div>
                 <div className="flex-1 flex justify-center">
                   <div className="bg-gray-700/50 rounded-md px-3 py-1 text-sm text-gray-400">
-                    kraftech-krafx.app
+                    krafx-q1.kraftechnologies.com
                   </div>
                 </div>
               </div>
               <div className="p-6 flex-1 flex flex-col">
                 <img 
-                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2426"
+                  src={KrafX}
                   alt="Enterprise Dashboard"
                   className="rounded-lg shadow-2xl transform group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="mt-6 flex-1">
-                  <h3 className="text-white/3 text-xl font-semibold mb-2">KrafX - Futuristic Payment Wallet</h3>
-                  <p className="text-gray-400 mb-4">A secure, NFC-based digital payment solution for merchants and businesses.</p>
+                  <h3 className="text-white/3 text-xl font-semibold mb-2">KrafX-Q1: Business Solution & Hackathon Management Platform</h3>
+                  <p className="text-gray-400 mb-4">KrafX-Q1 is a B2B SaaS solution designed to help companies and organizations efficiently manage hackathons. It streamlines the entire hackathon process, from listing and registration to evaluation, team collaboration, and final submission.</p>
                   <div className="flex gap-3">
                     <span className="px-3 py-1 bg-[#18CB96]/10 text-[#18CB96] rounded-full text-sm">React</span>
-                    <span className="px-3 py-1 bg-[#18CB96]/10 text-[#18CB96] rounded-full text-sm">TypeScript</span>
-                    <span className="px-3 py-1 bg-[#18CB96]/10 text-[#18CB96] rounded-full text-sm">D3.js</span>
+                    <span className="px-3 py-1 bg-[#18CB96]/10 text-[#18CB96] rounded-full text-sm">Redux</span>
+                    <span className="px-3 py-1 bg-[#18CB96]/10 text-[#18CB96] rounded-full text-sm">WebRTC</span>
                   </div>
                 </div>
               </div>
