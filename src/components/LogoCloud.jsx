@@ -37,11 +37,11 @@ export default function LogoCloud() {
             className="max-h-8 sm:max-h-12 w-full object-contain opacity-80 hover:opacity-100"
           />
           {/* Logo 5 */}
-          <img
+          {/* <img
             alt="Brand 3"
             src={Logo4}
             className="max-h-8 sm:max-h-12 w-full object-contain opacity-80 hover:opacity-100"
-          />
+          /> */}
         </div>
       </div>
     </div>
