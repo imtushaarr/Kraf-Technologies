@@ -1,6 +1,6 @@
 import React from 'react';
 import { Monitor, Laptop, Phone, BarChart, Users, Cog, ArrowRight, Globe, Shield, Database } from 'lucide-react';
-import KrafX from '../assets/MacBook Pro 14_ - 1.png';
+import KrafX from '../assets/MacBook.png';
 
 export default function Showcase() {
   return (

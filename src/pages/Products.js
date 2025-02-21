@@ -3,7 +3,7 @@ import {
   LineChart, Server, Shield, Globe, Box, Terminal, 
   Cpu, Brain, Command, Layers, Database, Network 
 } from 'lucide-react';
-import KrafX from '../assets/MacBook Pro 14_ - 1.png';
+import KrafX from '../assets/MacBook.png';
 
 // ... (keep existing interfaces and data arrays the same)
 
