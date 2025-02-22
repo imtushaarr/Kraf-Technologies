@@ -7,7 +7,7 @@
 /coverage
 
 # Ignore services directory
-/src/services/*
+# /src/services/*
 
 # production
 /build
