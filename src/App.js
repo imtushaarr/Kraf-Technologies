@@ -161,7 +161,7 @@ function App() {
                                 </>
                             } 
                         />
-                        {/* <Route path="/kraf-think-2025/*" element={<HackathonRoute />} /> */}
+                        <Route path="/kraf-think-2025/*" element={<HackathonRoute />} />
                         <Route path="/admin-hackathon-dashboard" element={<AdminLogin />} />
                         <Route
                             path="/hackathon-dashboard" 
