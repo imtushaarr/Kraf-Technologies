@@ -187,7 +187,7 @@
 
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { db } from "../services/firebase";
+import { db } from "./../../services/firebase";
 import { collection, getDocs, doc, getDoc, deleteDoc, orderBy, query } from "firebase/firestore";
 import { FaUserTie, FaUsers } from "react-icons/fa";
 import { MdClose, MdLaptop, MdDelete } from "react-icons/md";

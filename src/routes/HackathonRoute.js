@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import HackathonRegistration from "../pages/HackathonRegistration";
+import HackathonRegistration from "../pages/krafThink/HackathonRegistration";
 
 const HackathonRoute = () => {
   return (
