@@ -62,7 +62,7 @@ const KrafThink = () => {
               Empowering innovation, fostering collaboration, and transforming ideas into reality – join the Kraf Think 2025 Hackathon revolution!
             </motion.p>
             {/* Register Now Button */}
-            <div className="flex flex-wrap justify-center md:justify-start gap-4">
+            {/* <div className="flex flex-wrap justify-center md:justify-start gap-4">
               <motion.button
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -83,7 +83,7 @@ const KrafThink = () => {
                 PPT Submission
               </motion.button>
               </a>
-            </div>
+            </div> */}
             {/* </a> */}
           </div>
           <div className="relative mt-12 max-w-6xl mx-auto">

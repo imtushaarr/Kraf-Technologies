@@ -148,9 +148,9 @@ function App() {
                         <Route path="/products" element={<Products />} />
                         <Route path="/about" element={<About />} />
                         <Route path="/contact-us" element={<ContactUs />} />
-                        <Route path="/our-services" element={<Service />} />  {/* ✅ Fixed Typo */}
+                        <Route path="/our-services" element={<Service />} /> 
                         <Route path="/career" element={<Career />} />
-                        <Route path="/ppt-submission" element={<PPTSubmission />} />
+                        {/* <Route path="/ppt-submission" element={<PPTSubmission />} /> */}
                         <Route path="/career/registration" element={<CareerRegistration />} />
                         <Route 
                             path="/kraf-think-2025" 

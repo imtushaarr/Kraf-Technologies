@@ -14,7 +14,7 @@ export default function About() {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&q=80&w=2070"
+                src="https://media.licdn.com/dms/image/v2/D4D22AQHS3M392goqbA/feedshare-shrink_1280/B4DZT4pfn2HwAk-/0/1739338415267?e=1743033600&v=beta&t=nZ48BzE13goKxpjpH-N1N50MxD4VeRNsdV_67GdDPLE"
                 alt="Modern office space"
                 className="w-full h-[600px] object-cover"
               />
