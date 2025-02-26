@@ -2,14 +2,15 @@ import React from 'react';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Brands from '../components/Brands';
-import Showcase from '../components/Showcase';
+import Portfolio from "./../components/portfolio";
+
 
 function Home() {
   return (
     <div className="min-h-screen bg-black">
       <Hero />
       <About />
-      <Showcase />
+      <Portfolio />
       <Brands />
     </div>
   );

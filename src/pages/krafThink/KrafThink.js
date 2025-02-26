@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaLinkedin, FaInstagram, FaTwitter } from 'react-icons/fa';
 import { Trophy, 
 Award, 
@@ -28,6 +28,33 @@ import tarveen from "../../assets/tarveen.jpg";
 
 const KrafThink = () => {
   const navigate = useNavigate()
+  const [timeLeft, setTimeLeft] = useState(null);
+  const [isActive, setIsActive] = useState(false);
+
+  useEffect(() => {
+    const targetTime = new Date();
+    targetTime.setHours(20, 0, 0, 0); // Set to 8:00 PM today
+
+    const updateTimer = () => {
+      const now = new Date();
+      const timeDifference = targetTime - now;
+
+      if (timeDifference <= 0) {
+        setIsActive(true);
+        setTimeLeft("00:00:00"); // Timer reaches zero
+      } else {
+        const hours = String(Math.floor(timeDifference / (1000 * 60 * 60))).padStart(2, '0');
+        const minutes = String(Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
+        const seconds = String(Math.floor((timeDifference % (1000 * 60)) / 1000)).padStart(2, '0');
+        setTimeLeft(`${hours}:${minutes}:${seconds}`);
+      }
+    };
+
+    const timerInterval = setInterval(updateTimer, 1000);
+    updateTimer(); // Run immediately to avoid 1s delay
+
+    return () => clearInterval(timerInterval);
+  }, []);
 
   const handleDownload = () => {
     const fileUrl = "/KrafThink-2025-ppt-format.pptx"; // File must be in public/ folder
@@ -62,28 +89,36 @@ const KrafThink = () => {
               Empowering innovation, fostering collaboration, and transforming ideas into reality – join the Kraf Think 2025 Hackathon revolution!
             </motion.p>
             {/* Register Now Button */}
-            {/* <div className="flex flex-wrap justify-center md:justify-start gap-4">
-              <motion.button
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                onClick={handleDownload}
-                className="bg-[#18CB96] hover:bg-[#18CB70] text-black px-6 py-2 rounded text-sm font-regular transition-all duration-300 transform hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
-              >
-                Download PPT Template
-              </motion.button>
-              
-              <a href="/ppt-submission">
-              <motion.button
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                className="bg-[#18CB96] hover:bg-[#18CB70] text-black px-6 py-2 rounded text-sm font-regular transition-all duration-300 transform hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
-              >
-                PPT Submission
-              </motion.button>
-              </a>
-            </div> */}
+            <div className="flex flex-col items-center gap-4 p-6">
+              {/* Countdown Timer */}
+              {!isActive && (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 1 }}
+                  className="flex items-center gap-2 text-lg font-semibold text-gray-700 bg-gray-100 px-4 py-2 rounded-md shadow-sm"
+                >
+                  ⏳ Result available in: <span className="text-red-500 font-bold">{timeLeft}</span>
+                </motion.div>
+              )}
+
+              {/* Download Button */}
+              {/* <a href={isActive ? "/result.pdf" : "#"} download={isActive}>
+                <motion.button
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: 0.4 }}
+                  className={`px-6 py-3 rounded text-sm font-medium transition-all duration-300 transform focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 ${
+                    isActive 
+                      ? "bg-green-600 text-white hover:bg-green-700 hover:scale-105 active:scale-95"
+                      : "bg-gray-400 text-gray-700 cursor-not-allowed"
+                  }`}
+                  disabled={!isActive}
+                >
+                  {isActive ? "Download Result" : "Result Coming Soon"}
+                </motion.button>
+              </a> */}
+            </div>
             {/* </a> */}
           </div>
           <div className="relative mt-12 max-w-6xl mx-auto">
