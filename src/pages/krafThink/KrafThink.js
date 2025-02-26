@@ -28,33 +28,33 @@ import tarveen from "../../assets/tarveen.jpg";
 
 const KrafThink = () => {
   const navigate = useNavigate()
-  const [timeLeft, setTimeLeft] = useState(null);
-  const [isActive, setIsActive] = useState(false);
+  // const [timeLeft, setTimeLeft] = useState(null);
+  // const [isActive, setIsActive] = useState(false);
 
-  useEffect(() => {
-    const targetTime = new Date();
-    targetTime.setHours(20, 0, 0, 0); // Set to 8:00 PM today
+  // useEffect(() => {
+  //   const targetTime = new Date();
+  //   targetTime.setHours(20, 0, 0, 0); // Set to 8:00 PM today
 
-    const updateTimer = () => {
-      const now = new Date();
-      const timeDifference = targetTime - now;
+  //   const updateTimer = () => {
+  //     const now = new Date();
+  //     const timeDifference = targetTime - now;
 
-      if (timeDifference <= 0) {
-        setIsActive(true);
-        setTimeLeft("00:00:00"); // Timer reaches zero
-      } else {
-        const hours = String(Math.floor(timeDifference / (1000 * 60 * 60))).padStart(2, '0');
-        const minutes = String(Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
-        const seconds = String(Math.floor((timeDifference % (1000 * 60)) / 1000)).padStart(2, '0');
-        setTimeLeft(`${hours}:${minutes}:${seconds}`);
-      }
-    };
+  //     if (timeDifference <= 0) {
+  //       setIsActive(true);
+  //       setTimeLeft("00:00:00"); // Timer reaches zero
+  //     } else {
+  //       const hours = String(Math.floor(timeDifference / (1000 * 60 * 60))).padStart(2, '0');
+  //       const minutes = String(Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
+  //       const seconds = String(Math.floor((timeDifference % (1000 * 60)) / 1000)).padStart(2, '0');
+  //       setTimeLeft(`${hours}:${minutes}:${seconds}`);
+  //     }
+  //   };
 
-    const timerInterval = setInterval(updateTimer, 1000);
-    updateTimer(); // Run immediately to avoid 1s delay
+  //   const timerInterval = setInterval(updateTimer, 1000);
+  //   updateTimer(); // Run immediately to avoid 1s delay
 
-    return () => clearInterval(timerInterval);
-  }, []);
+  //   return () => clearInterval(timerInterval);
+  // }, []);
 
   const handleDownload = () => {
     const fileUrl = "/KrafThink-2025-ppt-format.pptx"; // File must be in public/ folder
@@ -90,32 +90,15 @@ const KrafThink = () => {
             </motion.p>
             {/* Register Now Button */}
             <div className="flex flex-col items-center gap-4 p-6">
-              {/* Countdown Timer */}
-              {!isActive && (
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 1 }}
-                  className="flex items-center gap-2 text-lg font-semibold text-gray-700 bg-gray-100 px-4 py-2 rounded-md shadow-sm"
-                >
-                  ⏳ Result available in: <span className="text-red-500 font-bold">{timeLeft}</span>
-                </motion.div>
-              )}
 
-              {/* Download Button */}
-              <a href={isActive ? "/kraf-think-2025/result" : "/kraf-think-2025/result"}>
+              <a href="/kraf-think-2025/result">
                 <motion.button
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
-                  className={`px-6 py-3 rounded text-sm font-medium transition-all duration-300 transform focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 ${
-                    isActive 
-                      ? "bg-green-600 text-white hover:bg-green-700 hover:scale-105 active:scale-95"
-                      : "bg-gray-400 text-gray-700 cursor-not-allowed"
-                  }`}
-                  disabled={!isActive}
+                  className="px-6 py-3 rounded text-sm font-medium bg-green-500 text-white hover:bg-green-600 transition-all duration-300 transform focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
                 >
-                  {isActive ? "Result Dashboard" : "Result Coming Soon"}
+                  View Results
                 </motion.button>
               </a>
             </div>
