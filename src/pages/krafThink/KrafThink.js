@@ -103,7 +103,7 @@ const KrafThink = () => {
               )}
 
               {/* Download Button */}
-              {/* <a href={isActive ? "/result.pdf" : "#"} download={isActive}>
+              <a href={isActive ? "/kraf-think-2025/result" : "/kraf-think-2025/result"} download={isActive}>
                 <motion.button
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -115,9 +115,9 @@ const KrafThink = () => {
                   }`}
                   disabled={!isActive}
                 >
-                  {isActive ? "Download Result" : "Result Coming Soon"}
+                  {isActive ? "Result Dashboard" : "Result Coming Soon"}
                 </motion.button>
-              </a> */}
+              </a>
             </div>
             {/* </a> */}
           </div>

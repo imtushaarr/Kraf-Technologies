@@ -19,6 +19,7 @@ import Service from './pages/Service';
 import CareerRegistration from './pages/CareerRegistration';
 import Announcement from './components/Announcement'; 
 import PPTSubmission from "../src/pages//krafThink/pptSubmission"
+import HackathonResults from "../src/pages/krafThink/HackathonResults"
 
 
 // ✅ Protected Route for Thank You Page
@@ -63,6 +64,7 @@ function App() {
                         <Route path="/career" element={<Career />} />
                         {/* <Route path="/ppt-submission" element={<PPTSubmission />} /> */}
                         <Route path="/career/registration" element={<CareerRegistration />} />
+                        <Route path="/kraf-think-2025/result" element={<HackathonResults />} />
                         <Route 
                             path="/kraf-think-2025" 
                             element={
