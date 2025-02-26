@@ -330,7 +330,7 @@ const KrafThink = () => {
               icon={<FilePresentation />}
               title="Presentation Result" 
               date="February 26, 2025"
-              description="Result will be declared at KrafX-Q1 and top 15 teams will move to next phase"
+              description="Result will be declared at KrafX-Q1 and top 20 teams will move to next phase"
             />
             <TimelineCard 
               icon={<Send />}
