@@ -39,10 +39,10 @@ export default function HackathonResults() {
                   S.No
                 </th>
                 <th className="py-3 px-4 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">
-                  Team
+                  Team Name
                 </th>
                 <th className="py-3 px-4 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">
-                  Leader
+                  Leader Name
                 </th>
               </tr>
             </thead>
