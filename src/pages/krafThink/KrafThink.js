@@ -103,7 +103,7 @@ const KrafThink = () => {
               )}
 
               {/* Download Button */}
-              <a href={isActive ? "/kraf-think-2025/result" : "/kraf-think-2025/result"} download={isActive}>
+              <a href={isActive ? "/kraf-think-2025/result" : "/kraf-think-2025/result"}>
                 <motion.button
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
