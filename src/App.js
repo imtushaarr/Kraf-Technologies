@@ -19,8 +19,7 @@ import Service from './pages/Service';
 import CareerRegistration from './pages/CareerRegistration';
 import Announcement from './components/Announcement'; 
 import PPTSubmission from "../src/pages//krafThink/pptSubmission"
-import HackathonResults from "../src/pages/krafThink/HackathonResults"
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import HackathonResults from "../src/pages/krafThink/HackathonResults";
 
 
 // ✅ Protected Route for Thank You Page
@@ -50,22 +49,6 @@ function App() {
     }, []);
 
     return (
-        <HelmetProvider>
-            <Helmet>
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "Organization",
-                        "name": "Kraf Technologies",
-                        "url": "https://www.kraftechnologies.com",
-                        "logo": "https://www.kraftechnologies.com/static/media/favicon.fce5cceaf97449876926.png",
-                        "sameAs": [
-                            "https://www.linkedin.com/company/kraftechnologies",
-                            "https://instagram.com/kraftechnologies"
-                        ]
-                    })}
-                </script>
-            </Helmet>
             <Router>
                 <Headers />
                 {loading ? (
@@ -115,7 +98,6 @@ function App() {
                 )}
                 <Footer />
             </Router>
-        </HelmetProvider> 
     );
 }
 
