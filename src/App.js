@@ -20,6 +20,7 @@ import CareerRegistration from './pages/CareerRegistration';
 import Announcement from './components/Announcement'; 
 import PPTSubmission from "../src/pages//krafThink/pptSubmission"
 import HackathonResults from "../src/pages/krafThink/HackathonResults"
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 
 // ✅ Protected Route for Thank You Page
@@ -49,55 +50,72 @@ function App() {
     }, []);
 
     return (
-        <Router>
-            <Headers />
-            {loading ? (
-                <Loader />
-            ) : (
-                <>
-                    <Routes>
-                        <Route path="/" element={<Home />} />
-                        <Route path="/products" element={<Products />} />
-                        <Route path="/about" element={<About />} />
-                        <Route path="/contact-us" element={<ContactUs />} />
-                        <Route path="/our-services" element={<Service />} /> 
-                        <Route path="/career" element={<Career />} />
-                        {/* <Route path="/ppt-submission" element={<PPTSubmission />} /> */}
-                        <Route path="/career/registration" element={<CareerRegistration />} />
-                        <Route path="/kraf-think-2025/result" element={<HackathonResults />} />
-                        <Route 
-                            path="/kraf-think-2025" 
-                            element={
-                                <>
-                                    <Announcement />  
-                                    <KrafThink />
-                                </>
-                            } 
-                        />
-                        <Route path="/kraf-think-2025/*" element={<HackathonRoute />} />
-                        <Route path="/admin-hackathon-dashboard" element={<AdminLogin />} />
-                        <Route
-                            path="/hackathon-dashboard" 
-                            element={
-                                <ProtectedRoute>
-                                    <HackathonDashboard />
-                                </ProtectedRoute>
-                            } 
-                        />
-                        <Route 
-                            path="/kraf-think-2025/thank-you" 
-                            element={
-                                <ProtectedThankYou>
-                                    <ThankYouPage />
-                                </ProtectedThankYou>
-                            } 
-                        />
-                        <Route path="*" element={<NotFound />} />
-                    </Routes>
-                </>
-            )}
-            <Footer />
-        </Router>
+        <HelmetProvider>
+            <Helmet>
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Organization",
+                        "name": "Kraf Technologies",
+                        "url": "https://www.kraftechnologies.com",
+                        "logo": "https://www.kraftechnologies.com/static/media/favicon.fce5cceaf97449876926.png",
+                        "sameAs": [
+                            "https://www.linkedin.com/company/kraftechnologies",
+                            "https://instagram.com/kraftechnologies"
+                        ]
+                    })}
+                </script>
+            </Helmet>
+            <Router>
+                <Headers />
+                {loading ? (
+                    <Loader />
+                ) : (
+                    <>
+                        <Routes>
+                            <Route path="/" element={<Home />} />
+                            <Route path="/products" element={<Products />} />
+                            <Route path="/about" element={<About />} />
+                            <Route path="/contact-us" element={<ContactUs />} />
+                            <Route path="/our-services" element={<Service />} /> 
+                            <Route path="/career" element={<Career />} />
+                            {/* <Route path="/ppt-submission" element={<PPTSubmission />} /> */}
+                            <Route path="/career/registration" element={<CareerRegistration />} />
+                            <Route path="/kraf-think-2025/result" element={<HackathonResults />} />
+                            <Route 
+                                path="/kraf-think-2025" 
+                                element={
+                                    <>
+                                        <Announcement />  
+                                        <KrafThink />
+                                    </>
+                                } 
+                            />
+                            <Route path="/kraf-think-2025/*" element={<HackathonRoute />} />
+                            <Route path="/admin-hackathon-dashboard" element={<AdminLogin />} />
+                            <Route
+                                path="/hackathon-dashboard" 
+                                element={
+                                    <ProtectedRoute>
+                                        <HackathonDashboard />
+                                    </ProtectedRoute>
+                                } 
+                            />
+                            <Route 
+                                path="/kraf-think-2025/thank-you" 
+                                element={
+                                    <ProtectedThankYou>
+                                        <ThankYouPage />
+                                    </ProtectedThankYou>
+                                } 
+                            />
+                            <Route path="*" element={<NotFound />} />
+                        </Routes>
+                    </>
+                )}
+                <Footer />
+            </Router>
+        </HelmetProvider> 
     );
 }
 
