@@ -89,8 +89,7 @@ const KrafThink = () => {
               Empowering innovation, fostering collaboration, and transforming ideas into reality – join the Kraf Think 2025 Hackathon revolution!
             </motion.p>
             {/* Register Now Button */}
-            <div className="flex flex-col items-center gap-4 p-6">
-
+            <div className="flex flex-col sm:flex-row items-center gap-4 p-6">
               <a href="/kraf-think-2025/result">
                 <motion.button
                   initial={{ opacity: 0, y: 20 }}
@@ -99,6 +98,16 @@ const KrafThink = () => {
                   className="px-6 py-3 rounded text-sm font-medium bg-green-500 text-white hover:bg-green-600 transition-all duration-300 transform focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
                 >
                   View Results
+                </motion.button>
+              </a>
+              <a href="/kraf-think-2025/codesubmission">
+                <motion.button
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: 0.4 }}
+                  className="px-6 py-3 rounded text-sm font-medium bg-green-500 text-white hover:bg-green-600 transition-all duration-300 transform focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
+                >
+                  Code Submission
                 </motion.button>
               </a>
             </div>

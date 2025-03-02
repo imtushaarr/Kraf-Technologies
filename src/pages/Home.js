@@ -4,7 +4,6 @@ import About from '../components/About';
 import Brands from '../components/Brands';
 import Portfolio from "./../components/portfolio";
 
-
 function Home() {
   return (
     <>
