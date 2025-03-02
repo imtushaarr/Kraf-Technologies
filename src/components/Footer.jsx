@@ -242,8 +242,8 @@ export default function Footer() {
                 </p>
                 <p>
                   Contact:{" "}
-                  <a href="tel:+8801612140042" className="text-white hover:opacity-80">
-                    +88-01612140042
+                  <a href="tel:+91 9588746232" className="text-white hover:opacity-80">
+                    +91 9588746232
                   </a>
                 </p>
                 <p>
