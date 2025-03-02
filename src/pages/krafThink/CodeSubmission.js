@@ -214,7 +214,7 @@ function CodeSubmission() {
 
                 <div className="mb-8">
                   <label htmlFor="mobile" className="block text-xl font-medium mb-2">
-                    Mobile Number
+                    Team Leader Mobile Number
                   </label>
                   <input
                     type="tel"
@@ -231,7 +231,7 @@ function CodeSubmission() {
 
                 <div className="mb-8">
                   <label htmlFor="email" className="block text-xl font-medium mb-2">
-                    Team Email
+                    Team Leader Email
                   </label>
                   <input
                     type="email"
