@@ -181,7 +181,7 @@ export default function Footer() {
                 <Link to="/portfolio" className="block hover:text-white transition-colors">
                   Portfolio
                 </Link>
-                <Link to="/career" className="block hover:text-white transition-colors">
+                <Link to="/careers" className="block hover:text-white transition-colors">
                   Careers
                 </Link>
                 <Link to="/contact-us" className="block hover:text-white transition-colors">

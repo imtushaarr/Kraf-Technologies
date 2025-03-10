@@ -38,8 +38,8 @@ function App() {
                             <Route path="/about" element={<About />} />
                             <Route path="/contact-us" element={<ContactUs />} />
                             <Route path="/our-services" element={<Service />} /> 
-                            <Route path="/career" element={<Career />} />
-                            <Route path="/career/registration" element={<CareerRegistration />} />
+                            <Route path="/careers" element={<Career />} />
+                            <Route path="/careers/registration" element={<CareerRegistration />} />
                             <Route path="/kraf-think-2025" element={<KrafThink />} />
                             <Route path="*" element={<NotFound />} />
                         </Routes>
