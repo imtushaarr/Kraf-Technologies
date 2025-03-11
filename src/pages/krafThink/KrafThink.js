@@ -25,48 +25,22 @@ import yash from '../../assets/founders/yash.JPG';
 import {useNavigate} from "react-router-dom";
 import sonu from '../../assets/sonu.png';
 import tarveen from "../../assets/tarveen.jpg";
+import { Helmet } from "react-helmet";
 
 const KrafThink = () => {
-  const navigate = useNavigate()
-  // const [timeLeft, setTimeLeft] = useState(null);
-  // const [isActive, setIsActive] = useState(false);
-
-  // useEffect(() => {
-  //   const targetTime = new Date();
-  //   targetTime.setHours(20, 0, 0, 0); // Set to 8:00 PM today
-
-  //   const updateTimer = () => {
-  //     const now = new Date();
-  //     const timeDifference = targetTime - now;
-
-  //     if (timeDifference <= 0) {
-  //       setIsActive(true);
-  //       setTimeLeft("00:00:00"); // Timer reaches zero
-  //     } else {
-  //       const hours = String(Math.floor(timeDifference / (1000 * 60 * 60))).padStart(2, '0');
-  //       const minutes = String(Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
-  //       const seconds = String(Math.floor((timeDifference % (1000 * 60)) / 1000)).padStart(2, '0');
-  //       setTimeLeft(`${hours}:${minutes}:${seconds}`);
-  //     }
-  //   };
-
-  //   const timerInterval = setInterval(updateTimer, 1000);
-  //   updateTimer(); // Run immediately to avoid 1s delay
-
-  //   return () => clearInterval(timerInterval);
-  // }, []);
-
-  const handleDownload = () => {
-    const fileUrl = "/KrafThink-2025-ppt-format.pptx"; // File must be in public/ folder
-    const link = document.createElement("a");
-    link.href = fileUrl;
-    link.download = "KrafThink-2025-ppt-format.pptx"; // Rename file if needed
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
+            <Helmet>
+              <title>Kraf Think 2025 Hackathon - Kraf Technologies</title>
+              <meta name="description" content="Join the biggest premier Hackathon, Kraf Think 2025, organized by Kraf Technologies." />
+              <meta name="keywords" content="Hackathon, IT solutions, Kraf Think 2025, AI, Blockchain, SaaS, kt, kraftechnologies" />
+              <meta property="og:title" content="Kraf Think 2025 Hackathon" />
+              <meta property="og:description" content="Empowering innovation and collaboration at Chandigarh University." />
+              <meta property="og:image" content="https://kraftechnologies.com/og-image.jpg" />
+              <meta property="og:url" content="https://kraftechnologies.com/kraf-think-2025/" />
+              <link rel="canonical" href="https://kraftechnologies.com/kraf-think-2025/" />
+            </Helmet>
       <main>
         {/* Hero Section */}
         <section className="relative text-center md:py-16 bg-cover bg-center h-screen" style={{ backgroundImage: `url(${heroImage})` }}>
@@ -88,30 +62,6 @@ const KrafThink = () => {
             >
               Empowering innovation, fostering collaboration, and transforming ideas into reality – join the Kraf Think 2025 Hackathon revolution!
             </motion.p>
-            {/* Register Now Button */}
-            <div className="flex flex-col sm:flex-row items-center gap-4 p-6">
-              <a href="/kraf-think-2025/result">
-                <motion.button
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: 0.4 }}
-                  className="px-6 py-3 rounded text-sm font-medium bg-green-500 text-white hover:bg-green-600 transition-all duration-300 transform focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
-                >
-                  View Results
-                </motion.button>
-              </a>
-              <a href="/kraf-think-2025/codesubmission">
-                <motion.button
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: 0.4 }}
-                  className="px-6 py-3 rounded text-sm font-medium bg-green-500 text-white hover:bg-green-600 transition-all duration-300 transform focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
-                >
-                  Code Submission
-                </motion.button>
-              </a>
-            </div>
-            {/* </a> */}
           </div>
           <div className="relative mt-12 max-w-6xl mx-auto">
             {[...Array(8)].map((_, i) => (
@@ -411,7 +361,7 @@ const KrafThink = () => {
   <div className="w-40 h-1 bg-[#18CB96] mx-auto mb-16"></div>
 
   {/* Team Members Grid */}
-  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
     {/* Team Member 1 */}
     <TeamMember
       image={tushar}
@@ -454,26 +404,6 @@ const KrafThink = () => {
       linkedin="https://www.linkedin.com/in/yash-singh2109"
       instagram="https://www.instagram.com/yash_ys_23"
       twitter="https://x.com/yash-singh2109"
-    />
-
-    {/* Team Member 5 */}
-    <TeamMember
-      image={sonu}
-      name="Sonu Kumar"
-      role="Secretary AIT Triads, Chandigarh University"
-      // bio="Data Engineer with expertise in building and optimizing data pipelines for efficient processing and storage"
-      linkedin="https://www.linkedin.com/in/sonukumarmandal?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-      instagram="https://www.instagram.com/_____sonu______1102?igsh=YnJ4Z2NqcWR4Nms0"
-    />
-
-    {/* Team Member 6 */}
-    <TeamMember
-      image={tarveen}
-      name="Tarveen Kaur"
-      role="Society Coordinator Of AIT Triads, Chandigarh University"
-      // bio="Data Engineer with expertise in building and optimizing data pipelines for efficient processing and storage"
-      linkedin="https://www.linkedin.com/in/tarveen-kaur-01984024b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-      instagram="https://www.instagram.com/tkaur2714?igsh=MXd5eTBiamt0bmVjag%3D%3D&utm_source=qr"
     />
   </div>
 </div>
