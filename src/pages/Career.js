@@ -1,5 +1,6 @@
 import React from 'react';
 import { Briefcase, GraduationCap, TrendingUp, Users } from 'lucide-react';
+import { Helmet } from "react-helmet";
 
 const benefits = [
   {
@@ -55,6 +56,16 @@ const openings = [
 export default function Career() {
   return (
     <div className="min-h-screen bg-black text-white">
+            <Helmet>
+              <title>Careers at Kraf Technologies - Join Our Team</title>
+              <meta name="description" content="Join Kraf Technologies and be part of an innovative team. Explore exciting career opportunities in software development, AI, and cloud computing." />
+              <meta name="keywords" content="Careers, Jobs, Software Development, AI, Cloud Computing, Kraf Technologies" />
+              <meta property="og:title" content="Careers at Kraf Technologies - Join Our Team" />
+              <meta property="og:description" content="Explore job openings and work with the best in the industry at Kraf Technologies." />
+              <meta property="og:image" content="https://kraftechnologies.com/assets/careers-og-image.jpg" />
+              <meta property="og:url" content="https://kraftechnologies.com/careers/" />
+              <link rel="canonical" href="https://kraftechnologies.com/careers/" />
+            </Helmet>
       {/* Hero Section */}
       <div className="relative h-[400px] flex items-center justify-center bg-[url('https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')] bg-cover bg-center">
         <div className="absolute inset-0 bg-black/70"></div>

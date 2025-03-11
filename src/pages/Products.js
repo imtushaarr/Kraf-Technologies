@@ -5,11 +5,24 @@ import {
 } from 'lucide-react';
 import KrafX from '../assets/MacBook.png';
 
-// ... (keep existing interfaces and data arrays the same)
+import { Helmet } from "react-helmet";
 
 const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-black via-[#0a0a0a] to-black text-white">
+            <Helmet>
+              <title>Our Products -  Kraf Technologies</title>
+              <meta
+                name="description"
+                content="Explore our cutting-edge SaaS solutions, AI-powered analytics, and enterprise-grade cloud infrastructure. Built for scale and security."
+              />
+              <meta name="keywords" content="SaaS, AI, Cloud, Security, Analytics, Kraf Technologies" />
+              <meta property="og:title" content="Enterprise Solutions & SaaS Products | Kraf Technologies" />
+              <meta property="og:description" content="Explore our latest innovations in AI, cloud computing, and security solutions for enterprises." />
+              <meta property="og:image" content="https://kraftechnologies.com/assets/products-og-image.jpg" />
+              <meta property="og:url" content="https://kraftechnologies.com/products/" />
+              <link rel="canonical" href="https://kraftechnologies.com/products/" />
+            </Helmet>
       {/* Hero Section */}
       <section className="relative overflow-hidden py-12 md:py-20 px-4 sm:px-6 lg:px-8">
         <div className="relative max-w-7xl mx-auto">

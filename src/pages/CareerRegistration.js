@@ -163,7 +163,7 @@ function CareerRegistration() {
           toast.error(`Please fill all fresher fields: ${missingFresherFields.join(", ")}`);
           return;
         }
-        const maxYear = 2035; // Change from 2030 to 2035
+        const maxYear = 2035; 
         if (!formData.passing_year || formData.passing_year < 1900 || formData.passing_year > maxYear) {
           toast.error(`Please enter a valid passing year (1900-${maxYear})`);
           return;
